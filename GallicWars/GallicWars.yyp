@@ -52,6 +52,7 @@
     {"id":{"name":"farmTile","path":"sprites/farmTile/farmTile.yy",},},
     {"id":{"name":"Barrack","path":"objects/Barrack/Barrack.yy",},},
     {"id":{"name":"quarryTile","path":"sprites/quarryTile/quarryTile.yy",},},
+    {"id":{"name":"Script1","path":"scripts/Script1/Script1.yy",},},
     {"id":{"name":"oResourceUI","path":"objects/oResourceUI/oResourceUI.yy",},},
     {"id":{"name":"EnemySprite","path":"sprites/EnemySprite/EnemySprite.yy",},},
     {"id":{"name":"Enemy","path":"objects/Enemy/Enemy.yy",},},
