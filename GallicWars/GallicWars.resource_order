@@ -24,6 +24,7 @@
   "ResourceOrderSettings": [
     {"name":"oFarm","order":1,"path":"objects/oFarm/oFarm.yy",},
     {"name":"stoneIcon","order":1,"path":"sprites/stoneIcon/stoneIcon.yy",},
+    {"name":"ResourceUI","order":5,"path":"sprites/ResourceUI/ResourceUI.yy",},
     {"name":"mineTile","order":1,"path":"sprites/mineTile/mineTile.yy",},
     {"name":"stoneWaterTileMap","order":2,"path":"sprites/stoneWaterTileMap/stoneWaterTileMap.yy",},
     {"name":"metalIcon","order":4,"path":"sprites/metalIcon/metalIcon.yy",},

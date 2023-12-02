@@ -41,6 +41,7 @@
   "resources": [
     {"id":{"name":"oFarm","path":"objects/oFarm/oFarm.yy",},},
     {"id":{"name":"stoneIcon","path":"sprites/stoneIcon/stoneIcon.yy",},},
+    {"id":{"name":"ResourceUI","path":"sprites/ResourceUI/ResourceUI.yy",},},
     {"id":{"name":"mineTile","path":"sprites/mineTile/mineTile.yy",},},
     {"id":{"name":"Room1","path":"rooms/Room1/Room1.yy",},},
     {"id":{"name":"stoneWaterTileMap","path":"sprites/stoneWaterTileMap/stoneWaterTileMap.yy",},},
