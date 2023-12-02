@@ -8,7 +8,7 @@ function parse_to_string(_n){
 		ret = "00" + ret;
 	} else if(_n < 1000) {
 		ret = "0" + ret;
+		
 	}
-	show_debug_message(ret);
 	return ret;
 }
