@@ -16,3 +16,4 @@ display_height = start_height;
 display_width = start_width;
 
 camera_set_view_size(view_camera[0], display_width, display_height);
+camera_set_view_pos(view_camera[0], 1920, 800);
