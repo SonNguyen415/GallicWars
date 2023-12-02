@@ -1,8 +1,11 @@
 {
   "resourceType": "GMObject",
   "resourceVersion": "1.0",
-  "name": "Barrack",
-  "eventList": [],
+  "name": "oFarm",
+  "eventList": [
+    {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,},
+    {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":null,"eventNum":0,"eventType":2,"isDnD":false,},
+  ],
   "managed": true,
   "overriddenProperties": [],
   "parent": {
@@ -26,8 +29,8 @@
   "properties": [],
   "solid": false,
   "spriteId": {
-    "name": "BarrackSprite",
-    "path": "sprites/BarrackSprite/BarrackSprite.yy",
+    "name": "farmTile",
+    "path": "sprites/farmTile/farmTile.yy",
   },
   "spriteMaskId": null,
   "visible": true,
