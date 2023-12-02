@@ -1,3 +1,4 @@
+/// @description Change camera based on wasd and mouse position and use scroll to zoom
 
 // Get the current width and height of the camera
 var view_w = camera_get_view_width(view_camera[0]);
@@ -28,10 +29,6 @@ camera_set_view_size(view_camera[0], new_w, new_h);
 
 // Camera movement
 
-// Set new camera speed given zoom factor (camera will be 2 times faster when at max zoom and 2 times slower at min)
-var camera_speed = base_camera_speed; // Keep it constant for now
-
-
 // Get current camera position of x and y
 var cx = camera_get_view_x(view_camera[0]);
 var cy = camera_get_view_y(view_camera[0]);
@@ -42,16 +39,16 @@ var vert = (keyboard_check(ord("S"))-keyboard_check(ord("W"))) * camera_speed;
 
 // Check for mouse position to move camera
 if(mouse_x - mouse_tolerance < cx) {
-	hori -= camera_speed;
+	hori -= mouse_camera_speed;
 }
 if(mouse_x + mouse_tolerance > cx + view_w) {
-	hori += camera_speed;
+	hori += mouse_camera_speed;
 }
 if(mouse_y - mouse_tolerance < cy) {
-	vert -= camera_speed;
+	vert -= mouse_camera_speed;
 }
 if(mouse_y + mouse_tolerance > cy + view_h) {
-	vert += camera_speed;
+	vert += mouse_camera_speed;
 }
 
 
