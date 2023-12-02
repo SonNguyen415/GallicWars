@@ -8,4 +8,4 @@ global.stone = 100;
 global.metal = 100;
 
 
-global.taxRate = 30;
+global.tax_rate = 30;

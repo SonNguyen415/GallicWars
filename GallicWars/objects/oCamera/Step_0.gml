@@ -3,18 +3,12 @@
 // Get the current width and height of the camera
 var view_w = camera_get_view_width(view_camera[0]);
 var view_h = camera_get_view_height(view_camera[0]);
-show_debug_message("view_w: " + string(view_w) + " | view_h: " + string(view_h) );
 
 // Zooming in/out of the camera
 // Find the zoom factor (which would be the percentage we be zooming
 var mouse_wheel = mouse_wheel_down() - mouse_wheel_up();
 zoom_f = zoom_f + mouse_wheel/10;
 zoom_f = clamp(zoom_f, min_zoom, max_zoom);
-// show_debug_message("Mousewheel: " + string(mouse_wheel) + " | Zoom factor: " + string(zoom_f));
-
-
-// Find zoom position (where we be zooming into)
-show_debug_message("MouseX: " + string(mouse_x) + " | MouseY: " + string(mouse_y) );
 
 
 // Set new camera width and height given the zoom factor

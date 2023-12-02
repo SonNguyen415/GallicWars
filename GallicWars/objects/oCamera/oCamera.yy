@@ -27,9 +27,9 @@
   "physicsShapePoints": [],
   "physicsStartAwake": true,
   "properties": [
-    {"resourceType":"GMObjectProperty","resourceVersion":"1.0","name":"camera_speed","filters":[],"listItems":[],"multiselect":false,"rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"value":"16","varType":0,},
-    {"resourceType":"GMObjectProperty","resourceVersion":"1.0","name":"mouse_camera_speed","filters":[],"listItems":[],"multiselect":false,"rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"value":"25","varType":0,},
-    {"resourceType":"GMObjectProperty","resourceVersion":"1.0","name":"mouse_tolerance","filters":[],"listItems":[],"multiselect":false,"rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"value":"20","varType":0,},
+    {"resourceType":"GMObjectProperty","resourceVersion":"1.0","name":"camera_speed","filters":[],"listItems":[],"multiselect":false,"rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"value":"2.5","varType":0,},
+    {"resourceType":"GMObjectProperty","resourceVersion":"1.0","name":"mouse_camera_speed","filters":[],"listItems":[],"multiselect":false,"rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"value":"3.5","varType":0,},
+    {"resourceType":"GMObjectProperty","resourceVersion":"1.0","name":"mouse_tolerance","filters":[],"listItems":[],"multiselect":false,"rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"value":"25","varType":0,},
     {"resourceType":"GMObjectProperty","resourceVersion":"1.0","name":"min_zoom","filters":[],"listItems":[],"multiselect":false,"rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"value":"0.1","varType":0,},
     {"resourceType":"GMObjectProperty","resourceVersion":"1.0","name":"start_width","filters":[],"listItems":[],"multiselect":false,"rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"value":"1920","varType":0,},
     {"resourceType":"GMObjectProperty","resourceVersion":"1.0","name":"start_height","filters":[],"listItems":[],"multiselect":false,"rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"value":"1080","varType":0,},
