@@ -20,6 +20,7 @@
     {"name":"UI","order":14,"path":"folders/Sprites/UI.yy",},
     {"name":"Tile Sets","order":2,"path":"folders/Tile Sets.yy",},
     {"name":"Timelines","order":8,"path":"folders/Timelines.yy",},
+    {"name":"Numbers","order":7,"path":"folders/Sprites/UI/Numbers.yy",},
   ],
   "ResourceOrderSettings": [
     {"name":"oFarm","order":1,"path":"objects/oFarm/oFarm.yy",},
@@ -45,6 +46,7 @@
     {"name":"goldIcon","order":3,"path":"sprites/goldIcon/goldIcon.yy",},
     {"name":"PlotSprite","order":7,"path":"sprites/PlotSprite/PlotSprite.yy",},
     {"name":"grassWaterTileMap","order":1,"path":"sprites/grassWaterTileMap/grassWaterTileMap.yy",},
+    {"name":"Num0","order":1,"path":"sprites/Num0/Num0.yy",},
     {"name":"Controller","order":4,"path":"objects/Controller/Controller.yy",},
     {"name":"oCamera","order":5,"path":"objects/oCamera/oCamera.yy",},
   ],
