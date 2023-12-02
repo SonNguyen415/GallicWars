@@ -11,4 +11,8 @@ max_zoom = max_camera_width / start_width;
 
 zoom_f = 1;
 
-camera_set_view_size(view_camera[0], start_width, start_height);
+
+display_height = start_height;
+display_width = start_width;
+
+camera_set_view_size(view_camera[0], display_width, display_height);
