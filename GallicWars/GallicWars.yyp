@@ -66,6 +66,7 @@
     {"id":{"name":"ArmySprite","path":"sprites/ArmySprite/ArmySprite.yy",},},
     {"id":{"name":"grassWater","path":"tilesets/grassWater/grassWater.yy",},},
     {"id":{"name":"foodIcon","path":"sprites/foodIcon/foodIcon.yy",},},
+    {"id":{"name":"BuildingUI","path":"sprites/BuildingUI/BuildingUI.yy",},},
     {"id":{"name":"BackgroundSprite","path":"sprites/BackgroundSprite/BackgroundSprite.yy",},},
     {"id":{"name":"goldIcon","path":"sprites/goldIcon/goldIcon.yy",},},
     {"id":{"name":"PlotSprite","path":"sprites/PlotSprite/PlotSprite.yy",},},
