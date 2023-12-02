@@ -13,12 +13,12 @@
     {"name":"Shaders","order":6,"path":"folders/Shaders.yy",},
     {"name":"Sounds","order":3,"path":"folders/Sounds.yy",},
     {"name":"Sprites","order":1,"path":"folders/Sprites.yy",},
+    {"name":"OffenseBuildings","order":17,"path":"folders/Sprites/OffenseBuildings.yy",},
+    {"name":"ResourceBuildings","order":16,"path":"folders/Sprites/ResourceBuildings.yy",},
+    {"name":"Tilemap","order":15,"path":"folders/Sprites/Tilemap.yy",},
+    {"name":"UI","order":14,"path":"folders/Sprites/UI.yy",},
     {"name":"Tile Sets","order":2,"path":"folders/Tile Sets.yy",},
     {"name":"Timelines","order":8,"path":"folders/Timelines.yy",},
-    {"name":"UI","order":14,"path":"folders/Sprites/UI.yy",},
-    {"name":"Tilemap","order":15,"path":"folders/Sprites/Tilemap.yy",},
-    {"name":"ResourceBuildings","order":16,"path":"folders/Sprites/ResourceBuildings.yy",},
-    {"name":"OffenseBuildings","order":17,"path":"folders/Sprites/OffenseBuildings.yy",},
   ],
   "ResourceOrderSettings": [
     {"name":"stoneIcon","order":1,"path":"sprites/stoneIcon/stoneIcon.yy",},
@@ -43,5 +43,6 @@
     {"name":"PlotSprite","order":7,"path":"sprites/PlotSprite/PlotSprite.yy",},
     {"name":"grassWaterTileMap","order":1,"path":"sprites/grassWaterTileMap/grassWaterTileMap.yy",},
     {"name":"Controller","order":4,"path":"objects/Controller/Controller.yy",},
+    {"name":"oCamera","order":5,"path":"objects/oCamera/oCamera.yy",},
   ],
 }
