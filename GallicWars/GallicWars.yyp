@@ -32,6 +32,7 @@
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Numbers","folderPath":"folders/Sprites/UI/Numbers.yy",},
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Tile Sets","folderPath":"folders/Tile Sets.yy",},
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Timelines","folderPath":"folders/Timelines.yy",},
+    {"resourceType":"GMFolder","resourceVersion":"1.0","name":"BuildingUI","folderPath":"folders/Sprites/UI/BuildingUI.yy",},
   ],
   "IncludedFiles": [],
   "isEcma": false,
@@ -41,6 +42,7 @@
   },
   "resources": [
     {"id":{"name":"oFarm","path":"objects/oFarm/oFarm.yy",},},
+    {"id":{"name":"BuildingUIButton","path":"sprites/BuildingUIButton/BuildingUIButton.yy",},},
     {"id":{"name":"stoneIcon","path":"sprites/stoneIcon/stoneIcon.yy",},},
     {"id":{"name":"ResourceUI","path":"sprites/ResourceUI/ResourceUI.yy",},},
     {"id":{"name":"mineTile","path":"sprites/mineTile/mineTile.yy",},},
