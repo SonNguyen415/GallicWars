@@ -46,7 +46,7 @@
     {"name":"goldIcon","order":3,"path":"sprites/goldIcon/goldIcon.yy",},
     {"name":"PlotSprite","order":7,"path":"sprites/PlotSprite/PlotSprite.yy",},
     {"name":"grassWaterTileMap","order":1,"path":"sprites/grassWaterTileMap/grassWaterTileMap.yy",},
-    {"name":"Num0","order":1,"path":"sprites/Num0/Num0.yy",},
+    {"name":"Num","order":1,"path":"sprites/Num/Num.yy",},
     {"name":"Controller","order":4,"path":"objects/Controller/Controller.yy",},
     {"name":"oCamera","order":5,"path":"objects/oCamera/oCamera.yy",},
   ],
