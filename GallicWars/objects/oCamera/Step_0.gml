@@ -37,19 +37,7 @@ var _cy = camera_get_view_y(view_camera[0]);
 var _hori = (keyboard_check(ord("D"))-keyboard_check(ord("A"))) * _camera_speed;
 var _vert = (keyboard_check(ord("S"))-keyboard_check(ord("W"))) * _camera_speed;
 
-// Check for mouse position to move camera
-if(mouse_x - mouse_tolerance < _cx) {
-	_hori -= _camera_speed * mouse_speed_factor;
-}
-if(mouse_x + mouse_tolerance > _cx + _view_w) {
-	_hori += _camera_speed * mouse_speed_factor;
-}
-if(mouse_y - mouse_tolerance < _cy) {
-	_vert -= _camera_speed * mouse_speed_factor;
-}
-if(mouse_y + mouse_tolerance > _cy + _view_h) {
-	_vert += _camera_speed;
-}
+
 
 
 // Calculate the offset due to zoom
