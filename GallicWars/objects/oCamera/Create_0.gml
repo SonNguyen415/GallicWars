@@ -4,8 +4,8 @@
 min_camera_width = start_width * min_zoom;
 min_camera_height = start_height * min_zoom;
 
-max_camera_width = room_width * max_zoom_factor;
-max_camera_height = room_height * start_height/start_width * max_zoom_factor;
+max_camera_width = room_width;
+max_camera_height = room_height * start_height/start_width;
 max_zoom = max_camera_width / start_width;
 
 
@@ -16,4 +16,4 @@ display_height = start_height;
 display_width = start_width;
 
 camera_set_view_size(view_camera[0], display_width, display_height);
-camera_set_view_pos(view_camera[0], 1920, 800);
+camera_set_view_pos(view_camera[0], room_width/2-display_width/2, room_height/2-display_height);

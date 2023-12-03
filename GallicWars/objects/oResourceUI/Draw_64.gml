@@ -11,8 +11,7 @@ function display_gold(_char, _pos)
 	
 // Parse resources
 for(var _i=0; _i<5; _i++) {
-	var _res_str = parse_to_string(global.resources[_i]);
-	show_debug_message(_res_str);
+	var _res_str = parse_to_string(global.resources[_i])
 	for(var _j=0; _j < 4; _j++) {
 		draw_sprite(Num, string_char_at(_res_str, _j+1), 560+_j*22+_i*205, 1080-62);
 	}

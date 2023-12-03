@@ -18,10 +18,10 @@
     {"name":"ResourceBuildings","order":16,"path":"folders/Sprites/ResourceBuildings.yy",},
     {"name":"Tilemap","order":15,"path":"folders/Sprites/Tilemap.yy",},
     {"name":"UI","order":14,"path":"folders/Sprites/UI.yy",},
+    {"name":"BuildingUI","order":10,"path":"folders/Sprites/UI/BuildingUI.yy",},
     {"name":"Numbers","order":5,"path":"folders/Sprites/UI/Numbers.yy",},
     {"name":"Tile Sets","order":2,"path":"folders/Tile Sets.yy",},
     {"name":"Timelines","order":8,"path":"folders/Timelines.yy",},
-    {"name":"BuildingUI","order":10,"path":"folders/Sprites/UI/BuildingUI.yy",},
   ],
   "ResourceOrderSettings": [
     {"name":"oFarm","order":1,"path":"objects/oFarm/oFarm.yy",},

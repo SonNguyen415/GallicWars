@@ -4,6 +4,8 @@
 var _view_w = camera_get_view_width(view_camera[0]);
 var _view_h = camera_get_view_height(view_camera[0]);
 
+show_debug_message("Width: " + string(_view_w) + "| Height: " + string(_view_h));
+
 // Zooming in/out of the camera
 // Find the zoom factor (which would be the percentage we be zooming
 var _mouse_wheel = mouse_wheel_down() - mouse_wheel_up();
@@ -31,6 +33,7 @@ var _camera_speed = base_camera_speed*zoom_f;
 // Get current camera position of x and y
 var _cx = camera_get_view_x(view_camera[0]);
 var _cy = camera_get_view_y(view_camera[0]);
+show_debug_message("X: " + string(_cx) + "| Height: " + string(_cy));
 
 // Control inputs that move left right up and down
 var _hori = (keyboard_check(ord("D"))-keyboard_check(ord("A"))) * _camera_speed;
