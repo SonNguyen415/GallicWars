@@ -74,7 +74,6 @@
     {"id":{"name":"PlotSprite","path":"sprites/PlotSprite/PlotSprite.yy",},},
     {"id":{"name":"grassWaterTileMap","path":"sprites/grassWaterTileMap/grassWaterTileMap.yy",},},
     {"id":{"name":"Num","path":"sprites/Num/Num.yy",},},
-    {"id":{"name":"Controller","path":"objects/Controller/Controller.yy",},},
     {"id":{"name":"oCamera","path":"objects/oCamera/oCamera.yy",},},
     {"id":{"name":"barracksTile","path":"sprites/barracksTile/barracksTile.yy",},},
     {"id":{"name":"Army","path":"objects/Army/Army.yy",},},
