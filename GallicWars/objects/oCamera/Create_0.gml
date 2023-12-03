@@ -1,10 +1,10 @@
 /// @description Initialize start camera position, height, and width
 // You can write your code in this editor
-start_height = view_hport[0]/4;
-start_width = view_wport[0]/4;
 
-show_debug_message("Start height: " + string(start_height));
 
+// Set starting size to be 2 times zoomed in (50% of window size)
+start_height = view_hport[0]/2;
+start_width = view_wport[0]/2;
 
 max_camera_width = room_width;
 max_camera_height = room_height * start_height/start_width;
