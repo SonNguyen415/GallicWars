@@ -45,6 +45,7 @@
     {"name":"foodIcon","order":2,"path":"sprites/foodIcon/foodIcon.yy",},
     {"name":"BackgroundSprite","order":2,"path":"sprites/BackgroundSprite/BackgroundSprite.yy",},
     {"name":"goldIcon","order":3,"path":"sprites/goldIcon/goldIcon.yy",},
+    {"name":"oConstructionManager","order":8,"path":"objects/oConstructionManager/oConstructionManager.yy",},
     {"name":"PlotSprite","order":7,"path":"sprites/PlotSprite/PlotSprite.yy",},
     {"name":"grassWaterTileMap","order":1,"path":"sprites/grassWaterTileMap/grassWaterTileMap.yy",},
     {"name":"Num","order":1,"path":"sprites/Num/Num.yy",},

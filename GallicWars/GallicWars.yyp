@@ -71,6 +71,7 @@
     {"id":{"name":"BuildingUI","path":"sprites/BuildingUI/BuildingUI.yy",},},
     {"id":{"name":"BackgroundSprite","path":"sprites/BackgroundSprite/BackgroundSprite.yy",},},
     {"id":{"name":"goldIcon","path":"sprites/goldIcon/goldIcon.yy",},},
+    {"id":{"name":"oConstructionManager","path":"objects/oConstructionManager/oConstructionManager.yy",},},
     {"id":{"name":"PlotSprite","path":"sprites/PlotSprite/PlotSprite.yy",},},
     {"id":{"name":"grassWaterTileMap","path":"sprites/grassWaterTileMap/grassWaterTileMap.yy",},},
     {"id":{"name":"Num","path":"sprites/Num/Num.yy",},},
