@@ -46,6 +46,7 @@
     {"id":{"name":"ResourceUI","path":"sprites/ResourceUI/ResourceUI.yy",},},
     {"id":{"name":"MenuButtons","path":"sprites/MenuButtons/MenuButtons.yy",},},
     {"id":{"name":"mineTile","path":"sprites/mineTile/mineTile.yy",},},
+    {"id":{"name":"oBuildingManager","path":"objects/oBuildingManager/oBuildingManager.yy",},},
     {"id":{"name":"Room1","path":"rooms/Room1/Room1.yy",},},
     {"id":{"name":"stoneWaterTileMap","path":"sprites/stoneWaterTileMap/stoneWaterTileMap.yy",},},
     {"id":{"name":"metalIcon","path":"sprites/metalIcon/metalIcon.yy",},},

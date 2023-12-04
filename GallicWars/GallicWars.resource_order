@@ -29,6 +29,7 @@
     {"name":"ResourceUI","order":6,"path":"sprites/ResourceUI/ResourceUI.yy",},
     {"name":"MenuButtons","order":2,"path":"sprites/MenuButtons/MenuButtons.yy",},
     {"name":"mineTile","order":1,"path":"sprites/mineTile/mineTile.yy",},
+    {"name":"oBuildingManager","order":7,"path":"objects/oBuildingManager/oBuildingManager.yy",},
     {"name":"stoneWaterTileMap","order":2,"path":"sprites/stoneWaterTileMap/stoneWaterTileMap.yy",},
     {"name":"metalIcon","order":4,"path":"sprites/metalIcon/metalIcon.yy",},
     {"name":"sawmillTile","order":3,"path":"sprites/sawmillTile/sawmillTile.yy",},
