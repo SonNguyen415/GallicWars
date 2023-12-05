@@ -4,6 +4,7 @@
 state = menu;
 previous_state = ds_stack_create();
 
+
 selected = -1;
 hovering = -1;
 
@@ -28,3 +29,4 @@ farm = 4;
 mill = 5;
 quarry = 6;
 mine = 7;
+

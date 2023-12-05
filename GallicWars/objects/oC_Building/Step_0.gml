@@ -6,3 +6,4 @@ if(mouse_check_button_pressed(mb_right)) {
 	oBuildingManager.building = 0;
 	instance_destroy();
 }
+

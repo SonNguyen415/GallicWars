@@ -3,8 +3,8 @@
 
 
 // Process mouse pos
-var _x_pos = mouse_x - camera_get_view_x(view_camera[0]);
-var _y_pos = mouse_y - camera_get_view_y(view_camera[0]);
+var _x_pos = (mouse_x - camera_get_view_x(view_camera[0]))/oCamera.zoom_f;
+var _y_pos = (mouse_y - camera_get_view_y(view_camera[0]))/oCamera.zoom_f;
 
 // Check if you're hovering
 if(_x_pos > x_offset && _x_pos < b_size + x_offset) {
@@ -28,7 +28,7 @@ if(_x_pos > x_offset && _x_pos < b_size + x_offset) {
 /*
 show_debug_message("Min: " + string(x_offset) + " | Max: " + string(b_size + x_offset));
 show_debug_message("--------------------------------------------------------------------------------------------");
-show_debug_message("X: " + string(_x_pos) + " | Y: " + string(_y_pos));
+show_debug_message("X: " + string(_x_pos/oCamera.zoom_f) + " | Y: " + string(_y_pos/oCamera.zoom_f));
 show_debug_message("Min: " + string(b_y_offset) + " | Max: " + string(b_y_offset+b_size) );
 show_debug_message("Min: " + string(b_y_offset+b_top_gap) + " | Max: " + string(b_y_offset+b_top_gap+b_size) );
 show_debug_message("Min: " + string(b_y_offset+b_top_gap*2) + " | Max: " + string( b_y_offset+b_top_gap*2+b_size) );
