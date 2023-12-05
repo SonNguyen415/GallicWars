@@ -42,7 +42,7 @@
     "IDEVersion": "2023.8.2.108",
   },
   "resources": [
-    {"id":{"name":"oFarm","path":"objects/oFarm/oFarm.yy",},},
+    {"id":{"name":"oC_Building","path":"objects/oC_Building/oC_Building.yy",},},
     {"id":{"name":"stoneIcon","path":"sprites/stoneIcon/stoneIcon.yy",},},
     {"id":{"name":"ResourceUI","path":"sprites/ResourceUI/ResourceUI.yy",},},
     {"id":{"name":"MenuButtons","path":"sprites/MenuButtons/MenuButtons.yy",},},
@@ -75,6 +75,7 @@
     {"id":{"name":"grassWater","path":"tilesets/grassWater/grassWater.yy",},},
     {"id":{"name":"foodIcon","path":"sprites/foodIcon/foodIcon.yy",},},
     {"id":{"name":"BuildingUI","path":"sprites/BuildingUI/BuildingUI.yy",},},
+    {"id":{"name":"oResource_Building","path":"objects/oResource_Building/oResource_Building.yy",},},
     {"id":{"name":"BackgroundSprite","path":"sprites/BackgroundSprite/BackgroundSprite.yy",},},
     {"id":{"name":"goldIcon","path":"sprites/goldIcon/goldIcon.yy",},},
     {"id":{"name":"PlotSprite","path":"sprites/PlotSprite/PlotSprite.yy",},},

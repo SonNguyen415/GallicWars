@@ -3,7 +3,6 @@
 
 state = menu;
 previous_state = ds_stack_create();
-build = false;
 
 selected = -1;
 hovering = -1;
@@ -13,7 +12,19 @@ y_offset = 225;
 
 button_offset = button_size*2-11;
 
-b_size = button_size-14;
-b_y_offset = y_offset/2+4;
-b_spacing = 9;
+b_size = button_size/2+14;
+b_y_offset = y_offset/2+7;
+b_spacing = 12;
 b_top_gap = b_size + b_spacing;
+
+building = 0;
+
+
+// Building ids;
+barrack = 1; 
+range = 2;
+stable = 3;
+farm = 4;
+mill = 5;
+quarry = 6;
+mine = 7;

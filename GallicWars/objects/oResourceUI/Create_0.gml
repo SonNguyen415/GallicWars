@@ -8,6 +8,6 @@ global.metal = 4;
 
 global.resources = [100, 100, 100, 100, 100]
 
-global.tax_rate = 30;
+global.tax_rate = 600;
 
-
+alarm_set(0, global.tax_rate);

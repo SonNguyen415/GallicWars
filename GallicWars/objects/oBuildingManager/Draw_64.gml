@@ -1,8 +1,12 @@
-/// @description Insert description here
+	/// @description Insert description here
 // You can write your code in this editor
 
 
 draw_sprite(BuildingUI, 0, 0, 200);
+
+
+var _draw_state = state;
+
 
 // Execute state
 switch(state) {

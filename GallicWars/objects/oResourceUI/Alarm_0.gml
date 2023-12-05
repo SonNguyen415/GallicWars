@@ -2,7 +2,5 @@
 // You can write your code in this editor
 
 
-if(building) {
-	x = mouse_x;
-	y = mouse_y;
-}
+global.gold += 10;
+alarm_set(0, global.tax_rate);

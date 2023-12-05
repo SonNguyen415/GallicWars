@@ -25,7 +25,7 @@
     {"name":"Timelines","order":8,"path":"folders/Timelines.yy",},
   ],
   "ResourceOrderSettings": [
-    {"name":"oFarm","order":1,"path":"objects/oFarm/oFarm.yy",},
+    {"name":"oC_Building","order":2,"path":"objects/oC_Building/oC_Building.yy",},
     {"name":"stoneIcon","order":1,"path":"sprites/stoneIcon/stoneIcon.yy",},
     {"name":"ResourceUI","order":6,"path":"sprites/ResourceUI/ResourceUI.yy",},
     {"name":"MenuButtons","order":2,"path":"sprites/MenuButtons/MenuButtons.yy",},
@@ -48,6 +48,7 @@
     {"name":"ArmySprite","order":1,"path":"sprites/ArmySprite/ArmySprite.yy",},
     {"name":"grassWater","order":1,"path":"tilesets/grassWater/grassWater.yy",},
     {"name":"foodIcon","order":2,"path":"sprites/foodIcon/foodIcon.yy",},
+    {"name":"oResource_Building","order":1,"path":"objects/oResource_Building/oResource_Building.yy",},
     {"name":"BackgroundSprite","order":2,"path":"sprites/BackgroundSprite/BackgroundSprite.yy",},
     {"name":"goldIcon","order":3,"path":"sprites/goldIcon/goldIcon.yy",},
     {"name":"PlotSprite","order":7,"path":"sprites/PlotSprite/PlotSprite.yy",},
