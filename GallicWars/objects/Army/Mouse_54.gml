@@ -6,6 +6,12 @@ if (selected == true) {
 	path = path_add();
 
 	if (mp_grid_path(grid, path, x, y, mouse_x, mouse_y, true)) {
+		if (mouse_x > x) {
+			image_xscale = -1;
+		} else {
+			image_xscale = 1;	
+		}
+		
 		path_set_kind(path, 1);
 		path_start(path, 5, path_action_stop, true);
 	}

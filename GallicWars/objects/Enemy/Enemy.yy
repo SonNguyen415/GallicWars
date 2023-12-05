@@ -33,7 +33,7 @@
     {"resourceType":"GMObjectProperty","resourceVersion":"1.0","name":"archer","filters":[],"listItems":[],"multiselect":false,"rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"value":"0","varType":6,},
     {"resourceType":"GMObjectProperty","resourceVersion":"1.0","name":"combat","filters":[],"listItems":[],"multiselect":false,"rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"value":"0","varType":3,},
   ],
-  "solid": true,
+  "solid": false,
   "spriteId": {
     "name": "EnemySprite",
     "path": "sprites/EnemySprite/EnemySprite.yy",
