@@ -1,7 +1,7 @@
 {
   "resourceType": "GMObject",
   "resourceVersion": "1.0",
-  "name": "Plot",
+  "name": "oPlot",
   "eventList": [],
   "managed": true,
   "overriddenProperties": [],
@@ -26,8 +26,8 @@
   "properties": [],
   "solid": true,
   "spriteId": {
-    "name": "PlotSprite",
-    "path": "sprites/PlotSprite/PlotSprite.yy",
+    "name": "grassPlot",
+    "path": "sprites/grassPlot/grassPlot.yy",
   },
   "spriteMaskId": null,
   "visible": true,
