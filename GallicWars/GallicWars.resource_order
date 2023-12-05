@@ -25,6 +25,7 @@
     {"name":"Timelines","order":8,"path":"folders/Timelines.yy",},
   ],
   "ResourceOrderSettings": [
+    {"name":"cityHall","order":2,"path":"sprites/cityHall/cityHall.yy",},
     {"name":"oC_Building","order":2,"path":"objects/oC_Building/oC_Building.yy",},
     {"name":"stoneIcon","order":1,"path":"sprites/stoneIcon/stoneIcon.yy",},
     {"name":"ResourceUI","order":6,"path":"sprites/ResourceUI/ResourceUI.yy",},
@@ -50,6 +51,7 @@
     {"name":"foodIcon","order":2,"path":"sprites/foodIcon/foodIcon.yy",},
     {"name":"popup","order":4,"path":"sprites/popup/popup.yy",},
     {"name":"oResource_Building","order":1,"path":"objects/oResource_Building/oResource_Building.yy",},
+    {"name":"archeryRange","order":1,"path":"sprites/archeryRange/archeryRange.yy",},
     {"name":"BackgroundSprite","order":2,"path":"sprites/BackgroundSprite/BackgroundSprite.yy",},
     {"name":"goldIcon","order":3,"path":"sprites/goldIcon/goldIcon.yy",},
     {"name":"PlotSprite","order":7,"path":"sprites/PlotSprite/PlotSprite.yy",},
