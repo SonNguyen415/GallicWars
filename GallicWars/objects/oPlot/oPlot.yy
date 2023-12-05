@@ -27,10 +27,7 @@
   "physicsStartAwake": true,
   "properties": [],
   "solid": true,
-  "spriteId": {
-    "name": "grassPlot",
-    "path": "sprites/grassPlot/grassPlot.yy",
-  },
+  "spriteId": null,
   "spriteMaskId": null,
   "visible": true,
 }

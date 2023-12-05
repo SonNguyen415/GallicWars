@@ -35,7 +35,7 @@
     {"name":"metalIcon","order":4,"path":"sprites/metalIcon/metalIcon.yy",},
     {"name":"sawmillTile","order":3,"path":"sprites/sawmillTile/sawmillTile.yy",},
     {"name":"quarryTile","order":2,"path":"sprites/quarryTile/quarryTile.yy",},
-    {"name":"grassPlot","order":3,"path":"sprites/grassPlot/grassPlot.yy",},
+    {"name":"grassPlot","order":5,"path":"sprites/grassPlot/grassPlot.yy",},
     {"name":"ResourceButtons","order":4,"path":"sprites/ResourceButtons/ResourceButtons.yy",},
     {"name":"EnemySprite","order":5,"path":"sprites/EnemySprite/EnemySprite.yy",},
     {"name":"BackButton","order":3,"path":"sprites/BackButton/BackButton.yy",},
