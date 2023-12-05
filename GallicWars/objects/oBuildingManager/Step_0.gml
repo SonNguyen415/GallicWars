@@ -54,15 +54,16 @@ if(selected > 0) {
 		case menu:
 			if(selected == 1){
 				state = barracks;
-				
 			}
+			
 			if(selected == 2){
-				
 				state = resources;
 			}
+			
 			if(selected == 3){
 				state = util;
 			}
+			
 			ds_stack_push(previous_state, menu);
 			break;
 		
@@ -71,6 +72,10 @@ if(selected > 0) {
 		
 		case resources:
 			// Build Farm
+			if(selected == 1) {
+				var _farm = instance_create_layer(mouse_x, mouse_y, "Build", oFarm);
+			}
+			
 			ds_stack_push(previous_state, resources);
 			break;
 		
