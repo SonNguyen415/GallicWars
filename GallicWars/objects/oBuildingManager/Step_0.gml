@@ -2,6 +2,7 @@
 // You can write your code in this editor
 
 
+
 // Process mouse pos
 var _x_pos = (mouse_x - camera_get_view_x(view_camera[0]))/oCamera.zoom_f;
 var _y_pos = (mouse_y - camera_get_view_y(view_camera[0]))/oCamera.zoom_f;
@@ -23,10 +24,13 @@ if(_x_pos > x_offset && _x_pos < b_size + x_offset) {
 	}
 } else {
 	hovering = -1;
-	building_popup = -1;
-	instance_destroy(oPopup);
 }
 
+
+if(has_popup >= 0) {
+	has_popup = -1;
+	instance_destroy(oPopup);
+}
 
 if(hovering >= 0) {
 	switch(state) {
@@ -35,23 +39,14 @@ if(hovering >= 0) {
 			break;
 		
 		case resources:
-			// Show farm cost
-			if(hovering == 1) {
-				if(building_popup < 0) {
-					building_popup = 1;
-					instance_create_layer(mouse_x, mouse_y, "Popup_Layer", oPopup);
-					oPopup.state = farm;
-					oPopup.cost = 1;
-					
-				}
-				
-					
-			} else if(selected == 2) {
-				building = mill;
-			} else if(selected == 3) {
-				building = quarry;
-			} else if(selected == 4) {
-				building = mine;
+		
+			// Show building cost. All resources building cost the same
+			if(has_popup != resources) {
+	
+				instance_create_layer(mouse_x, mouse_y, "Popup_Layer", oPopup);
+				has_popup = 1;
+				oPopup.popup_type = global.popup_construct;
+				oPopup.build_type = resources;
 			}
 		
 			

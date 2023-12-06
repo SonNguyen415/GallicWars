@@ -4,7 +4,7 @@
 state = menu;
 previous_state = ds_stack_create();
 
-building_popup = -1;
+has_popup = -1;
 selected = -1;
 hovering = -1;
 
