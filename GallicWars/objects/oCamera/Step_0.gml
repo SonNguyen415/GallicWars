@@ -22,9 +22,12 @@ _new_h = clamp(_new_h, 0, max_camera_height);
 display_height = _new_h;
 display_width = _new_w;
 
+
 camera_set_view_size(view_camera[0], display_width, display_height);
 
+
 // Camera movement
+
 
 // Modify speed based on zoom level
 var _camera_speed = base_camera_speed*zoom_f;
@@ -32,12 +35,11 @@ var _camera_speed = base_camera_speed*zoom_f;
 // Get current camera position of x and y
 var _cx = camera_get_view_x(view_camera[0]);
 var _cy = camera_get_view_y(view_camera[0]);
+// show_debug_message("X: " + string(_cx) + " | Y: " + string(_cy));
 
 // Control inputs that move left right up and down
 var _hori = (keyboard_check(ord("D"))-keyboard_check(ord("A"))) * _camera_speed;
 var _vert = (keyboard_check(ord("S"))-keyboard_check(ord("W"))) * _camera_speed;
-
-
 
 
 // Calculate the offset due to zoom

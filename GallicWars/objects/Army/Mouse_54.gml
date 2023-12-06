@@ -13,7 +13,7 @@ if (selected == true) {
 		}
 		
 		path_set_kind(path, 1);
-		path_start(path, troop_speed, path_action_stop, true);
+		path_start(path, 5, path_action_stop, true);
 	}
 }
 

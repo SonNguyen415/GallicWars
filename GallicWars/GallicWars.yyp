@@ -66,6 +66,7 @@
     {"id":{"name":"ResourceButtons","path":"sprites/ResourceButtons/ResourceButtons.yy",},},
     {"id":{"name":"EnemySprite","path":"sprites/EnemySprite/EnemySprite.yy",},},
     {"id":{"name":"BackButton","path":"sprites/BackButton/BackButton.yy",},},
+    {"id":{"name":"Enemy","path":"objects/Enemy/Enemy.yy",},},
     {"id":{"name":"oPlot","path":"objects/oPlot/oPlot.yy",},},
     {"id":{"name":"TileSetSprite","path":"sprites/TileSetSprite/TileSetSprite.yy",},},
     {"id":{"name":"grassStoneTileMap","path":"sprites/grassStoneTileMap/grassStoneTileMap.yy",},},
@@ -84,6 +85,7 @@
     {"id":{"name":"archeryRange","path":"sprites/archeryRange/archeryRange.yy",},},
     {"id":{"name":"BackgroundSprite","path":"sprites/BackgroundSprite/BackgroundSprite.yy",},},
     {"id":{"name":"goldIcon","path":"sprites/goldIcon/goldIcon.yy",},},
+<<<<<<< HEAD
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
     {"id":{"name":"unitLevel","path":"sprites/unitLevel/unitLevel.yy",},},
@@ -93,6 +95,9 @@
 =======
     {"id":{"name":"Enemy","path":"objects/Enemy/Enemy.yy",},},
 >>>>>>> Stashed changes
+=======
+    {"id":{"name":"unitLevel","path":"sprites/unitLevel/unitLevel.yy",},},
+>>>>>>> parent of 72d249c (finished combat mechanic)
     {"id":{"name":"PlotSprite","path":"sprites/PlotSprite/PlotSprite.yy",},},
     {"id":{"name":"Tree","path":"sprites/Tree/Tree.yy",},},
     {"id":{"name":"grassWaterTileMap","path":"sprites/grassWaterTileMap/grassWaterTileMap.yy",},},

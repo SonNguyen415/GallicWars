@@ -1,4 +1,4 @@
-//draw_set_alpha( .3);
+draw_set_alpha( .3);
 
 //mp_grid_draw( grid);
 
