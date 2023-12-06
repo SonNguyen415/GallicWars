@@ -84,6 +84,7 @@
     {"id":{"name":"archeryRange","path":"sprites/archeryRange/archeryRange.yy",},},
     {"id":{"name":"BackgroundSprite","path":"sprites/BackgroundSprite/BackgroundSprite.yy",},},
     {"id":{"name":"goldIcon","path":"sprites/goldIcon/goldIcon.yy",},},
+    {"id":{"name":"unitLevel","path":"sprites/unitLevel/unitLevel.yy",},},
     {"id":{"name":"PlotSprite","path":"sprites/PlotSprite/PlotSprite.yy",},},
     {"id":{"name":"Tree","path":"sprites/Tree/Tree.yy",},},
     {"id":{"name":"grassWaterTileMap","path":"sprites/grassWaterTileMap/grassWaterTileMap.yy",},},
