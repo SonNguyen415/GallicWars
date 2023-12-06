@@ -2,11 +2,13 @@
 // You can write your code in this editor
 
 
-draw_sprite(popup, 0, _x_pos, _y_pos-20);
+draw_sprite(popup, 0, _x_pos, _y_pos);
 
 
 draw_set_halign(fa_center);
 draw_set_valign(fa_middle);
+
+
 
 
 
@@ -82,5 +84,72 @@ if(popup_type == global.popup_money) {
 	draw_text_ext_transformed(_x_pos+text_x_offset, _y_pos-30, _income, 2, 300, 0.8, 0.8, 0);
 	draw_text_ext_transformed(_x_pos+text_x_offset, _y_pos, _expenses, 2, 300, 0.8, 0.8, 0);
 	draw_text_ext_transformed(_x_pos+text_x_offset, _y_pos+30, _balance, 2, 300, 0.8, 0.8, 0);
+
+}
+
+
+if(popup_type == global.popup_upgrade) {
+	var _curr_build = "";
+	var _curr_lvl = "";
+	var _curr_product = "";
+	var _upgrade = "";
+
+	switch(popup_subtype) {
+		case oBuildingManager.farm:
+			_curr_build = "Farm";
+			_curr_lvl = "Current Level: " + string(build_lvl);
+			_curr_product = "Produces: " + string(global.productivity + (build_lvl-1)*global.upgrade_incr) + " Food";
+			if(build_lvl < 4) {
+				_upgrade = "Upgradable: Yes";
+			} else {
+				_upgrade = "Upgradable: No";
+			}
+			break;
+		
+		case oBuildingManager.mill:
+			_curr_build = "Mill";
+			_curr_lvl = "Current Level: " + string(build_lvl);
+			_curr_product = "Produces: " + string(global.productivity + (build_lvl-1)*global.upgrade_incr) + " Wood";
+			if(build_lvl < 4) {
+				_upgrade = "Upgradable: Yes";
+			} else {
+				_upgrade = "Upgradable: No";
+			}
+			break;
+		
+		case oBuildingManager.quarry:
+			_curr_build = "Stone";
+			_curr_lvl = "Current Level: " + string(build_lvl);
+			_curr_product = "Produces: " + string(global.productivity + (build_lvl-1)*global.upgrade_incr) + " Stone";
+			if(build_lvl < 4) {
+				_upgrade = "Upgradable: Yes";
+			} else {
+				_upgrade = "Upgradable: No";
+			}
+			break;
+			
+		case oBuildingManager.mine:
+			_curr_build = "Mine";
+			_curr_lvl = "Current Level: " + string(build_lvl);
+			_curr_product = "Produces: " + string(global.productivity + (build_lvl-1)*global.upgrade_incr) + " Metal";
+			if(build_lvl < 4) {
+				_upgrade = "Upgradable: Yes";
+			} else {
+				_upgrade = "Upgradable: No";
+			}
+			break;
+	
+		
+		default:
+			draw_text(_x_pos+text_x_offset, _y_pos-30, "Error 2");
+			break;
+	}
+	
+	draw_text_ext_transformed(_x_pos+text_x_offset, _y_pos-35, _curr_build, 2, 300, 0.8, 0.8, 0);
+	draw_text_ext_transformed(_x_pos+text_x_offset, _y_pos-10, _curr_lvl, 2, 300, 0.8, 0.8, 0);
+	draw_text_ext_transformed(_x_pos+text_x_offset, _y_pos+10, _curr_product, 2, 300, 0.8, 0.8, 0);
+	draw_text_ext_transformed(_x_pos+text_x_offset, _y_pos+30, _upgrade, 2, 300, 0.8, 0.8, 0);
+
+	
 
 }

@@ -34,6 +34,8 @@
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Units","folderPath":"folders/Sprites/Units.yy",},
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Tile Sets","folderPath":"folders/Tile Sets.yy",},
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Timelines","folderPath":"folders/Timelines.yy",},
+    {"resourceType":"GMFolder","resourceVersion":"1.0","name":"units","folderPath":"folders/Objects/units.yy",},
+    {"resourceType":"GMFolder","resourceVersion":"1.0","name":"control","folderPath":"folders/Objects/control.yy",},
   ],
   "IncludedFiles": [],
   "isEcma": false,
