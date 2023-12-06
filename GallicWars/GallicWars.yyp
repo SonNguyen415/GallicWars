@@ -53,6 +53,7 @@
     {"id":{"name":"Room1","path":"rooms/Room1/Room1.yy",},},
     {"id":{"name":"stoneWaterTileMap","path":"sprites/stoneWaterTileMap/stoneWaterTileMap.yy",},},
     {"id":{"name":"metalIcon","path":"sprites/metalIcon/metalIcon.yy",},},
+    {"id":{"name":"archer","path":"sprites/archer/archer.yy",},},
     {"id":{"name":"TileSet","path":"tilesets/TileSet/TileSet.yy",},},
     {"id":{"name":"sawmillTile","path":"sprites/sawmillTile/sawmillTile.yy",},},
     {"id":{"name":"farmTile","path":"sprites/farmTile/farmTile.yy",},},

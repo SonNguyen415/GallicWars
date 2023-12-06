@@ -22,6 +22,7 @@
     {"name":"inst_6B1EE7B4","path":"rooms/Room1/Room1.yy",},
     {"name":"inst_4F6AC8A9","path":"rooms/Room1/Room1.yy",},
     {"name":"inst_camera","path":"rooms/Room1/Room1.yy",},
+    {"name":"inst_camera","path":"rooms/Room1/Room1.yy",},
   ],
   "isDnd": false,
   "layers": [

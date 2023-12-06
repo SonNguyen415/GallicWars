@@ -34,6 +34,7 @@
     {"name":"oBuildingManager","order":7,"path":"objects/oBuildingManager/oBuildingManager.yy",},
     {"name":"stoneWaterTileMap","order":2,"path":"sprites/stoneWaterTileMap/stoneWaterTileMap.yy",},
     {"name":"metalIcon","order":4,"path":"sprites/metalIcon/metalIcon.yy",},
+    {"name":"archer","order":2,"path":"sprites/archer/archer.yy",},
     {"name":"sawmillTile","order":3,"path":"sprites/sawmillTile/sawmillTile.yy",},
     {"name":"quarryTile","order":2,"path":"sprites/quarryTile/quarryTile.yy",},
     {"name":"grassPlot","order":5,"path":"sprites/grassPlot/grassPlot.yy",},
