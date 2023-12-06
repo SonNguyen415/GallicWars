@@ -43,8 +43,8 @@
   ],
   "solid": false,
   "spriteId": {
-    "name": "soldier",
-    "path": "sprites/soldier/soldier.yy",
+    "name": "soldierIdle",
+    "path": "sprites/soldierIdle/soldierIdle.yy",
   },
   "spriteMaskId": null,
   "visible": true,

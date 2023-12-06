@@ -11,6 +11,7 @@ if (selected == true) {
 		} else {
 			image_xscale = 1;	
 		}
+		sprite_index = soldierWalk;
 		
 		path_set_kind(path, 1);
 		path_start(path, troop_speed, path_action_stop, true);

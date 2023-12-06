@@ -3,6 +3,10 @@
 
 path_end();
 
+if (sprite_index != soldierAttack) {
+	sprite_index = soldierAttack;
+}
+
 if (target == noone) {
 	target = other;
 } else {
