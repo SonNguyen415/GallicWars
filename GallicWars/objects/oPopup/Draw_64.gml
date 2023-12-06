@@ -20,8 +20,8 @@ if(popup_type == global.popup_construct) {
 			var _gold_cost = string(global.build_cost) + " Gold";
 			var _wood_cost = string(global.build_cost) + " Wood";
 			var _build_result = "Result: +" + string(global.productivity);
-			
-			draw_text(_x_pos+text_x_offset, _y_pos - 35, "Cost");
+				
+			draw_text_ext_transformed(_x_pos+text_x_offset, _y_pos - 50, "Cost", 2, 300, 1.2, 1.2, 0);
 			draw_text(_x_pos+text_x_offset, _y_pos - 10, _gold_cost);
 			draw_text(_x_pos+text_x_offset, _y_pos + 10, _wood_cost);
 			draw_text(_x_pos+text_x_offset, _y_pos + 35, _build_result);
@@ -90,15 +90,13 @@ if(popup_type == global.popup_money) {
 
 if(popup_type == global.popup_upgrade) {
 	var _curr_build = "";
-	var _curr_lvl = "";
 	var _curr_product = "";
 	var _upgrade = "";
 
 	switch(popup_subtype) {
 		case oBuildingManager.farm:
 			_curr_build = "Farm";
-			_curr_lvl = "Current Level: " + string(build_lvl);
-			_curr_product = "Produces: " + string(global.productivity + (build_lvl-1)*global.upgrade_incr) + " Food";
+			_curr_product = "Product: " + string(global.productivity * build_lvl) + " Food";
 			if(build_lvl < 4) {
 				_upgrade = "Upgradable: Yes";
 			} else {
@@ -108,8 +106,7 @@ if(popup_type == global.popup_upgrade) {
 		
 		case oBuildingManager.mill:
 			_curr_build = "Mill";
-			_curr_lvl = "Current Level: " + string(build_lvl);
-			_curr_product = "Produces: " + string(global.productivity + (build_lvl-1)*global.upgrade_incr) + " Wood";
+			_curr_product = "Product: " + string(global.productivity * build_lvl)  + " Wood";
 			if(build_lvl < 4) {
 				_upgrade = "Upgradable: Yes";
 			} else {
@@ -119,8 +116,7 @@ if(popup_type == global.popup_upgrade) {
 		
 		case oBuildingManager.quarry:
 			_curr_build = "Stone";
-			_curr_lvl = "Current Level: " + string(build_lvl);
-			_curr_product = "Produces: " + string(global.productivity + (build_lvl-1)*global.upgrade_incr) + " Stone";
+			_curr_product = "Product: " + string(global.productivity * build_lvl)  + " Stone";
 			if(build_lvl < 4) {
 				_upgrade = "Upgradable: Yes";
 			} else {
@@ -130,8 +126,7 @@ if(popup_type == global.popup_upgrade) {
 			
 		case oBuildingManager.mine:
 			_curr_build = "Mine";
-			_curr_lvl = "Current Level: " + string(build_lvl);
-			_curr_product = "Produces: " + string(global.productivity + (build_lvl-1)*global.upgrade_incr) + " Metal";
+			_curr_product = "Product: " + string(global.productivity *(build_lvl-1))  + " Metal";
 			if(build_lvl < 4) {
 				_upgrade = "Upgradable: Yes";
 			} else {
@@ -145,10 +140,9 @@ if(popup_type == global.popup_upgrade) {
 			break;
 	}
 	
-	draw_text_ext_transformed(_x_pos+text_x_offset, _y_pos-35, _curr_build, 2, 300, 0.8, 0.8, 0);
-	draw_text_ext_transformed(_x_pos+text_x_offset, _y_pos-10, _curr_lvl, 2, 300, 0.8, 0.8, 0);
-	draw_text_ext_transformed(_x_pos+text_x_offset, _y_pos+10, _curr_product, 2, 300, 0.8, 0.8, 0);
-	draw_text_ext_transformed(_x_pos+text_x_offset, _y_pos+30, _upgrade, 2, 300, 0.8, 0.8, 0);
+	draw_text_ext_transformed(_x_pos+text_x_offset, _y_pos-45, _curr_build, 2, 300, 1, 1, 0);
+	draw_text_ext_transformed(_x_pos+text_x_offset, _y_pos-10, _curr_product, 2, 300, 0.9, 0.9, 0);
+	draw_text_ext_transformed(_x_pos+text_x_offset, _y_pos+20, _upgrade, 2, 300, 0.9, 0.9, 0);
 
 	
 

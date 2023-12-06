@@ -36,7 +36,7 @@ if(instance_position(mouse_x, mouse_y, self.id) != noone) {
 
 
 
-// Popup > 0
+// If we have the popup and not hovering
 if(has_popup > 0 && hovering < 0) {
 	has_popup = -1;
 	instance_destroy(oPopup);
@@ -54,4 +54,28 @@ if(hovering > 0 && has_popup < 0) {
 
 
 
+
+
+
+
 // If hovering, then on click we invoke upgrade
+
+if(mouse_check_button_pressed(mb_left)) {
+	if(hovering > 0 && upgrading < 0) {
+
+		upgrading = instance_create_layer(x, y, "Popup_Layer", oUpgrade);
+		upgrading.build_lvl = build_lvl;
+		upgrading.upgrade_type = build_type;
+		upgrading.upgrade_building = id;
+	} else if(upgrading > 0) {
+		instance_destroy(upgrading);
+		upgrading = -1;
+	}
+}
+
+
+// Also cancel on right click
+if(upgrading > 0 && mouse_check_button_pressed(mb_right)) {
+	instance_destroy(upgrading);
+	upgrading = -1;
+}

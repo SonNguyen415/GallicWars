@@ -15,9 +15,8 @@ global.popup_unit = 4;
 
 // Build cost and upgrade cost
 global.build_cost = 50;
-global.upgrade_cost = 15;
-global.productivity = 10;
-global.upgrade_incr = 2;
+global.upgrade_cost = 25;
+global.productivity = 5;
 
 
 

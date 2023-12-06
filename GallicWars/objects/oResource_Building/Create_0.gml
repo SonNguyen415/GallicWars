@@ -2,12 +2,16 @@
 // You can write your code in this editor
 
 
-build_type = oBuildingManager.building;
+
 hovering = -1;
 has_popup = -1;
+upgrading = -1;
 build_lvl = 1;
 
 
+build_type = oBuildingManager.building;
+
 // Increase the income
 global.tax_income[build_type- oBuildingManager.stable] += global.productivity;
+
 
