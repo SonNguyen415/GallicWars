@@ -49,6 +49,7 @@
     {"name":"BackButton","order":2,"path":"sprites/BackButton/BackButton.yy",},
     {"name":"Enemy","order":1,"path":"objects/Enemy/Enemy.yy",},
     {"name":"oPlot","order":3,"path":"objects/oPlot/oPlot.yy",},
+    {"name":"checkbutton","order":6,"path":"sprites/checkbutton/checkbutton.yy",},
     {"name":"TileSetSprite","order":8,"path":"sprites/TileSetSprite/TileSetSprite.yy",},
     {"name":"soldierAttack","order":6,"path":"sprites/soldierAttack/soldierAttack.yy",},
     {"name":"unitLevel","order":8,"path":"sprites/unitLevel/unitLevel.yy",},

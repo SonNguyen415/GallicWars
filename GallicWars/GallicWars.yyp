@@ -72,6 +72,7 @@
     {"id":{"name":"BackButton","path":"sprites/BackButton/BackButton.yy",},},
     {"id":{"name":"Enemy","path":"objects/Enemy/Enemy.yy",},},
     {"id":{"name":"oPlot","path":"objects/oPlot/oPlot.yy",},},
+    {"id":{"name":"checkbutton","path":"sprites/checkbutton/checkbutton.yy",},},
     {"id":{"name":"TileSetSprite","path":"sprites/TileSetSprite/TileSetSprite.yy",},},
     {"id":{"name":"grassStoneTileMap","path":"sprites/grassStoneTileMap/grassStoneTileMap.yy",},},
     {"id":{"name":"soldierAttack","path":"sprites/soldierAttack/soldierAttack.yy",},},
