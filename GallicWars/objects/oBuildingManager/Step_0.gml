@@ -23,6 +23,43 @@ if(_x_pos > x_offset && _x_pos < b_size + x_offset) {
 	}
 } else {
 	hovering = -1;
+	building_popup = -1;
+	instance_destroy(oPopup);
+}
+
+
+if(hovering >= 0) {
+	switch(state) {
+		
+		case barracks:
+			break;
+		
+		case resources:
+			// Show farm cost
+			if(hovering == 1) {
+				if(building_popup < 0) {
+					building_popup = 1;
+					instance_create_layer(mouse_x, mouse_y, "Popup_Layer", oPopup);
+					oPopup.state = farm;
+					oPopup.cost = 1;
+					
+				}
+				
+					
+			} else if(selected == 2) {
+				building = mill;
+			} else if(selected == 3) {
+				building = quarry;
+			} else if(selected == 4) {
+				building = mine;
+			}
+		
+			
+			break;
+		
+		default:
+			break;
+	}	
 }
 
 /*
@@ -40,6 +77,7 @@ show_debug_message("------------------------------------------------------------
 if(mouse_check_button_pressed(mb_left) && hovering >= 0 && !building) {
 	selected = hovering;
 }
+
 
 
 // Switch state

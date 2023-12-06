@@ -5,8 +5,6 @@
 draw_sprite(BuildingUI, 0, 0, 200);
 
 
-var _draw_state = state;
-
 
 // Execute state
 switch(state) {

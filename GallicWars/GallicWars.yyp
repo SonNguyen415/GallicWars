@@ -68,6 +68,7 @@
     {"id":{"name":"oPlot","path":"objects/oPlot/oPlot.yy",},},
     {"id":{"name":"TileSetSprite","path":"sprites/TileSetSprite/TileSetSprite.yy",},},
     {"id":{"name":"grassStoneTileMap","path":"sprites/grassStoneTileMap/grassStoneTileMap.yy",},},
+    {"id":{"name":"oPopup","path":"objects/oPopup/oPopup.yy",},},
     {"id":{"name":"woodIcon","path":"sprites/woodIcon/woodIcon.yy",},},
     {"id":{"name":"BarrackSprite","path":"sprites/BarrackSprite/BarrackSprite.yy",},},
     {"id":{"name":"stoneWater","path":"tilesets/stoneWater/stoneWater.yy",},},
