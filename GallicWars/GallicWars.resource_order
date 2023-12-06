@@ -38,7 +38,6 @@
     {"name":"sawmillTile","order":3,"path":"sprites/sawmillTile/sawmillTile.yy",},
     {"name":"quarryTile","order":2,"path":"sprites/quarryTile/quarryTile.yy",},
     {"name":"grassPlot","order":5,"path":"sprites/grassPlot/grassPlot.yy",},
-    {"name":"barbArcher","order":5,"path":"sprites/barbArcher/barbArcher.yy",},
     {"name":"ResourceButtons","order":3,"path":"sprites/ResourceButtons/ResourceButtons.yy",},
     {"name":"EnemySprite","order":5,"path":"sprites/EnemySprite/EnemySprite.yy",},
     {"name":"BackButton","order":2,"path":"sprites/BackButton/BackButton.yy",},
