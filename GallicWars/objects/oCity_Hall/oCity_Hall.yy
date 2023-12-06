@@ -1,7 +1,7 @@
 {
   "resourceType": "GMObject",
   "resourceVersion": "1.0",
-  "name": "Barrack",
+  "name": "oCity_Hall",
   "eventList": [],
   "managed": true,
   "overriddenProperties": [],
@@ -26,8 +26,8 @@
   "properties": [],
   "solid": false,
   "spriteId": {
-    "name": "BarrackSprite",
-    "path": "sprites/BarrackSprite/BarrackSprite.yy",
+    "name": "cityHall",
+    "path": "sprites/cityHall/cityHall.yy",
   },
   "spriteMaskId": null,
   "visible": true,

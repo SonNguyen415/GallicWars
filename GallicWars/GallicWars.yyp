@@ -57,7 +57,7 @@
     {"id":{"name":"TileSet","path":"tilesets/TileSet/TileSet.yy",},},
     {"id":{"name":"sawmillTile","path":"sprites/sawmillTile/sawmillTile.yy",},},
     {"id":{"name":"farmTile","path":"sprites/farmTile/farmTile.yy",},},
-    {"id":{"name":"Barrack","path":"objects/Barrack/Barrack.yy",},},
+    {"id":{"name":"oCity_Hall","path":"objects/oCity_Hall/oCity_Hall.yy",},},
     {"id":{"name":"quarryTile","path":"sprites/quarryTile/quarryTile.yy",},},
     {"id":{"name":"grassPlot","path":"sprites/grassPlot/grassPlot.yy",},},
     {"id":{"name":"Script1","path":"scripts/Script1/Script1.yy",},},
