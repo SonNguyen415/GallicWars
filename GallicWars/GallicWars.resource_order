@@ -57,7 +57,6 @@
     {"name":"archeryRange","order":1,"path":"sprites/archeryRange/archeryRange.yy",},
     {"name":"BackgroundSprite","order":2,"path":"sprites/BackgroundSprite/BackgroundSprite.yy",},
     {"name":"goldIcon","order":3,"path":"sprites/goldIcon/goldIcon.yy",},
-    {"name":"unitLevel","order":4,"path":"sprites/unitLevel/unitLevel.yy",},
     {"name":"PlotSprite","order":7,"path":"sprites/PlotSprite/PlotSprite.yy",},
     {"name":"Tree","order":4,"path":"sprites/Tree/Tree.yy",},
     {"name":"grassWaterTileMap","order":1,"path":"sprites/grassWaterTileMap/grassWaterTileMap.yy",},
