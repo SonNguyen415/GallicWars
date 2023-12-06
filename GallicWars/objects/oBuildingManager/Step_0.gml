@@ -32,7 +32,7 @@ if(has_popup >= 0) {
 	instance_destroy(oPopup);
 }
 
-if(hovering >= 0) {
+if(hovering > 0) {
 	switch(state) {
 		
 		case barracks:
@@ -107,14 +107,14 @@ if(selected > 0) {
 			break;
 		
 		case resources:
-			// Build Farm
-			if(selected == 1) {
+			
+			if(selected == 1) { // Build Farm
 				building = farm;
-			} else if(selected == 2) {
+			} else if(selected == 2) { // Build mill
 				building = mill;
-			} else if(selected == 3) {
+			} else if(selected == 3) { // Build quarry
 				building = quarry;
-			} else if(selected == 4) {
+			} else if(selected == 4) { // Build mine
 				building = mine;
 			}
 		

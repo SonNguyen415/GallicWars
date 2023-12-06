@@ -14,8 +14,10 @@ if(popup_type == global.popup_construct) {
 	switch(build_type) {
 		case oBuildingManager.resources:
 				// show_debug_message("100 Gold");
-			draw_text(_x_pos+72, _y_pos - 20, "100 Gold");
-			draw_text(_x_pos+72, _y_pos + 20, "100 Wood");
+			var _gold_cost = string(global.build_cost) + " Gold";
+			var _wood_cost = string(global.build_cost) + " Gold";
+			draw_text(_x_pos+72, _y_pos - 20, _gold_cost);
+			draw_text(_x_pos+72, _y_pos + 20, _wood_cost);
 			break;
 	
 		

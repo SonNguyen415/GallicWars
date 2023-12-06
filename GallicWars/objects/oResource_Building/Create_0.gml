@@ -2,9 +2,8 @@
 // You can write your code in this editor
 
 
+
 build_type = oBuildingManager.building;
 
-
-
-alarm_set(0, global.tax_rate);
-
+// Increase the income
+global.tax_income[build_type-3] += 5;

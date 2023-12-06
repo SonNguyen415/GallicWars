@@ -5,6 +5,14 @@ global.popup_construct = 1;
 global.popup_upgrade = 2;
 global.popup_unit = 3;
 
+
+// Build cost and upgrade cost
+global.build_cost = 50;
+
+
+
+
+// Just some id
 global.gold = 0;
 global.food = 1;
 global.wood = 2;
@@ -12,6 +20,7 @@ global.stone = 3;
 global.metal = 4;
 
 global.resources = [100, 100, 100, 100, 100]
+global.tax_income = [5, 0, 0, 0, 0];
 
 global.tax_rate = 60;
 
