@@ -61,6 +61,7 @@
     {"id":{"name":"quarryTile","path":"sprites/quarryTile/quarryTile.yy",},},
     {"id":{"name":"grassPlot","path":"sprites/grassPlot/grassPlot.yy",},},
     {"id":{"name":"Script1","path":"scripts/Script1/Script1.yy",},},
+    {"id":{"name":"barbArcher","path":"sprites/barbArcher/barbArcher.yy",},},
     {"id":{"name":"oResourceUI","path":"objects/oResourceUI/oResourceUI.yy",},},
     {"id":{"name":"ResourceButtons","path":"sprites/ResourceButtons/ResourceButtons.yy",},},
     {"id":{"name":"EnemySprite","path":"sprites/EnemySprite/EnemySprite.yy",},},
