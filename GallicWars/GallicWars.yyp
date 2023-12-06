@@ -88,6 +88,7 @@
     {"id":{"name":"foodIcon","path":"sprites/foodIcon/foodIcon.yy",},},
     {"id":{"name":"BuildingUI","path":"sprites/BuildingUI/BuildingUI.yy",},},
     {"id":{"name":"popup","path":"sprites/popup/popup.yy",},},
+    {"id":{"name":"popup2","path":"sprites/popup2/popup2.yy",},},
     {"id":{"name":"oResource_Building","path":"objects/oResource_Building/oResource_Building.yy",},},
     {"id":{"name":"archeryRange","path":"sprites/archeryRange/archeryRange.yy",},},
     {"id":{"name":"barbArcher","path":"sprites/barbArcher/barbArcher.yy",},},

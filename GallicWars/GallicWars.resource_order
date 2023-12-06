@@ -61,6 +61,7 @@
     {"name":"grassWater","order":1,"path":"tilesets/grassWater/grassWater.yy",},
     {"name":"foodIcon","order":2,"path":"sprites/foodIcon/foodIcon.yy",},
     {"name":"popup","order":4,"path":"sprites/popup/popup.yy",},
+    {"name":"popup2","order":5,"path":"sprites/popup2/popup2.yy",},
     {"name":"oResource_Building","order":1,"path":"objects/oResource_Building/oResource_Building.yy",},
     {"name":"archeryRange","order":1,"path":"sprites/archeryRange/archeryRange.yy",},
     {"name":"barbArcher","order":7,"path":"sprites/barbArcher/barbArcher.yy",},
