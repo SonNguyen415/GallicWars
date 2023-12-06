@@ -71,6 +71,7 @@
     {"id":{"name":"grassStoneTileMap","path":"sprites/grassStoneTileMap/grassStoneTileMap.yy",},},
     {"id":{"name":"oPopup","path":"objects/oPopup/oPopup.yy",},},
     {"id":{"name":"woodIcon","path":"sprites/woodIcon/woodIcon.yy",},},
+    {"id":{"name":"barbSoldier","path":"sprites/barbSoldier/barbSoldier.yy",},},
     {"id":{"name":"BarrackSprite","path":"sprites/BarrackSprite/BarrackSprite.yy",},},
     {"id":{"name":"stoneWater","path":"tilesets/stoneWater/stoneWater.yy",},},
     {"id":{"name":"grassStone","path":"tilesets/grassStone/grassStone.yy",},},
