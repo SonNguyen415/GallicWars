@@ -4,6 +4,7 @@
 
 switch(oBuildingManager.building) {
 	case oBuildingManager.farm:
+		
 		draw_sprite_ext(farmTile, 0, mouse_x, mouse_y, 1, 1, 0, c_white, build_transparency);
 		break;
 	case oBuildingManager.mill:
