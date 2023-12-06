@@ -45,6 +45,7 @@
     {"name":"oPlot","order":3,"path":"objects/oPlot/oPlot.yy",},
     {"name":"TileSetSprite","order":8,"path":"sprites/TileSetSprite/TileSetSprite.yy",},
     {"name":"oPopup","order":3,"path":"objects/oPopup/oPopup.yy",},
+    {"name":"barbSoldier","order":3,"path":"sprites/barbSoldier/barbSoldier.yy",},
     {"name":"BarrackSprite","order":3,"path":"sprites/BarrackSprite/BarrackSprite.yy",},
     {"name":"stoneWater","order":3,"path":"tilesets/stoneWater/stoneWater.yy",},
     {"name":"grassStone","order":2,"path":"tilesets/grassStone/grassStone.yy",},
