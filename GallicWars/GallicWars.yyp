@@ -85,7 +85,11 @@
     {"id":{"name":"BackgroundSprite","path":"sprites/BackgroundSprite/BackgroundSprite.yy",},},
     {"id":{"name":"goldIcon","path":"sprites/goldIcon/goldIcon.yy",},},
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
     {"id":{"name":"unitLevel","path":"sprites/unitLevel/unitLevel.yy",},},
+=======
+    {"id":{"name":"Enemy","path":"objects/Enemy/Enemy.yy",},},
+>>>>>>> Stashed changes
 =======
     {"id":{"name":"Enemy","path":"objects/Enemy/Enemy.yy",},},
 >>>>>>> Stashed changes

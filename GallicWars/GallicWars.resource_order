@@ -58,7 +58,11 @@
     {"name":"BackgroundSprite","order":2,"path":"sprites/BackgroundSprite/BackgroundSprite.yy",},
     {"name":"goldIcon","order":3,"path":"sprites/goldIcon/goldIcon.yy",},
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
     {"name":"unitLevel","order":4,"path":"sprites/unitLevel/unitLevel.yy",},
+=======
+    {"name":"Enemy","order":8,"path":"objects/Enemy/Enemy.yy",},
+>>>>>>> Stashed changes
 =======
     {"name":"Enemy","order":8,"path":"objects/Enemy/Enemy.yy",},
 >>>>>>> Stashed changes
