@@ -6,4 +6,4 @@
 build_type = oBuildingManager.building;
 
 // Increase the income
-global.tax_income[build_type-3] += 5;
+global.tax_income[build_type-3] += global.productivity;

@@ -27,9 +27,10 @@ if(_x_pos > x_offset && _x_pos < b_size + x_offset) {
 }
 
 
-if(has_popup >= 0) {
+if(has_popup > 0 && hovering < 0) {
 	has_popup = -1;
 	instance_destroy(oPopup);
+	show_debug_message("--------------------------");
 }
 
 if(hovering > 0) {
@@ -41,12 +42,12 @@ if(hovering > 0) {
 		case resources:
 		
 			// Show building cost. All resources building cost the same
-			if(has_popup != resources) {
-	
+			if(has_popup < 1) {
+				
 				instance_create_layer(mouse_x, mouse_y, "Popup_Layer", oPopup);
 				has_popup = 1;
 				oPopup.popup_type = global.popup_construct;
-				oPopup.build_type = resources;
+				oPopup.popup_subtype = resources;
 			}
 		
 			

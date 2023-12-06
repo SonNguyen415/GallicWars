@@ -3,3 +3,6 @@
 
 _x_pos = (mouse_x - camera_get_view_x(view_camera[0]))/oCamera.zoom_f*2;
 _y_pos = (mouse_y - camera_get_view_y(view_camera[0]))/oCamera.zoom_f*2;
+
+
+text_x_offset = 110;
