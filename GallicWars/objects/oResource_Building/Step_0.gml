@@ -51,3 +51,7 @@ if(hovering > 0 && has_popup < 0) {
 	oPopup.build_lvl = build_lvl;
 	has_popup = 1;
 }
+
+
+
+// If hovering, then on click we invoke upgrade

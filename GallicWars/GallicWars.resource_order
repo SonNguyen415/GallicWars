@@ -25,6 +25,7 @@
     {"name":"Timelines","order":8,"path":"folders/Timelines.yy",},
     {"name":"units","order":2,"path":"folders/Objects/units.yy",},
     {"name":"control","order":3,"path":"folders/Objects/control.yy",},
+    {"name":"popups","order":5,"path":"folders/Objects/popups.yy",},
   ],
   "ResourceOrderSettings": [
     {"name":"cityHall","order":2,"path":"sprites/cityHall/cityHall.yy",},
@@ -50,7 +51,7 @@
     {"name":"oPlot","order":3,"path":"objects/oPlot/oPlot.yy",},
     {"name":"TileSetSprite","order":8,"path":"sprites/TileSetSprite/TileSetSprite.yy",},
     {"name":"soldierAttack","order":6,"path":"sprites/soldierAttack/soldierAttack.yy",},
-    {"name":"oPopup","order":4,"path":"objects/oPopup/oPopup.yy",},
+    {"name":"oUpgrade","order":1,"path":"objects/oUpgrade/oUpgrade.yy",},
     {"name":"barbSoldier","order":3,"path":"sprites/barbSoldier/barbSoldier.yy",},
     {"name":"BarrackSprite","order":3,"path":"sprites/BarrackSprite/BarrackSprite.yy",},
     {"name":"stoneWater","order":3,"path":"tilesets/stoneWater/stoneWater.yy",},
