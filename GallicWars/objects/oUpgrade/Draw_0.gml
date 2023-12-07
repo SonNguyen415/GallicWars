@@ -12,6 +12,7 @@ draw_set_valign(fa_middle);
 var _curr_build = "";
 var _curr_lvl = "";
 
+// 
 switch(upgrade_type) {
 	case oBuildingManager.farm:
 		_curr_build = "Farm";
@@ -51,11 +52,15 @@ switch(upgrade_type) {
 		break;
 }
 
+
+
+// Barracks have 2 buttons - upgrade and recruit
 if(upgrade_type == oBuildingManager.barrack || upgrade_type == oBuildingManager.range) {
 	draw_text_ext_transformed_color(x, y-y_offset-30, _curr_build, 5, 500,0.6,0.6,0, c_blue,c_blue,c_blue,c_blue, 1 );
 	draw_text_ext_transformed_color(x, y-y_offset-15, _curr_lvl, 5, 500,0.5,0.5,0, c_black,c_black,c_black,c_black, 1 );
 	draw_text_ext_transformed_color(x-15, y-y_offset+5, "Upgrade:", 5, 500,0.5,0.5,0, c_black,c_black,c_black,c_black, 1 );
 		
+	// Upgrade unit
 	var _curr_cost = build_lvl*global.upgrade_cost+global.build_cost;
 	if(build_lvl < 4 && 
 	global.resources[global.wood] >= _curr_cost && global.resources[global.gold] >= _curr_cost) {
@@ -63,8 +68,18 @@ if(upgrade_type == oBuildingManager.barrack || upgrade_type == oBuildingManager.
 	} else {
 		draw_sprite(checkbutton, 1, x+20, y-y_offset+10);
 	}
+	
+	// Recruit unit
+	draw_text_ext_transformed_color(x-15, y-y_offset+30, "Recruit:", 5, 500,0.5,0.5,0, c_black,c_black,c_black,c_black, 1 );
+	if(global.resources[global.gold] >= global.recruit_cost && global.resources[global.metal] >= global.recruit_cost) {
+		draw_sprite(checkbutton, 0, x+20, y-y_offset+35);
+	}else {
+		draw_sprite(checkbutton, 1, x+20, y-y_offset+35);
+	}
+	
+	
 
-} else {
+} else { // Other buildings can only upgrade
 	draw_text_ext_transformed_color(x, y-y_offset-20, _curr_build, 5, 500,0.8,0.6,0, c_blue,c_blue,c_blue,c_blue, 1 );
 	draw_text_ext_transformed_color(x, y-y_offset, _curr_lvl, 5, 500,0.6,0.6,0, c_black,c_black,c_black,c_black, 1 );
 	draw_text_ext_transformed_color(x-15, y-y_offset+20, "Upgrade: ",5, 500,0.6,0.6,0, c_black,c_black,c_black,c_black, 1 );

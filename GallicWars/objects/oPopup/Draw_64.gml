@@ -182,18 +182,22 @@ if(popup_type == global.popup_upgrade && build_lvl > 0) {
 	var _curr_up_cost = build_lvl*global.upgrade_cost+global.build_cost;
 	var _upgrade0 = "Max Level";
 	var	_upgrade1 = "";
-	var _color = c_silver;
 	
+	var _c_upgrade = c_silver;
 	if(build_lvl < 4) {
 		_upgrade0 = string(_curr_up_cost) + " Gold";
 		_upgrade1 = string(_curr_up_cost) + " Wood";
 		if(global.resources[global.gold] >= _curr_up_cost && global.resources[global.wood] >=_curr_up_cost) {
-			_color = c_green;
+			_c_upgrade = c_green;
 		} else {
-			_color = c_maroon;
+			_c_upgrade = c_maroon;
 		}
 	}
 	
+	var _c_recruit = c_maroon;
+	if(global.resources[global.gold] >= global.recruit_cost && global.resources[global.metal] >= global.recruit_cost) {
+		_c_recruit = c_green;
+	}
 	
 
 	switch(popup_subtype) {
@@ -221,20 +225,44 @@ if(popup_type == global.popup_upgrade && build_lvl > 0) {
 			_curr_health = "HP: " + string(building_health) + " / " + string(oResource_Building.max_health);
 			break;
 	
+		case oBuildingManager.barrack:
+			_curr_build = "Barrack";
+			_curr_health = "HP: " + string(building_health) + " / " + string(oBarrack_Building.max_health);
+			_curr_product = string(global.build_cost);
+			break;
+	
+	
+		case oBuildingManager.range:
+			_curr_build = "Skirmish Range";
+			_curr_health = "HP: " + string(building_health) + " / " + string(oBarrack_Building.max_health);
+			_curr_product = string(global.build_cost);
+			
+			
+			break;
+	
 		
 		default:
 			draw_text(_x_pos+text_x_offset, _y_pos-30, "Error 2");
 			break;
 	}
 	
-	if(popup_subtype == oBuildingManager.farm || popup_subtype == oBuildingManager.mill || popup_subtype == oBuildingManager.quarry || popup_subtype == oBuildingManager.mine) {
+	if(popup_subtype == oBuildingManager.barrack || popup_subtype == oBuildingManager.range) {
+		draw_text_ext_transformed_color(_x_pos+text_x_offset, _y_pos-69, _curr_build, 5, 500, 1,1,0, c_blue, c_blue,c_blue,c_blue, 1 );
+		draw_text_ext_transformed_color(_x_pos+text_x_offset, _y_pos-45, "Recruit Cost", 5, 500, 0.9,0.9,0, c_black,c_black,c_black,c_black, 1 );
+		draw_text_ext_transformed_color(_x_pos+text_x_offset, _y_pos-25, _curr_product + " Gold", 5, 500, 0.9,0.9,0, _c_recruit,_c_recruit,_c_recruit,_c_recruit, 1 );
+		draw_text_ext_transformed_color(_x_pos+text_x_offset, _y_pos-10, _curr_product + " Metal", 5, 500, 0.9,0.9,0, _c_recruit,_c_recruit,_c_recruit,_c_recruit, 1 )
+		draw_text_ext_transformed_color(_x_pos+text_x_offset, _y_pos+8, _curr_health, 5, 500, 0.9,0.9,0, c_maroon,c_maroon,c_maroon,c_maroon, 1 );
+		draw_text_ext_transformed_color(_x_pos+text_x_offset, _y_pos+25, "Upgrade Cost", 5, 500, 0.9,0.9,0, c_black,c_black,c_black,c_black, 1 );
+		draw_text_ext_transformed_color(_x_pos+text_x_offset, _y_pos+45, _upgrade0, 5, 500, 0.9,0.9,0, _c_upgrade,_c_upgrade,_c_upgrade,_c_upgrade, 1 );
+		draw_text_ext_transformed_color(_x_pos+text_x_offset, _y_pos+60, _upgrade1, 5, 500, 0.9,0.9,0, _c_upgrade,_c_upgrade,_c_upgrade,_c_upgrade, 1 );
+		
+	} else {
 		draw_text_ext_transformed_color(_x_pos+text_x_offset, _y_pos-65, _curr_build, 5, 500, 1.2,1.2,0, c_blue, c_blue,c_blue,c_blue, 1 );
 		draw_text_ext_transformed_color(_x_pos+text_x_offset, _y_pos-36, _curr_product, 5, 500, 0.9,0.9,0, c_black,c_black,c_black,c_black, 1 );
 		draw_text_ext_transformed_color(_x_pos+text_x_offset, _y_pos-10, _curr_health, 5, 500, 0.9,0.9,0, c_maroon,c_maroon,c_maroon,c_maroon, 1 );
 		draw_text_ext_transformed_color(_x_pos+text_x_offset, _y_pos+15, "Upgrade Cost", 5, 500, 0.9,0.9,0, c_black,c_black,c_black,c_black, 1 );
-		draw_text_ext_transformed_color(_x_pos+text_x_offset, _y_pos+40, _upgrade0, 5, 500, 0.9,0.9,0, _color,_color,_color,_color, 1 );
-		draw_text_ext_transformed_color(_x_pos+text_x_offset, _y_pos+60, _upgrade1, 5, 500, 0.9,0.9,0, _color,_color,_color,_color, 1 );
-
+		draw_text_ext_transformed_color(_x_pos+text_x_offset, _y_pos+40, _upgrade0, 5, 500, 0.9,0.9,0, _c_upgrade,_c_upgrade,_c_upgrade,_c_upgrade, 1 );
+		draw_text_ext_transformed_color(_x_pos+text_x_offset, _y_pos+60, _upgrade1, 5, 500, 0.9,0.9,0, _c_upgrade,_c_upgrade,_c_upgrade,_c_upgrade, 1 );
 	}
 
 	
