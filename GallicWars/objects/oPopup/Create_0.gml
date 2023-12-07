@@ -9,3 +9,4 @@ building_health = -1;
 build_lvl = -1;
 
 image_alpha = 0.9;
+

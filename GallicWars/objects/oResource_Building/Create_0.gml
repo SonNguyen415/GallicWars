@@ -15,12 +15,13 @@ build_lvl = 1;
 global.resources[global.gold] -= global.build_cost;
 global.resources[global.wood] -= global.build_cost;
 	
-	
-// Increase the income
-global.tax_income[build_type- oBuildingManager.stable] += global.productivity;
 
-max_health = 500;
+building_health = max_health;
 
 // Set building type and reset construction
 build_type = oBuildingManager.building;
 oBuildingManager.building = 0;
+
+	
+// Increase the income
+global.tax_income[build_type- oBuildingManager.stable] += global.productivity;

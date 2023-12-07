@@ -70,7 +70,10 @@ if(hovering > 0 && has_popup < 1) {
 		case util:
 			if(hovering == 1) {
 				oPopup.popup_subtype = house;
+			} else {
+				instance_destroy(oPopup);
 			}
+			break;
 		
 		default:
 			instance_destroy(oPopup);
@@ -132,8 +135,9 @@ if(selected > 0) {
 				} else if(selected == 2) { // Build mill
 					building = range;
 				} 
+				instance_create_layer(mouse_x, mouse_y, "Build", oC_Building);
 			}
-			instance_create_layer(mouse_x, mouse_y, "Build", oC_Building);
+			
 			break;
 		
 		case resources:
@@ -148,22 +152,21 @@ if(selected > 0) {
 				} else if(selected == 4) { // Build mine
 					building = mine;
 				}
+				instance_create_layer(mouse_x, mouse_y, "Build", oC_Building);
 			}
 
-			instance_create_layer(mouse_x, mouse_y, "Build", oC_Building);
+			
 			break;
 			
 		case util:
 			if(global.resources[global.gold] >= global.build_cost && 
 			global.resources[global.wood] >= global.build_cost)  {
 				if(selected == 1) { // Build House
-					building = house
+					building = house;
 				} 
+				instance_create_layer(mouse_x, mouse_y, "Build", oC_Building);
 			}
-		
-		
-		
-			instance_create_layer(mouse_x, mouse_y, "Build", oC_Building);
+			
 			break;
 		
 		default:

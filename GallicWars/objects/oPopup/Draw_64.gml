@@ -69,6 +69,13 @@ if(popup_type == global.popup_construct) {
 		
 			break;
 		
+		case oBuildingManager.house:
+			_build_result += "+" + string(global.productivity) + " Gold";
+			draw_text_ext_transformed_color(_x_pos+text_x_offset, _y_pos - 50, "House",5, 500,1.2,1.2,0, c_blue,c_blue,c_blue,c_blue, 1 );
+			draw_text_ext_transformed_color(_x_pos+text_x_offset, _y_pos + 35, _build_result,5, 500, 1,1,0, c_black,c_black,c_black,c_black, 1 );
+		
+			break;
+		
 		
 		default:
 			draw_text(_x_pos+text_x_offset, _y_pos-30, "Error 0");
@@ -159,6 +166,8 @@ if(popup_type == global.popup_money) {
 				_c_balance = c_green;
 			}
 			break;
+			
+		
 		
 		default:
 			draw_text(_x_pos+text_x_offset, _y_pos-30, "Error 1");
@@ -221,7 +230,7 @@ if(popup_type == global.popup_upgrade && build_lvl > 0) {
 			
 		case oBuildingManager.mine:
 			_curr_build = "Mine";
-			_curr_product = "Product: " + string(global.productivity *(build_lvl-1))  + " Metal";
+			_curr_product = "Product: " + string(global.productivity *build_lvl)  + " Metal";
 			_curr_health = "HP: " + string(building_health) + " / " + string(oResource_Building.max_health);
 			break;
 	
@@ -236,11 +245,16 @@ if(popup_type == global.popup_upgrade && build_lvl > 0) {
 			_curr_build = "Skirmish Range";
 			_curr_health = "HP: " + string(building_health) + " / " + string(oBarrack_Building.max_health);
 			_curr_product = string(global.build_cost);
-			
-			
 			break;
 	
-		
+		case oBuildingManager.house:
+			_curr_build = "House";
+			_curr_product = "Product: " + string(global.productivity *build_lvl)  + " Gold";
+			_curr_health = "HP: " + string(building_health) + " / " + string(oUtil_Building.max_health);
+			break;
+	
+	
+	
 		default:
 			draw_text(_x_pos+text_x_offset, _y_pos-30, "Error 2");
 			break;

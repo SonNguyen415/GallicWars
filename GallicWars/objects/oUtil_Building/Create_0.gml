@@ -15,8 +15,7 @@ global.resources[global.gold] -= global.build_cost;
 global.resources[global.wood] -= global.build_cost;
 	
 	
-
-max_health = 500;
+building_health = max_health;
 
 
 // Set building type and reset construction
@@ -25,7 +24,6 @@ oBuildingManager.building = 0;
 
 
 // Modify functionality based on type
-
 switch(build_type) {
 	case oBuildingManager.house:
 		global.tax_income[global.gold] += global.productivity;

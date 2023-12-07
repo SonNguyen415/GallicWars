@@ -47,6 +47,12 @@ switch(upgrade_type) {
 		_curr_lvl = "Level: " + string(build_lvl);
 		break;
 		
+	case oBuildingManager.house:
+		_curr_build = "House";
+		_curr_lvl = "Level: " + string(build_lvl);
+		break;
+		
+		
 	default:
 		draw_text(x, y-y_offset, "Error 2");
 		break;
