@@ -81,6 +81,7 @@
     {"name":"barbInfDeath","order":3,"path":"sprites/barbInfDeath/barbInfDeath.yy",},
     {"name":"OffenseButtons","order":10,"path":"sprites/OffenseButtons/OffenseButtons.yy",},
     {"name":"BarrackSprite","order":3,"path":"sprites/BarrackSprite/BarrackSprite.yy",},
+    {"name":"title","order":10,"path":"sprites/title/title.yy",},
     {"name":"stoneWater","order":3,"path":"tilesets/stoneWater/stoneWater.yy",},
     {"name":"grassStone","order":2,"path":"tilesets/grassStone/grassStone.yy",},
     {"name":"ArmySprite","order":1,"path":"sprites/ArmySprite/ArmySprite.yy",},

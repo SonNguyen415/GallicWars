@@ -107,6 +107,7 @@
     {"id":{"name":"OffenseButtons","path":"sprites/OffenseButtons/OffenseButtons.yy",},},
     {"id":{"name":"BarrackSprite","path":"sprites/BarrackSprite/BarrackSprite.yy",},},
     {"id":{"name":"highscore","path":"sprites/highscore/highscore.yy",},},
+    {"id":{"name":"title","path":"sprites/title/title.yy",},},
     {"id":{"name":"stoneWater","path":"tilesets/stoneWater/stoneWater.yy",},},
     {"id":{"name":"grassStone","path":"tilesets/grassStone/grassStone.yy",},},
     {"id":{"name":"ArmySprite","path":"sprites/ArmySprite/ArmySprite.yy",},},
