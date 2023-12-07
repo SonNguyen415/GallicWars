@@ -14,4 +14,4 @@ build_type = oBuildingManager.building;
 
 
 
-curr_health = max_health;
+max_health = 500;

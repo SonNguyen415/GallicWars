@@ -1,6 +1,9 @@
 /// @description Insert description here
 // You can write your code in this editor
 
+if (building_health <= 0) {
+	instance_destroy();
+}
 
 // Set sprite
 switch(build_type) {
@@ -57,7 +60,7 @@ if(hovering > 0 && has_popup < 0) {
 	oPopup.popup_type = global.popup_upgrade;
 	oPopup.popup_subtype = build_type;
 	oPopup.build_lvl = build_lvl;
-	oPopup.building_health = curr_health;
+	oPopup.building_health = building_health;
 	has_popup = 1;
 }
 

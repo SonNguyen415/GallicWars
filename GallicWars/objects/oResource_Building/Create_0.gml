@@ -15,4 +15,4 @@ build_type = oBuildingManager.building;
 // Increase the income
 global.tax_income[build_type- oBuildingManager.stable] += global.productivity;
 
-curr_health = max_health;
+max_health = 500;
