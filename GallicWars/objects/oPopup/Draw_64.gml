@@ -147,10 +147,11 @@ if(popup_type == global.popup_money) {
 }
 
 
-if(popup_type == global.popup_upgrade) {
+if(popup_type == global.popup_upgrade && build_lvl > 0) {
+	
 	var _curr_build = "";
 	var _curr_product = "";
-	
+	var _curr_health = "";
 	
 	var _curr_up_cost = build_lvl*global.upgrade_cost+global.build_cost;
 	var _upgrade0 = "Max Level";
@@ -173,21 +174,25 @@ if(popup_type == global.popup_upgrade) {
 		case oBuildingManager.farm:
 			_curr_build = "Farm";
 			_curr_product = "Product: " + string(global.productivity * build_lvl) + " Food";
+			_curr_health = "HP: " + string(building_health) + " / " + string(oResource_Building.max_health);
 			break;
 		
 		case oBuildingManager.mill:
 			_curr_build = "Mill";
 			_curr_product = "Product: " + string(global.productivity * build_lvl)  + " Wood";
+			_curr_health = "HP: " + string(building_health) + " / " + string(oResource_Building.max_health);
 			break;
 		
 		case oBuildingManager.quarry:
 			_curr_build = "Stone";
 			_curr_product = "Product: " + string(global.productivity * build_lvl)  + " Stone";
+			_curr_health = "HP: " + string(building_health) + " / " + string(oResource_Building.max_health);
 			break;
 			
 		case oBuildingManager.mine:
 			_curr_build = "Mine";
 			_curr_product = "Product: " + string(global.productivity *(build_lvl-1))  + " Metal";
+			_curr_health = "HP: " + string(building_health) + " / " + string(oResource_Building.max_health);
 			
 			break;
 	
@@ -197,11 +202,12 @@ if(popup_type == global.popup_upgrade) {
 			break;
 	}
 	
-	draw_text_ext_transformed_color(_x_pos+text_x_offset, _y_pos-55, _curr_build, 5, 500, 1.2,1.2,0, c_blue, c_blue,c_blue,c_blue, 1 );
-	draw_text_ext_transformed_color(_x_pos+text_x_offset, _y_pos-25, _curr_product, 5, 500, 0.9,0.9,0, c_black,c_black,c_black,c_black, 1 );
-	draw_text_ext_transformed_color(_x_pos+text_x_offset, _y_pos+5, "Upgrade Cost", 5, 500, 0.9,0.9,0, c_black,c_black,c_black,c_black, 1 );
-	draw_text_ext_transformed_color(_x_pos+text_x_offset, _y_pos+30, _upgrade0, 5, 500, 0.9,0.9,0, _color,_color,_color,_color, 1 );
-	draw_text_ext_transformed_color(_x_pos+text_x_offset, _y_pos+50, _upgrade1, 5, 500, 0.9,0.9,0, _color,_color,_color,_color, 1 );
+	draw_text_ext_transformed_color(_x_pos+text_x_offset, _y_pos-65, _curr_build, 5, 500, 1.2,1.2,0, c_blue, c_blue,c_blue,c_blue, 1 );
+	draw_text_ext_transformed_color(_x_pos+text_x_offset, _y_pos-36, _curr_product, 5, 500, 0.9,0.9,0, c_black,c_black,c_black,c_black, 1 );
+	draw_text_ext_transformed_color(_x_pos+text_x_offset, _y_pos-10, _curr_health, 5, 500, 0.9,0.9,0, c_maroon,c_maroon,c_maroon,c_maroon, 1 );
+	draw_text_ext_transformed_color(_x_pos+text_x_offset, _y_pos+15, "Upgrade Cost", 5, 500, 0.9,0.9,0, c_black,c_black,c_black,c_black, 1 );
+	draw_text_ext_transformed_color(_x_pos+text_x_offset, _y_pos+40, _upgrade0, 5, 500, 0.9,0.9,0, _color,_color,_color,_color, 1 );
+	draw_text_ext_transformed_color(_x_pos+text_x_offset, _y_pos+60, _upgrade1, 5, 500, 0.9,0.9,0, _color,_color,_color,_color, 1 );
 
 	
 

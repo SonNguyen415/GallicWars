@@ -57,6 +57,7 @@ if(hovering > 0 && has_popup < 0) {
 	oPopup.popup_type = global.popup_upgrade;
 	oPopup.popup_subtype = build_type;
 	oPopup.build_lvl = build_lvl;
+	oPopup.building_health = curr_health;
 	has_popup = 1;
 }
 
