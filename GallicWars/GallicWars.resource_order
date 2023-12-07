@@ -52,6 +52,7 @@
     {"name":"home","order":5,"path":"sprites/home/home.yy",},
     {"name":"woodWall","order":7,"path":"sprites/woodWall/woodWall.yy",},
     {"name":"oResourceUI","order":1,"path":"objects/oResourceUI/oResourceUI.yy",},
+    {"name":"oWaveManager","order":5,"path":"objects/oWaveManager/oWaveManager.yy",},
     {"name":"ResourceButtons","order":3,"path":"sprites/ResourceButtons/ResourceButtons.yy",},
     {"name":"EnemySprite","order":5,"path":"sprites/EnemySprite/EnemySprite.yy",},
     {"name":"BackButton","order":2,"path":"sprites/BackButton/BackButton.yy",},

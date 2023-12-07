@@ -74,6 +74,7 @@
     {"id":{"name":"Script1","path":"scripts/Script1/Script1.yy",},},
     {"id":{"name":"woodWall","path":"sprites/woodWall/woodWall.yy",},},
     {"id":{"name":"oResourceUI","path":"objects/oResourceUI/oResourceUI.yy",},},
+    {"id":{"name":"oWaveManager","path":"objects/oWaveManager/oWaveManager.yy",},},
     {"id":{"name":"ResourceButtons","path":"sprites/ResourceButtons/ResourceButtons.yy",},},
     {"id":{"name":"EnemySprite","path":"sprites/EnemySprite/EnemySprite.yy",},},
     {"id":{"name":"BackButton","path":"sprites/BackButton/BackButton.yy",},},
