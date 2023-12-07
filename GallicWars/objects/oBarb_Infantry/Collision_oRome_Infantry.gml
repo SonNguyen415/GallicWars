@@ -7,6 +7,11 @@ sprite_index = barbInfAttack;
 
 if (target == noone) {
 	target = other;
+	if (target.x > x) {
+		image_xscale = -1;
+	} else {
+		image_xscale = 1;	
+	}
 } else {
 	if (!instance_exists(target) || !place_meeting(x, y, target)) {
 		target = noone;

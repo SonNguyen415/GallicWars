@@ -11,7 +11,7 @@ if (!place_meeting(x, y, oCity_Hall) && !place_meeting(x, y, oRome_Infantry)) {
 	path = path_add();
 
 	if (mp_grid_path(grid, path, x, y, oCity_Hall.x, oCity_Hall.y, true)) {
-		if (mouse_x > x) {
+		if (oCity_Hall > x) {
 			image_xscale = -1;
 		} else {
 			image_xscale = 1;	
