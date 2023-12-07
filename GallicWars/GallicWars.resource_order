@@ -35,6 +35,7 @@
     {"name":"stoneIcon","order":1,"path":"sprites/stoneIcon/stoneIcon.yy",},
     {"name":"ResourceUI","order":6,"path":"sprites/ResourceUI/ResourceUI.yy",},
     {"name":"MenuButtons","order":1,"path":"sprites/MenuButtons/MenuButtons.yy",},
+    {"name":"wave","order":13,"path":"sprites/wave/wave.yy",},
     {"name":"mineTile","order":1,"path":"sprites/mineTile/mineTile.yy",},
     {"name":"oBuildingManager","order":2,"path":"objects/oBuildingManager/oBuildingManager.yy",},
     {"name":"romeInfWalk","order":6,"path":"sprites/romeInfWalk/romeInfWalk.yy",},

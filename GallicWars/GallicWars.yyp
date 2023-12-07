@@ -52,6 +52,7 @@
     {"id":{"name":"stoneIcon","path":"sprites/stoneIcon/stoneIcon.yy",},},
     {"id":{"name":"ResourceUI","path":"sprites/ResourceUI/ResourceUI.yy",},},
     {"id":{"name":"MenuButtons","path":"sprites/MenuButtons/MenuButtons.yy",},},
+    {"id":{"name":"wave","path":"sprites/wave/wave.yy",},},
     {"id":{"name":"mineTile","path":"sprites/mineTile/mineTile.yy",},},
     {"id":{"name":"oBuildingManager","path":"objects/oBuildingManager/oBuildingManager.yy",},},
     {"id":{"name":"romeInfWalk","path":"sprites/romeInfWalk/romeInfWalk.yy",},},
