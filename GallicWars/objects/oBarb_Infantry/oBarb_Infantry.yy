@@ -41,10 +41,10 @@
     {"resourceType":"GMObjectProperty","resourceVersion":"1.0","name":"troop_attack","filters":[],"listItems":[],"multiselect":false,"rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"value":"5","varType":1,},
   ],
   "solid": false,
-  "spriteId": {
+  "spriteId": null,
+  "spriteMaskId": {
     "name": "barbInfWalk",
     "path": "sprites/barbInfWalk/barbInfWalk.yy",
   },
-  "spriteMaskId": null,
   "visible": true,
 }
