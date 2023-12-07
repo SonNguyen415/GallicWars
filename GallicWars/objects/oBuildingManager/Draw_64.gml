@@ -16,8 +16,8 @@ switch(state) {
 		break;
 		
 	case barracks:
-		for(var _i=0; _i<4; _i++) {
-			draw_sprite(ResourceButtons, _i, x_offset, y_offset+_i*button_offset);
+		for(var _i=0; _i<2; _i++) {
+			draw_sprite(OffenseButtons, _i, x_offset, y_offset+_i*button_offset);
 		}
 		draw_sprite(BackButton, 0, x_offset, y_offset+4*button_offset);
 		break;
@@ -29,7 +29,9 @@ switch(state) {
 		draw_sprite(BackButton, 0, x_offset, y_offset+4*button_offset);
 		break;
 	case util:
-
+		for(var _i=0; _i<1, i++) {
+			draw_sprite(UtilityButtons, _i, x_offset, y_offset+_i*button_offset);
+		}
 		draw_sprite(BackButton, 0, x_offset, y_offset+4*button_offset);
 		break;
 	

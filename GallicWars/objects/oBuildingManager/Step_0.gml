@@ -147,7 +147,19 @@ if(selected > 0) {
 			}
 
 			instance_create_layer(mouse_x, mouse_y, "Build", oC_Building);
+			break;
 			
+		case util:
+			if(global.resources[global.gold] >= global.build_cost && 
+			global.resources[global.wood] >= global.build_cost)  {
+				if(selected == 1) { // Build House
+					building = house
+				} 
+			}
+		
+		
+		
+			instance_create_layer(mouse_x, mouse_y, "Build", oC_Building);
 			break;
 		
 		default:

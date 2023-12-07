@@ -25,6 +25,11 @@ switch(oBuildingManager.building) {
 		draw_sprite_ext(archeryRange, 0, mouse_x, mouse_y, 1, 1, 0, c_white, build_transparency);
 		break;
 		
+	case oBuildingManager.house:
+		draw_sprite_ext(houses, 0, mouse_x, mouse_y, 1, 1, 0, c_white, build_transparency);
+		break;
+		
+		
 	default:
 		break;
 }

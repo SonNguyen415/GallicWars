@@ -29,4 +29,4 @@ farm = 4;
 mill = 5;
 quarry = 6;
 mine = 7;
-
+house = 8;
