@@ -76,7 +76,7 @@
     {"id":{"name":"BackButton","path":"sprites/BackButton/BackButton.yy",},},
     {"id":{"name":"buttons","path":"sprites/buttons/buttons.yy",},},
     {"id":{"name":"back","path":"sprites/back/back.yy",},},
-    {"id":{"name":"oBarb_Infantry","path":"objects/oBarb_Infantry/oBarb_Infantry.yy",},},
+    {"id":{"name":"oBarb","path":"objects/oBarb/oBarb.yy",},},
     {"id":{"name":"oPlot","path":"objects/oPlot/oPlot.yy",},},
     {"id":{"name":"checkbutton","path":"sprites/checkbutton/checkbutton.yy",},},
     {"id":{"name":"Title","path":"rooms/Title/Title.yy",},},
@@ -116,7 +116,7 @@
     {"id":{"name":"Num","path":"sprites/Num/Num.yy",},},
     {"id":{"name":"oCamera","path":"objects/oCamera/oCamera.yy",},},
     {"id":{"name":"barracksTile","path":"sprites/barracksTile/barracksTile.yy",},},
-    {"id":{"name":"oRome_Infantry","path":"objects/oRome_Infantry/oRome_Infantry.yy",},},
+    {"id":{"name":"oRome","path":"objects/oRome/oRome.yy",},},
   ],
   "RoomOrderNodes": [
     {"roomId":{"name":"Room1","path":"rooms/Room1/Room1.yy",},},
