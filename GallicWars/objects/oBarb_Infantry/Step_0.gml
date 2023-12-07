@@ -5,7 +5,7 @@ if (troop_health <= 0) {
 	instance_destroy();
 }
 
-if (!place_meeting(x, y, oCity_Hall) && !place_meeting(x, y, oRome_Infantry)) {
+if (!place_meeting(x, y, oCity_Hall) && !place_meeting(x, y, oRome_Infantry)  && !place_meeting(x, y, oBarb_Infantry)) {
 	sprite_index = barbInfWalk;	
 		
 	path = path_add();
