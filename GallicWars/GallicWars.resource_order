@@ -27,6 +27,7 @@
     {"name":"Tile Sets","order":2,"path":"folders/Tile Sets.yy",},
     {"name":"Timelines","order":8,"path":"folders/Timelines.yy",},
     {"name":"Title","order":12,"path":"folders/Sprites/UI/Title.yy",},
+    {"name":"UtilityBuildings","order":19,"path":"folders/Sprites/UtilityBuildings.yy",},
   ],
   "ResourceOrderSettings": [
     {"name":"cityHall","order":2,"path":"sprites/cityHall/cityHall.yy",},
