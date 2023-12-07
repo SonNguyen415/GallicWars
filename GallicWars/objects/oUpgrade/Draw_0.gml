@@ -48,8 +48,11 @@ draw_text_ext_transformed_color(x, y-y_offset, _curr_lvl, 5, 500,0.6,0.6,0, c_bl
 draw_text_ext_transformed_color(x-15, y-y_offset+20, "Upgrade: ",5, 500,0.6,0.6,0, c_black,c_black,c_black,c_black, 1 );
 
 
-		
-if(build_lvl < 4) {
+var _curr_cost = build_lvl*global.upgrade_cost+global.build_cost;
+if(build_lvl < 4 && 
+global.resources[global.wood] >= _curr_cost && global.resources[global.gold] >= _curr_cost) {
 	draw_sprite(checkbutton, 0, x+20, y-y_offset+25);
+} else {
+	draw_sprite(checkbutton, 1, x+20, y-y_offset+25);
 }
 

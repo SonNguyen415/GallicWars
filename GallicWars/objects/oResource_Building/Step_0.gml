@@ -23,7 +23,15 @@ switch(build_type) {
 		break;
 }
 
+
 image_speed = 0;
+
+if(recent_upgraded) {
+	image_index = build_lvl-1;
+	global.tax_income[build_type- oBuildingManager.stable] += global.productivity;
+	recent_upgraded = false;
+
+}
 
 
 // Check for hovering

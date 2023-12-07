@@ -6,6 +6,7 @@
 hovering = -1;
 has_popup = -1;
 upgrading = -1;
+recent_upgraded = false;
 build_lvl = 1;
 
 

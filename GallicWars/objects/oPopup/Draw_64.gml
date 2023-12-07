@@ -144,16 +144,24 @@ if(popup_type == global.popup_money) {
 if(popup_type == global.popup_upgrade) {
 	var _curr_build = "";
 	var _curr_product = "";
-	var _upgrade = "";
-	var _color = c_black;
+	
+	
+	var _curr_up_cost = build_lvl*global.upgrade_cost+global.build_cost;
+	var _upgrade0 = "Max Level";
+	var	_upgrade1 = "";
+	var _color = c_silver;
 	
 	if(build_lvl < 4) {
-		_upgrade = "Yes";
-		_color = c_green;
-	} else {
-		_upgrade = "No";
-		_color = c_maroon;
+		_upgrade0 = string(_curr_up_cost) + " Gold";
+		_upgrade1 = string(_curr_up_cost) + " Wood";
+		if(global.resources[global.gold] >= _curr_up_cost && global.resources[global.wood] >=_curr_up_cost) {
+			_color = c_green;
+		} else {
+			_color = c_maroon;
+		}
 	}
+	
+	
 
 	switch(popup_subtype) {
 		case oBuildingManager.farm:
@@ -183,10 +191,11 @@ if(popup_type == global.popup_upgrade) {
 			break;
 	}
 	
-	draw_text_ext_transformed_color(_x_pos+text_x_offset, _y_pos-45, _curr_build, 5, 500, 1.2,1.2,0, c_blue, c_blue,c_blue,c_blue, 1 );
-	draw_text_ext_transformed_color(_x_pos+text_x_offset, _y_pos-10, _curr_product, 5, 500, 0.9,0.9,0, c_black,c_black,c_black,c_black, 1 );
-	draw_text_ext_transformed_color(_x_pos+text_x_offset-20, _y_pos+20, "Upgradable: ", 5, 500, 0.9,0.9,0, c_black,c_black,c_black,c_black, 1 );
-	draw_text_ext_transformed_color(_x_pos+text_x_offset+45, _y_pos+20, _upgrade, 5, 500, 0.9,0.9,0, _color,_color,_color,_color, 1 );
+	draw_text_ext_transformed_color(_x_pos+text_x_offset, _y_pos-55, _curr_build, 5, 500, 1.2,1.2,0, c_blue, c_blue,c_blue,c_blue, 1 );
+	draw_text_ext_transformed_color(_x_pos+text_x_offset, _y_pos-25, _curr_product, 5, 500, 0.9,0.9,0, c_black,c_black,c_black,c_black, 1 );
+	draw_text_ext_transformed_color(_x_pos+text_x_offset, _y_pos+5, "Upgrade Cost", 5, 500, 0.9,0.9,0, c_black,c_black,c_black,c_black, 1 );
+	draw_text_ext_transformed_color(_x_pos+text_x_offset, _y_pos+30, _upgrade0, 5, 500, 0.9,0.9,0, _color,_color,_color,_color, 1 );
+	draw_text_ext_transformed_color(_x_pos+text_x_offset, _y_pos+50, _upgrade1, 5, 500, 0.9,0.9,0, _color,_color,_color,_color, 1 );
 
 	
 
