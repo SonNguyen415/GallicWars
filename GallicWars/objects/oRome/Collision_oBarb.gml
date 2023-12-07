@@ -7,9 +7,10 @@ sprite_index = romeInfAttack;
 
 if (target == noone) {
 	target = other;
-} else {
-	if (!instance_exists(target) || !place_meeting(x, y, target)) {
-		target = noone;
+	if (target.x > x) {
+		image_xscale = -1;
+	} else {
+		image_xscale = 1;	
 	}
 }
 
