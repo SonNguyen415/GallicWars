@@ -13,66 +13,119 @@ draw_set_valign(fa_middle);
 
 
 if(popup_type == global.popup_construct) {
+	var _gold_cost = string(global.build_cost) + " Gold";
+	var _wood_cost = string(global.build_cost) + " Wood";
+	var _build_result = "Result: +" + string(global.productivity);
 
 	switch(popup_subtype) {
-		case oBuildingManager.resources:
-			// show_debug_message("100 Gold");
-			var _gold_cost = string(global.build_cost) + " Gold";
-			var _wood_cost = string(global.build_cost) + " Wood";
-			var _build_result = "Result: +" + string(global.productivity);
-				
-			draw_text_ext_transformed(_x_pos+text_x_offset, _y_pos - 50, "Cost", 2, 300, 1.2, 1.2, 0);
-			draw_text(_x_pos+text_x_offset, _y_pos - 10, _gold_cost);
-			draw_text(_x_pos+text_x_offset, _y_pos + 10, _wood_cost);
-			draw_text(_x_pos+text_x_offset, _y_pos + 35, _build_result);
-			
+		case oBuildingManager.farm:
+			_build_result += " Food";
+			draw_text_ext_transformed_color(_x_pos+text_x_offset, _y_pos - 50, "Farm",5, 500,1.2,1.2,0, c_blue,c_blue,c_blue,c_blue, 1 );
 			break;
-	
+			
+		case oBuildingManager.mill:
+			_build_result += " Wood";
+			draw_text_ext_transformed_color(_x_pos+text_x_offset, _y_pos - 50, "Mill",5, 500,1.2,1.2,0, c_blue,c_blue,c_blue,c_blue, 1 );
+			break;
+			
+		case oBuildingManager.quarry:
+			_build_result += " Stone";
+			draw_text_ext_transformed_color(_x_pos+text_x_offset, _y_pos - 50, "Quarry",5, 500,1.2,1.2,0, c_blue,c_blue,c_blue,c_blue, 1 );
+			break;
+		
+		case oBuildingManager.mine:
+			_build_result += " Metal";
+			draw_text_ext_transformed_color(_x_pos+text_x_offset, _y_pos - 50, "Mine",5, 500,1.2,1.2,0, c_blue,c_blue,c_blue,c_blue, 1 );
+			break;
 		
 		default:
 			draw_text(_x_pos+text_x_offset, _y_pos-30, "Error 0");
 			break;
 	}
+	
+	
+	draw_text_ext_transformed_color(_x_pos+text_x_offset, _y_pos - 10, _gold_cost,5, 500, 1,1,0, c_black,c_black,c_black,c_black, 1 );
+	draw_text_ext_transformed_color(_x_pos+text_x_offset, _y_pos + 10, _wood_cost,5, 500, 1,1,0, c_black,c_black,c_black,c_black, 1 );
+	draw_text_ext_transformed_color(_x_pos+text_x_offset, _y_pos + 35, _build_result,5, 500, 1,1,0, c_black,c_black,c_black,c_black, 1 );
+			
 
 }
 
 
 
 if(popup_type == global.popup_money) {
+	var _money_type = "";
 	
-	var _income = "";
-	var _expenses = "";
-	var _balance = "";
+	var _income = "Income: ";
+	var _expenses = "Expenses: ";
+	var _balance = "Balance: ";
+	
+	var _c_balance = c_black;
 	
 	switch(popup_subtype) {
 		case global.gold:
-			_income = "Gold Income: " + string(global.tax_income[global.gold]);
-			_expenses = "Gold Expenses: " + string(global.expenses[global.gold]);
-			_balance = "Gold Balance: " + string(global.balance[global.gold]);
+			_money_type = "Gold";
+			_income += string(global.tax_income[global.gold]);
+			_expenses += string(global.expenses[global.gold]);
+			_balance += string(global.balance[global.gold]);
+			if(global.balance[global.gold] < 0) {
+				_c_balance = c_maroon;
+			}
+			if(global.balance[global.gold] > 0) {
+				_c_balance = c_green;
+			}
 			break;
 		
 		case global.food:
-			_income = "Food Income: " + string(global.tax_income[global.food])
-			_expenses = "Food Expenses: " + string(global.expenses[global.food]);
-			_balance = "Food Balance: " + string(global.balance[global.food]);
+			_money_type = "Food";
+			_income += string(global.tax_income[global.food])
+			_expenses += string(global.expenses[global.food]);
+			_balance += string(global.balance[global.food]);
+			if(global.balance[global.food] < 0) {
+				_c_balance = c_maroon;
+			}
+			if(global.balance[global.food] > 0) {
+				_c_balance = c_green;
+			}
 			break;
 		
 		case global.wood:
-			_income = "Wood Income: " + string(global.tax_income[global.wood]);
-			_expenses = "Wood Expenses: " + string(global.expenses[global.wood]);
-			_balance = "Wood Balance: " + string(global.balance[global.wood]);
+			_money_type = "Wood";
+			_income += string(global.tax_income[global.wood]);
+			_expenses += string(global.expenses[global.wood]);
+			_balance += string(global.balance[global.wood]);
+			if(global.balance[global.wood] < 0) {
+				_c_balance = c_maroon;
+			}
+			if(global.balance[global.wood] > 0) {
+				_c_balance = c_green;
+			}
 			break;
 		
 		case global.stone:
-			_income = "Stone Income: " + string(global.tax_income[global.stone]);
-			_expenses = "Stone Expenses: " + string(global.expenses[global.stone]);
-			_balance = "Stone Balance: " + string(global.balance[global.stone]);
+			_money_type = "Stone";
+			_income += string(global.tax_income[global.stone]);
+			_expenses += string(global.expenses[global.stone]);
+			_balance += string(global.balance[global.stone]);
+			if(global.balance[global.stone] < 0) {
+				_c_balance = c_maroon;
+			}
+			if(global.balance[global.stone] > 0) {
+				_c_balance = c_green;
+			}
 			break;
 		
 		case global.metal:
-			_income = "Metal Income: " + string(global.tax_income[global.metal]);
-			_expenses = "Metal Expenses: " + string(global.expenses[global.metal]);
-			_balance = "Metal Balance: " + string(global.balance[global.metal]);
+			_money_type = "Metal";
+			_income += string(global.tax_income[global.metal]);
+			_expenses += string(global.expenses[global.metal]);
+			_balance += string(global.balance[global.metal]);
+			if(global.balance[global.metal] < 0) {
+				_c_balance = c_maroon;
+			}
+			if(global.balance[global.metal] > 0) {
+				_c_balance = c_green;
+			}
 			break;
 		
 		default:
@@ -80,10 +133,10 @@ if(popup_type == global.popup_money) {
 			break;
 	}
 	
-	
-	draw_text_ext_transformed(_x_pos+text_x_offset, _y_pos-30, _income, 2, 300, 0.8, 0.8, 0);
-	draw_text_ext_transformed(_x_pos+text_x_offset, _y_pos, _expenses, 2, 300, 0.8, 0.8, 0);
-	draw_text_ext_transformed(_x_pos+text_x_offset, _y_pos+30, _balance, 2, 300, 0.8, 0.8, 0);
+	draw_text_ext_transformed_color(_x_pos+text_x_offset, _y_pos-50, _money_type, 5, 500, 1.2,1.2,0, c_blue,c_blue,c_blue,c_blue, 1 );
+	draw_text_ext_transformed_color(_x_pos+text_x_offset, _y_pos-15, _income, 5, 500, 1,1,0, c_black,c_black,c_black,c_black, 1 );
+	draw_text_ext_transformed_color(_x_pos+text_x_offset, _y_pos+15, _expenses, 5, 500, 1,1,0, c_black,c_black,c_black,c_black, 1 );
+	draw_text_ext_transformed_color(_x_pos+text_x_offset, _y_pos+45, _balance, 5, 500, 1,1,0, _c_balance,_c_balance,_c_balance,_c_balance, 1);
 
 }
 
@@ -92,46 +145,36 @@ if(popup_type == global.popup_upgrade) {
 	var _curr_build = "";
 	var _curr_product = "";
 	var _upgrade = "";
+	var _color = c_black;
+	
+	if(build_lvl < 4) {
+		_upgrade = "Yes";
+		_color = c_green;
+	} else {
+		_upgrade = "No";
+		_color = c_maroon;
+	}
 
 	switch(popup_subtype) {
 		case oBuildingManager.farm:
 			_curr_build = "Farm";
 			_curr_product = "Product: " + string(global.productivity * build_lvl) + " Food";
-			if(build_lvl < 4) {
-				_upgrade = "Upgradable: Yes";
-			} else {
-				_upgrade = "Upgradable: No";
-			}
 			break;
 		
 		case oBuildingManager.mill:
 			_curr_build = "Mill";
 			_curr_product = "Product: " + string(global.productivity * build_lvl)  + " Wood";
-			if(build_lvl < 4) {
-				_upgrade = "Upgradable: Yes";
-			} else {
-				_upgrade = "Upgradable: No";
-			}
 			break;
 		
 		case oBuildingManager.quarry:
 			_curr_build = "Stone";
 			_curr_product = "Product: " + string(global.productivity * build_lvl)  + " Stone";
-			if(build_lvl < 4) {
-				_upgrade = "Upgradable: Yes";
-			} else {
-				_upgrade = "Upgradable: No";
-			}
 			break;
 			
 		case oBuildingManager.mine:
 			_curr_build = "Mine";
 			_curr_product = "Product: " + string(global.productivity *(build_lvl-1))  + " Metal";
-			if(build_lvl < 4) {
-				_upgrade = "Upgradable: Yes";
-			} else {
-				_upgrade = "Upgradable: No";
-			}
+			
 			break;
 	
 		
@@ -140,9 +183,10 @@ if(popup_type == global.popup_upgrade) {
 			break;
 	}
 	
-	draw_text_ext_transformed(_x_pos+text_x_offset, _y_pos-45, _curr_build, 2, 300, 1, 1, 0);
-	draw_text_ext_transformed(_x_pos+text_x_offset, _y_pos-10, _curr_product, 2, 300, 0.9, 0.9, 0);
-	draw_text_ext_transformed(_x_pos+text_x_offset, _y_pos+20, _upgrade, 2, 300, 0.9, 0.9, 0);
+	draw_text_ext_transformed_color(_x_pos+text_x_offset, _y_pos-45, _curr_build, 5, 500, 1.2,1.2,0, c_blue, c_blue,c_blue,c_blue, 1 );
+	draw_text_ext_transformed_color(_x_pos+text_x_offset, _y_pos-10, _curr_product, 5, 500, 0.9,0.9,0, c_black,c_black,c_black,c_black, 1 );
+	draw_text_ext_transformed_color(_x_pos+text_x_offset-20, _y_pos+20, "Upgradable: ", 5, 500, 0.9,0.9,0, c_black,c_black,c_black,c_black, 1 );
+	draw_text_ext_transformed_color(_x_pos+text_x_offset+45, _y_pos+20, _upgrade, 5, 500, 0.9,0.9,0, _color,_color,_color,_color, 1 );
 
 	
 

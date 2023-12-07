@@ -38,13 +38,18 @@ switch(upgrade_type) {
 	
 		
 	default:
-		draw_text(_x_pos, _y_pos-30, "Error 2");
+		draw_text(x, y-y_offset, "Error 2");
 		break;
 }
-	
-draw_text_ext_transformed(x, y-y_offset-25, _curr_build, 2, 300, 0.65, 0.65, 0);
-draw_text_ext_transformed(x, y-y_offset-10, _curr_lvl, 2, 300, 0.55, 0.55, 0);
-draw_text_ext_transformed(x-15, y-y_offset+15, "Upgrade: ", 2, 300, 0.5, 0.5, 0);
+
+
+draw_text_ext_transformed_color(x, y-y_offset-20, _curr_build, 5, 500,0.8,0.6,0, c_blue,c_blue,c_blue,c_blue, 1 );
+draw_text_ext_transformed_color(x, y-y_offset, _curr_lvl, 5, 500,0.6,0.6,0, c_black,c_black,c_black,c_black, 1 );
+draw_text_ext_transformed_color(x-15, y-y_offset+20, "Upgrade: ",5, 500,0.6,0.6,0, c_black,c_black,c_black,c_black, 1 );
 
 
 		
+if(build_lvl < 4) {
+	draw_sprite(checkbutton, 0, x+20, y-y_offset+25);
+}
+

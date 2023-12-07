@@ -67,7 +67,7 @@ if(mouse_check_button_pressed(mb_left)) {
 		upgrading.build_lvl = build_lvl;
 		upgrading.upgrade_type = build_type;
 		upgrading.upgrade_building = id;
-	} else if(upgrading > 0) {
+	} else if(upgrading > 0 && instance_position(mouse_x, mouse_y, upgrading) != noone) {
 		instance_destroy(upgrading);
 		upgrading = -1;
 	}

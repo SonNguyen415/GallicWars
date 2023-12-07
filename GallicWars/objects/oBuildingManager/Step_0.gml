@@ -46,8 +46,18 @@ if(hovering > 0) {
 				
 				instance_create_layer(mouse_x, mouse_y, "Popup_Layer", oPopup);
 				has_popup = 1;
-				oPopup.popup_type = global.popup_construct;
-				oPopup.popup_subtype = resources;
+				oPopup.popup_type = global.popup_construct
+				
+				if(hovering == 1) {
+					oPopup.popup_subtype = farm;
+				} else if(hovering == 2) {
+					oPopup.popup_subtype = mill;
+				} else if(hovering == 3) {
+					oPopup.popup_subtype = quarry;
+				} else if(hovering == 4) {
+					oPopup.popup_subtype = mine;
+				}
+				
 			}
 		
 			
