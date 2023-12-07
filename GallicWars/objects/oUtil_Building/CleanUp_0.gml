@@ -6,6 +6,7 @@
 switch(build_type) {
 	case oBuildingManager.house:
 		global.tax_income[global.gold] -= global.productivity * build_lvl;
+		instance_create_layer(x, y, "Plots", oPlot);
 		break;
 		
 	

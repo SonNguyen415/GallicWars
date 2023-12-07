@@ -3,3 +3,4 @@
 
 global.tax_income[build_type- oBuildingManager.stable] -= global.productivity*build_lvl;
 
+instance_create_layer(x, y, "Plots", oPlot);
