@@ -117,16 +117,20 @@ if(selected > 0) {
 			break;
 		
 		case resources:
-			
-			if(selected == 1) { // Build Farm
-				building = farm;
-			} else if(selected == 2) { // Build mill
-				building = mill;
-			} else if(selected == 3) { // Build quarry
-				building = quarry;
-			} else if(selected == 4) { // Build mine
-				building = mine;
+			if(global.resources[global.gold] >= global.build_cost && 
+			global.resources[global.wood] >= global.build_cost)  {
+				if(selected == 1) { // Build Farm
+					building = farm;
+				} else if(selected == 2) { // Build mill
+					building = mill;
+				} else if(selected == 3) { // Build quarry
+					building = quarry;
+				} else if(selected == 4) { // Build mine
+					building = mine;
+				}
 			}
+			
+			
 		
 			instance_create_layer(mouse_x, mouse_y, "Build", oC_Building);
 			

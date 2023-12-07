@@ -13,9 +13,15 @@ draw_set_valign(fa_middle);
 
 
 if(popup_type == global.popup_construct) {
+	
 	var _gold_cost = string(global.build_cost) + " Gold";
 	var _wood_cost = string(global.build_cost) + " Wood";
 	var _build_result = "Result: +" + string(global.productivity);
+	
+	var _c_cost = c_maroon;
+	if(global.resources[global.gold] >= global.build_cost && global.resources[global.wood] >= global.build_cost) {
+		_c_cost = c_green;
+	}
 
 	switch(popup_subtype) {
 		case oBuildingManager.farm:
@@ -44,8 +50,8 @@ if(popup_type == global.popup_construct) {
 	}
 	
 	
-	draw_text_ext_transformed_color(_x_pos+text_x_offset, _y_pos - 10, _gold_cost,5, 500, 1,1,0, c_black,c_black,c_black,c_black, 1 );
-	draw_text_ext_transformed_color(_x_pos+text_x_offset, _y_pos + 10, _wood_cost,5, 500, 1,1,0, c_black,c_black,c_black,c_black, 1 );
+	draw_text_ext_transformed_color(_x_pos+text_x_offset, _y_pos - 10, _gold_cost,5, 500, 1,1,0, _c_cost,_c_cost,_c_cost,_c_cost, 1 );
+	draw_text_ext_transformed_color(_x_pos+text_x_offset, _y_pos + 10, _wood_cost,5, 500, 1,1,0, _c_cost,_c_cost,_c_cost,_c_cost, 1 );
 	draw_text_ext_transformed_color(_x_pos+text_x_offset, _y_pos + 35, _build_result,5, 500, 1,1,0, c_black,c_black,c_black,c_black, 1 );
 			
 

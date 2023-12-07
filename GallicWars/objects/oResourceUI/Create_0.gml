@@ -27,8 +27,8 @@ global.wood = 2;
 global.stone = 3;
 global.metal = 4;
 
-global.resources = [100, 100, 100, 100, 100]
-global.tax_income = [5, 0, 0, 0, 0];
+global.resources = [200, 300, 300, 300, 300]
+global.tax_income = [5, 0, 1, 0, 0];
 global.expenses = [0, 0, 0, 0, 0]
 global.balance = [0, 0, 0, 0, 0]
 
