@@ -16,6 +16,9 @@ switch(state) {
 		break;
 		
 	case barracks:
+		for(var _i=0; _i<4; _i++) {
+			draw_sprite(ResourceButtons, _i, x_offset, y_offset+_i*button_offset);
+		}
 		draw_sprite(BackButton, 0, x_offset, y_offset+4*button_offset);
 		break;
 	case resources:

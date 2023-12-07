@@ -91,6 +91,7 @@
     {"id":{"name":"woodIcon","path":"sprites/woodIcon/woodIcon.yy",},},
     {"id":{"name":"barbInfAttack","path":"sprites/barbInfAttack/barbInfAttack.yy",},},
     {"id":{"name":"barbInfWalk","path":"sprites/barbInfWalk/barbInfWalk.yy",},},
+    {"id":{"name":"oBarrack_Building","path":"objects/oBarrack_Building/oBarrack_Building.yy",},},
     {"id":{"name":"barbInfDeath","path":"sprites/barbInfDeath/barbInfDeath.yy",},},
     {"id":{"name":"BarrackSprite","path":"sprites/BarrackSprite/BarrackSprite.yy",},},
     {"id":{"name":"highscore","path":"sprites/highscore/highscore.yy",},},

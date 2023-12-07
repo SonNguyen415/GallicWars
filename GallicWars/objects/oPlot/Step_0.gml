@@ -8,8 +8,14 @@ if(mouse_check_button_pressed(mb_left) &&  position_meeting(mouse_x, mouse_y, id
 	instance_destroy(oC_Building);
 	
 	
-	if(oBuildingManager.building >= oBuildingManager.farm  && oBuildingManager.building <= oBuildingManager.mine) {
+	if(oBuildingManager.building == oBuildingManager.farm  ||
+		oBuildingManager.building == oBuildingManager.mill ||
+		oBuildingManager.building == oBuildingManager.quarry ||
+		oBuildingManager.building == oBuildingManager.mine) {
 		instance_create_layer(x, y, "Instances", oResource_Building);
+	} else if (oBuildingManager.building == oBuildingManager.barrack  ||
+		oBuildingManager.building == oBuildingManager.range) {
+		instance_create_layer(x, y, "Instances", oBarrack_Building);
 	}
 	
 	global.resources[global.gold] -= global.build_cost;

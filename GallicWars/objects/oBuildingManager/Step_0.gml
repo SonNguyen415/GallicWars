@@ -26,43 +26,50 @@ if(_x_pos > x_offset && _x_pos < b_size + x_offset) {
 	hovering = -1;
 }
 
-
+// Destroy popup if we're not hovering and we made the popup
 if(has_popup > 0 && hovering < 0) {
 	has_popup = -1;
 	instance_destroy(oPopup);
 }
 
-if(hovering > 0) {
+
+// Show building cost 
+if(hovering > 0 && has_popup < 1) {
+	instance_create_layer(mouse_x, mouse_y, "Popup_Layer", oPopup);
+	has_popup = 1;
+	oPopup.popup_type = global.popup_construct;
+				
 	switch(state) {
 		
 		case barracks:
+			if(hovering == 1) { // Build Barrack
+				oPopup.popup_subtype = barrack;
+			} else if(hovering == 2) { // Build archer range
+				oPopup.popup_subtype = range;
+			} else {
+				instance_destroy(oPopup);
+			}
 			break;
 		
 		case resources:
-		
-			// Show building cost. All resources building cost the same
-			if(has_popup < 1) {
-				
-				instance_create_layer(mouse_x, mouse_y, "Popup_Layer", oPopup);
-				has_popup = 1;
-				oPopup.popup_type = global.popup_construct
-				
-				if(hovering == 1) {
-					oPopup.popup_subtype = farm;
-				} else if(hovering == 2) {
-					oPopup.popup_subtype = mill;
-				} else if(hovering == 3) {
-					oPopup.popup_subtype = quarry;
-				} else if(hovering == 4) {
-					oPopup.popup_subtype = mine;
-				}
-				
+	
+			if(hovering == 1) {
+				oPopup.popup_subtype = farm;
+			} else if(hovering == 2) {
+				oPopup.popup_subtype = mill;
+			} else if(hovering == 3) {
+				oPopup.popup_subtype = quarry;
+			} else if(hovering == 4) {
+				oPopup.popup_subtype = mine;
+			} else {
+				instance_destroy(oPopup);
 			}
-		
+	
 			
 			break;
 		
 		default:
+			instance_destroy(oPopup);
 			break;
 	}	
 }
@@ -114,6 +121,15 @@ if(selected > 0) {
 			break;
 		
 		case barracks:
+			if(global.resources[global.gold] >= global.build_cost && 
+				global.resources[global.wood] >= global.build_cost)  {
+				if(selected == 1) { // Build Farm
+					building = barrack;
+				} else if(selected == 2) { // Build mill
+					building = range;
+				} 
+			}
+			instance_create_layer(mouse_x, mouse_y, "Build", oC_Building);
 			break;
 		
 		case resources:
@@ -129,9 +145,7 @@ if(selected > 0) {
 					building = mine;
 				}
 			}
-			
-			
-		
+
 			instance_create_layer(mouse_x, mouse_y, "Build", oC_Building);
 			
 			break;

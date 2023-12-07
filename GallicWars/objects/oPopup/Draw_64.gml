@@ -16,33 +16,59 @@ if(popup_type == global.popup_construct) {
 	
 	var _gold_cost = string(global.build_cost) + " Gold";
 	var _wood_cost = string(global.build_cost) + " Wood";
-	var _build_result = "Result: +" + string(global.productivity);
+	var _build_result = "Result: " 
+	
 	
 	var _c_cost = c_maroon;
 	if(global.resources[global.gold] >= global.build_cost && global.resources[global.wood] >= global.build_cost) {
 		_c_cost = c_green;
 	}
+	var _c_offset = 0;
+	
 
 	switch(popup_subtype) {
 		case oBuildingManager.farm:
-			_build_result += " Food";
+			_build_result += "+" + string(global.productivity) + " Food";
 			draw_text_ext_transformed_color(_x_pos+text_x_offset, _y_pos - 50, "Farm",5, 500,1.2,1.2,0, c_blue,c_blue,c_blue,c_blue, 1 );
+			draw_text_ext_transformed_color(_x_pos+text_x_offset, _y_pos + 35, _build_result,5, 500, 1,1,0, c_black,c_black,c_black,c_black, 1 );
 			break;
 			
 		case oBuildingManager.mill:
-			_build_result += " Wood";
+			_build_result += "+" + string(global.productivity) + " Wood";
 			draw_text_ext_transformed_color(_x_pos+text_x_offset, _y_pos - 50, "Mill",5, 500,1.2,1.2,0, c_blue,c_blue,c_blue,c_blue, 1 );
+			draw_text_ext_transformed_color(_x_pos+text_x_offset, _y_pos + 35, _build_result,5, 500, 1,1,0, c_black,c_black,c_black,c_black, 1 );
 			break;
 			
 		case oBuildingManager.quarry:
-			_build_result += " Stone";
+			_build_result += "+" + string(global.productivity) + " Stone";
 			draw_text_ext_transformed_color(_x_pos+text_x_offset, _y_pos - 50, "Quarry",5, 500,1.2,1.2,0, c_blue,c_blue,c_blue,c_blue, 1 );
+			draw_text_ext_transformed_color(_x_pos+text_x_offset, _y_pos + 35, _build_result,5, 500, 1,1,0, c_black,c_black,c_black,c_black, 1 );
 			break;
 		
 		case oBuildingManager.mine:
-			_build_result += " Metal";
+			_build_result += "+" + string(global.productivity) + " Metal";
 			draw_text_ext_transformed_color(_x_pos+text_x_offset, _y_pos - 50, "Mine",5, 500,1.2,1.2,0, c_blue,c_blue,c_blue,c_blue, 1 );
+			draw_text_ext_transformed_color(_x_pos+text_x_offset, _y_pos + 35, _build_result,5, 500, 1,1,0, c_black,c_black,c_black,c_black, 1 );
 			break;
+		
+		case oBuildingManager.barrack:
+	
+			draw_text_ext_transformed_color(_x_pos+text_x_offset, _y_pos - 55, "Barrack",5, 500,1.1,1.1,0, c_blue,c_blue,c_blue,c_blue, 1 );
+			_c_offset = -10;
+			draw_text_ext_transformed_color(_x_pos+text_x_offset, _y_pos + 30, _build_result,5, 500, 1,1,0, c_black,c_black,c_black,c_black, 1 );
+			draw_text_ext_transformed_color(_x_pos+text_x_offset, _y_pos + 50, "Recruit Legions",5, 500, 0.8,0.8,0, c_black,c_black,c_black,c_black, 1 );
+		
+			break;
+		
+		case oBuildingManager.range:
+			draw_text_ext_transformed_color(_x_pos+text_x_offset, _y_pos - 60, "Skirmisher",5, 500,1.2,1.2,0, c_blue,c_blue,c_blue,c_blue, 1 );
+			draw_text_ext_transformed_color(_x_pos+text_x_offset, _y_pos - 42, "Range",5, 500,1.2,1.2,0, c_blue,c_blue,c_blue,c_blue, 1 );
+			_c_offset = -5;
+			draw_text_ext_transformed_color(_x_pos+text_x_offset, _y_pos + 30, _build_result,5, 500, 1,1,0, c_black,c_black,c_black,c_black, 1 );
+			draw_text_ext_transformed_color(_x_pos+text_x_offset, _y_pos + 55, "Recruit Skirmishers",5, 500, 0.8,0.8,0, c_black,c_black,c_black,c_black, 1 );
+		
+			break;
+		
 		
 		default:
 			draw_text(_x_pos+text_x_offset, _y_pos-30, "Error 0");
@@ -50,9 +76,9 @@ if(popup_type == global.popup_construct) {
 	}
 	
 	
-	draw_text_ext_transformed_color(_x_pos+text_x_offset, _y_pos - 10, _gold_cost,5, 500, 1,1,0, _c_cost,_c_cost,_c_cost,_c_cost, 1 );
-	draw_text_ext_transformed_color(_x_pos+text_x_offset, _y_pos + 10, _wood_cost,5, 500, 1,1,0, _c_cost,_c_cost,_c_cost,_c_cost, 1 );
-	draw_text_ext_transformed_color(_x_pos+text_x_offset, _y_pos + 35, _build_result,5, 500, 1,1,0, c_black,c_black,c_black,c_black, 1 );
+	draw_text_ext_transformed_color(_x_pos+text_x_offset, _y_pos+_c_offset - 10, _gold_cost,5, 500, 1,1,0, _c_cost,_c_cost,_c_cost,_c_cost, 1 );
+	draw_text_ext_transformed_color(_x_pos+text_x_offset, _y_pos+_c_offset + 10, _wood_cost,5, 500, 1,1,0, _c_cost,_c_cost,_c_cost,_c_cost, 1 );
+
 			
 
 }
@@ -193,7 +219,6 @@ if(popup_type == global.popup_upgrade && build_lvl > 0) {
 			_curr_build = "Mine";
 			_curr_product = "Product: " + string(global.productivity *(build_lvl-1))  + " Metal";
 			_curr_health = "HP: " + string(building_health) + " / " + string(oResource_Building.max_health);
-			
 			break;
 	
 		
@@ -202,12 +227,15 @@ if(popup_type == global.popup_upgrade && build_lvl > 0) {
 			break;
 	}
 	
-	draw_text_ext_transformed_color(_x_pos+text_x_offset, _y_pos-65, _curr_build, 5, 500, 1.2,1.2,0, c_blue, c_blue,c_blue,c_blue, 1 );
-	draw_text_ext_transformed_color(_x_pos+text_x_offset, _y_pos-36, _curr_product, 5, 500, 0.9,0.9,0, c_black,c_black,c_black,c_black, 1 );
-	draw_text_ext_transformed_color(_x_pos+text_x_offset, _y_pos-10, _curr_health, 5, 500, 0.9,0.9,0, c_maroon,c_maroon,c_maroon,c_maroon, 1 );
-	draw_text_ext_transformed_color(_x_pos+text_x_offset, _y_pos+15, "Upgrade Cost", 5, 500, 0.9,0.9,0, c_black,c_black,c_black,c_black, 1 );
-	draw_text_ext_transformed_color(_x_pos+text_x_offset, _y_pos+40, _upgrade0, 5, 500, 0.9,0.9,0, _color,_color,_color,_color, 1 );
-	draw_text_ext_transformed_color(_x_pos+text_x_offset, _y_pos+60, _upgrade1, 5, 500, 0.9,0.9,0, _color,_color,_color,_color, 1 );
+	if(popup_subtype == oBuildingManager.farm || popup_subtype == oBuildingManager.mill || popup_subtype == oBuildingManager.quarry || popup_subtype == oBuildingManager.mine) {
+		draw_text_ext_transformed_color(_x_pos+text_x_offset, _y_pos-65, _curr_build, 5, 500, 1.2,1.2,0, c_blue, c_blue,c_blue,c_blue, 1 );
+		draw_text_ext_transformed_color(_x_pos+text_x_offset, _y_pos-36, _curr_product, 5, 500, 0.9,0.9,0, c_black,c_black,c_black,c_black, 1 );
+		draw_text_ext_transformed_color(_x_pos+text_x_offset, _y_pos-10, _curr_health, 5, 500, 0.9,0.9,0, c_maroon,c_maroon,c_maroon,c_maroon, 1 );
+		draw_text_ext_transformed_color(_x_pos+text_x_offset, _y_pos+15, "Upgrade Cost", 5, 500, 0.9,0.9,0, c_black,c_black,c_black,c_black, 1 );
+		draw_text_ext_transformed_color(_x_pos+text_x_offset, _y_pos+40, _upgrade0, 5, 500, 0.9,0.9,0, _color,_color,_color,_color, 1 );
+		draw_text_ext_transformed_color(_x_pos+text_x_offset, _y_pos+60, _upgrade1, 5, 500, 0.9,0.9,0, _color,_color,_color,_color, 1 );
+
+	}
 
 	
 

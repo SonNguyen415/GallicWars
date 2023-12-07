@@ -66,6 +66,7 @@
     {"name":"oUpgrade","order":1,"path":"objects/oUpgrade/oUpgrade.yy",},
     {"name":"barbInfAttack","order":3,"path":"sprites/barbInfAttack/barbInfAttack.yy",},
     {"name":"barbInfWalk","order":3,"path":"sprites/barbInfWalk/barbInfWalk.yy",},
+    {"name":"oBarrack_Building","order":4,"path":"objects/oBarrack_Building/oBarrack_Building.yy",},
     {"name":"barbInfDeath","order":3,"path":"sprites/barbInfDeath/barbInfDeath.yy",},
     {"name":"BarrackSprite","order":3,"path":"sprites/BarrackSprite/BarrackSprite.yy",},
     {"name":"stoneWater","order":3,"path":"tilesets/stoneWater/stoneWater.yy",},
