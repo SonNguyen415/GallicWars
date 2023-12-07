@@ -18,6 +18,9 @@ global.build_cost = 50;
 global.upgrade_cost = 25;
 global.productivity = 5;
 
+// Recruitment cost
+global.maintain_cost = 1;
+global.recruit_cost = 10;
 
 
 // Just some id

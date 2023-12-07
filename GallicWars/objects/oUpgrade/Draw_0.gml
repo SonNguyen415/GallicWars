@@ -35,24 +35,48 @@ switch(upgrade_type) {
 		_curr_build = "Mine";
 		_curr_lvl = "Level: " + string(build_lvl);
 		break;
+		
+	case oBuildingManager.barrack:
+		_curr_build = "Barrack";
+		_curr_lvl = "Level: " + string(build_lvl);
+		break;
 	
+	case oBuildingManager.range:
+		_curr_build = "Skirmish Range";
+		_curr_lvl = "Level: " + string(build_lvl);
+		break;
 		
 	default:
 		draw_text(x, y-y_offset, "Error 2");
 		break;
 }
 
+if(upgrade_type == oBuildingManager.barrack || upgrade_type == oBuildingManager.range) {
+	draw_text_ext_transformed_color(x, y-y_offset-30, _curr_build, 5, 500,0.6,0.6,0, c_blue,c_blue,c_blue,c_blue, 1 );
+	draw_text_ext_transformed_color(x, y-y_offset-15, _curr_lvl, 5, 500,0.5,0.5,0, c_black,c_black,c_black,c_black, 1 );
+	draw_text_ext_transformed_color(x-15, y-y_offset+5, "Upgrade:", 5, 500,0.5,0.5,0, c_black,c_black,c_black,c_black, 1 );
+		
+	var _curr_cost = build_lvl*global.upgrade_cost+global.build_cost;
+	if(build_lvl < 4 && 
+	global.resources[global.wood] >= _curr_cost && global.resources[global.gold] >= _curr_cost) {
+		draw_sprite(checkbutton, 0, x+20, y-y_offset+10);
+	} else {
+		draw_sprite(checkbutton, 1, x+20, y-y_offset+10);
+	}
 
-draw_text_ext_transformed_color(x, y-y_offset-20, _curr_build, 5, 500,0.8,0.6,0, c_blue,c_blue,c_blue,c_blue, 1 );
-draw_text_ext_transformed_color(x, y-y_offset, _curr_lvl, 5, 500,0.6,0.6,0, c_black,c_black,c_black,c_black, 1 );
-draw_text_ext_transformed_color(x-15, y-y_offset+20, "Upgrade: ",5, 500,0.6,0.6,0, c_black,c_black,c_black,c_black, 1 );
-
-
-var _curr_cost = build_lvl*global.upgrade_cost+global.build_cost;
-if(build_lvl < 4 && 
-global.resources[global.wood] >= _curr_cost && global.resources[global.gold] >= _curr_cost) {
-	draw_sprite(checkbutton, 0, x+20, y-y_offset+25);
 } else {
-	draw_sprite(checkbutton, 1, x+20, y-y_offset+25);
+	draw_text_ext_transformed_color(x, y-y_offset-20, _curr_build, 5, 500,0.8,0.6,0, c_blue,c_blue,c_blue,c_blue, 1 );
+	draw_text_ext_transformed_color(x, y-y_offset, _curr_lvl, 5, 500,0.6,0.6,0, c_black,c_black,c_black,c_black, 1 );
+	draw_text_ext_transformed_color(x-15, y-y_offset+20, "Upgrade: ",5, 500,0.6,0.6,0, c_black,c_black,c_black,c_black, 1 );
+	
+	var _curr_cost = build_lvl*global.upgrade_cost+global.build_cost;
+	if(build_lvl < 4 && 
+	global.resources[global.wood] >= _curr_cost && global.resources[global.gold] >= _curr_cost) {
+		draw_sprite(checkbutton, 0, x+20, y-y_offset+25);
+	} else {
+		draw_sprite(checkbutton, 1, x+20, y-y_offset+25);
+	}
+
 }
+
 

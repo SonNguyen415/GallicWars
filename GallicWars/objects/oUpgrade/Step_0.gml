@@ -11,15 +11,24 @@ var _curr_cost = build_lvl*global.upgrade_cost+global.build_cost;
 
 if(build_lvl < 4 && mouse_check_button_pressed(mb_left) &&
 global.resources[global.wood] >= _curr_cost && global.resources[global.gold] >= _curr_cost) {
-	
-	if(mouse_x > x+10 && mouse_x < x+10+upgrade_btn_sz && 
-	mouse_y > y-50 && mouse_y < y-50+upgrade_btn_sz) {
-		build_lvl++;
-		upgrade_building.build_lvl++;
-		upgrade_building.recent_upgraded = true;
-		global.resources[global.wood] -= _curr_cost;
-		global.resources[global.gold] -=_curr_cost;
-		
+	if(upgrade_type == oBuildingManager.barrack || upgrade_type == oBuildingManager.range) {
+		if(mouse_x > x+10 && mouse_x < x+10+upgrade_btn_sz && 
+		mouse_y > y-65 && mouse_y < y-65+upgrade_btn_sz) {
+			build_lvl++;
+			upgrade_building.build_lvl++;
+			upgrade_building.recent_upgraded = true;
+			global.resources[global.wood] -= _curr_cost;
+			global.resources[global.gold] -=_curr_cost;
+		}
+	} else {
+		if(mouse_x > x+10 && mouse_x < x+10+upgrade_btn_sz && 
+		mouse_y > y-50 && mouse_y < y-50+upgrade_btn_sz) {
+			build_lvl++;
+			upgrade_building.build_lvl++;
+			upgrade_building.recent_upgraded = true;
+			global.resources[global.wood] -= _curr_cost;
+			global.resources[global.gold] -=_curr_cost;
+		}
 	}
 
 }
