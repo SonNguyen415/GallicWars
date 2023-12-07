@@ -16,8 +16,8 @@
     "path": "folders/Tile Sets.yy",
   },
   "spriteId": {
-    "name": "PropTiles",
-    "path": "sprites/PropTiles/PropTiles.yy",
+    "name": "PropTiles57",
+    "path": "sprites/PropTiles57/PropTiles57.yy",
   },
   "spriteNoExport": false,
   "textureGroupId": {
