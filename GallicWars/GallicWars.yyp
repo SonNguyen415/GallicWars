@@ -81,6 +81,7 @@
     {"id":{"name":"buttons","path":"sprites/buttons/buttons.yy",},},
     {"id":{"name":"back","path":"sprites/back/back.yy",},},
     {"id":{"name":"UtilityButtons","path":"sprites/UtilityButtons/UtilityButtons.yy",},},
+    {"id":{"name":"oUtil_Building","path":"objects/oUtil_Building/oUtil_Building.yy",},},
     {"id":{"name":"oBarb","path":"objects/oBarb/oBarb.yy",},},
     {"id":{"name":"Props","path":"tilesets/Props/Props.yy",},},
     {"id":{"name":"oPlot","path":"objects/oPlot/oPlot.yy",},},

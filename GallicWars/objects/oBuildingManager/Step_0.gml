@@ -64,9 +64,13 @@ if(hovering > 0 && has_popup < 1) {
 			} else {
 				instance_destroy(oPopup);
 			}
-	
-			
 			break;
+		
+		
+		case util:
+			if(hovering == 1) {
+				oPopup.popup_subtype = house;
+			}
 		
 		default:
 			instance_destroy(oPopup);

@@ -18,12 +18,12 @@ if(mouse_check_button_pressed(mb_left) &&  position_meeting(mouse_x, mouse_y, id
 		oBuildingManager.building == oBuildingManager.range) {
 		instance_create_layer(x, y, "Instances", oBarrack_Building);
 		mp_grid_add_instances(oGridManager.grid, oBarrack_Building, false);
+	} else if (oBuildingManager.building == oBuildingManager.house) {
+		instance_create_layer(x, y, "Instances", oUtil_Building);
+		mp_grid_add_instances(oGridManager.grid, oUtil_Building, false);
 	}
 	
-	global.resources[global.gold] -= global.build_cost;
-	global.resources[global.wood] -= global.build_cost;
 	
-	// Reset construction and remove the plot
-	oBuildingManager.building = 0;
+	// Remove the plot
 	instance_destroy();
 }

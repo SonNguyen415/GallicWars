@@ -59,6 +59,7 @@
     {"name":"buttons","order":7,"path":"sprites/buttons/buttons.yy",},
     {"name":"back","order":8,"path":"sprites/back/back.yy",},
     {"name":"UtilityButtons","order":8,"path":"sprites/UtilityButtons/UtilityButtons.yy",},
+    {"name":"oUtil_Building","order":5,"path":"objects/oUtil_Building/oUtil_Building.yy",},
     {"name":"oBarb","order":1,"path":"objects/oBarb/oBarb.yy",},
     {"name":"Props","order":5,"path":"tilesets/Props/Props.yy",},
     {"name":"oPlot","order":3,"path":"objects/oPlot/oPlot.yy",},
