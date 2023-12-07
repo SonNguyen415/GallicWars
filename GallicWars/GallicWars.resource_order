@@ -54,7 +54,7 @@
     {"name":"BackButton","order":2,"path":"sprites/BackButton/BackButton.yy",},
     {"name":"buttons","order":7,"path":"sprites/buttons/buttons.yy",},
     {"name":"back","order":8,"path":"sprites/back/back.yy",},
-    {"name":"oBarb_Infantry","order":1,"path":"objects/oBarb_Infantry/oBarb_Infantry.yy",},
+    {"name":"oBarb","order":1,"path":"objects/oBarb/oBarb.yy",},
     {"name":"oPlot","order":3,"path":"objects/oPlot/oPlot.yy",},
     {"name":"checkbutton","order":6,"path":"sprites/checkbutton/checkbutton.yy",},
     {"name":"Title","order":1,"path":"rooms/Title/Title.yy",},
@@ -86,6 +86,6 @@
     {"name":"Tree","order":4,"path":"sprites/Tree/Tree.yy",},
     {"name":"grassWaterTileMap","order":1,"path":"sprites/grassWaterTileMap/grassWaterTileMap.yy",},
     {"name":"Num","order":1,"path":"sprites/Num/Num.yy",},
-    {"name":"oRome_Infantry","order":1,"path":"objects/oRome_Infantry/oRome_Infantry.yy",},
+    {"name":"oRome","order":1,"path":"objects/oRome/oRome.yy",},
   ],
 }

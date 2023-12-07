@@ -7,7 +7,7 @@ if (troop_health <= 0) {
 }
 
 
-if (!path_exists(path_index) && !place_meeting(x,y,oBarb_Infantry)) {
+if (!path_exists(path_index) && !place_meeting(x,y,oBarb)) {
 	sprite_index = romeInfIdle;
 }
 
