@@ -61,13 +61,16 @@ if(hovering > 0 && has_popup < 0) {
 // If hovering, then on click we invoke upgrade
 
 if(mouse_check_button_pressed(mb_left)) {
+	
 	if(hovering > 0 && upgrading < 0) {
 
 		upgrading = instance_create_layer(x, y, "Popup_Layer", oUpgrade);
 		upgrading.build_lvl = build_lvl;
 		upgrading.upgrade_type = build_type;
 		upgrading.upgrade_building = id;
-	} else if(upgrading > 0 && instance_position(mouse_x, mouse_y, upgrading) != noone) {
+	} else if(upgrading > 0 &&
+		(mouse_x < x-96/2 ||  mouse_x > x+96/2 ||
+				mouse_y < y-96 || mouse_y > y)) {
 		instance_destroy(upgrading);
 		upgrading = -1;
 	}

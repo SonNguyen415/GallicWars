@@ -20,7 +20,6 @@ show_debug_message("------------------------------------------------------------
 
 // Check if you're hovering
 if(_y_pos > y_offset && _y_pos < y_offset+30) {
-	show_debug_message("X: " + string(_x_pos) + " | Y: " + string(_y_pos));
 	if(_x_pos > x_offset && _x_pos <x_offset+card_sz) {
 		hovering = 0;
 	} else if(_x_pos > x_offset+(card_gap+card_sz) && _x_pos < x_offset+card_gap+card_sz*2) {

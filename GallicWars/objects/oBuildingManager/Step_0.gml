@@ -30,7 +30,6 @@ if(_x_pos > x_offset && _x_pos < b_size + x_offset) {
 if(has_popup > 0 && hovering < 0) {
 	has_popup = -1;
 	instance_destroy(oPopup);
-	show_debug_message("--------------------------");
 }
 
 if(hovering > 0) {
