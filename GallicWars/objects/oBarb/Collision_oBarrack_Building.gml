@@ -3,7 +3,7 @@
 
 speed = 0;
 
-sprite_index = barbInfAttack;
+
 
 if (target == noone) {
 	target = other;
@@ -14,7 +14,8 @@ if (target == noone) {
 	}
 }
 
-if (target == other && combat == false) {
+if (target == other && combat == false && dead == false) {
+	sprite_index = barbInfAttack;
 	combat = true;
 	other.building_health -= clamp(troop_attack, 1, other.building_health);
 	alarm[0]= room_speed;

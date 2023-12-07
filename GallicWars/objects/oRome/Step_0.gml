@@ -3,11 +3,12 @@
 
 if (troop_health <= 0) {
 	sprite_index = romeInfDeath;
-	instance_destroy();
+	image_speed = .4;
+	dead = true;
 }
 
 
-if (!path_exists(path_index) && !place_meeting(x,y,oBarb)) {
+if (!path_exists(path_index) && !place_meeting(x,y,oBarb) && dead == false) {
 	sprite_index = romeInfIdle;
 }
 

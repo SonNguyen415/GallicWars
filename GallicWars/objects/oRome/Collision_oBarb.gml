@@ -3,8 +3,6 @@
 
 path_end();
 
-sprite_index = romeInfAttack;
-
 if (target == noone) {
 	target = other;
 	if (target.x > x) {
@@ -14,7 +12,8 @@ if (target == noone) {
 	}
 }
 
-if (target == other && combat == false) {
+if (target == other && combat == false && dead == false) {
+	sprite_index = romeInfAttack;
 	combat = true;
 	other.troop_health -= clamp(troop_attack - other.troop_defense, 1, other.troop_health);
 	alarm[0]= room_speed;
