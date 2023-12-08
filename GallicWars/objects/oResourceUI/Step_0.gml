@@ -54,3 +54,7 @@ if(hovering >= 0 && has_popup < 0) {
 	oPopup.popup_subtype = hovering;
 	has_popup = 1;
 } 
+
+if(global.resources[FOOD] <= 0) {
+	global.curr_game = LOSE;	
+}

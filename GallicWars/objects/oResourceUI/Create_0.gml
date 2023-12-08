@@ -31,7 +31,7 @@ has_popup = -1;
 #macro STONE 3
 #macro METAL 4
 
-#macro TAX_RATE 200
+#macro TAX_RATE 100
 
 
 global.resources = [200, 300, 300, 100, 100]
