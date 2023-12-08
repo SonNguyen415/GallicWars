@@ -106,6 +106,7 @@
     {"name":"barbArcherWalk","order":16,"path":"sprites/barbArcherWalk/barbArcherWalk.yy",},
     {"name":"title","order":10,"path":"sprites/title/title.yy",},
     {"name":"stoneWater","order":3,"path":"tilesets/stoneWater/stoneWater.yy",},
+    {"name":"Script2","order":1,"path":"scripts/Script2/Script2.yy",},
     {"name":"archerWalk","order":12,"path":"sprites/archerWalk/archerWalk.yy",},
     {"name":"grassStone","order":2,"path":"tilesets/grassStone/grassStone.yy",},
     {"name":"woodWall","order":1,"path":"sprites/woodWall/woodWall.yy",},

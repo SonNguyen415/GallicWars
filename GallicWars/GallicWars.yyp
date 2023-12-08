@@ -134,6 +134,7 @@
     {"id":{"name":"barbArcherWalk","path":"sprites/barbArcherWalk/barbArcherWalk.yy",},},
     {"id":{"name":"title","path":"sprites/title/title.yy",},},
     {"id":{"name":"stoneWater","path":"tilesets/stoneWater/stoneWater.yy",},},
+    {"id":{"name":"Script2","path":"scripts/Script2/Script2.yy",},},
     {"id":{"name":"archerWalk","path":"sprites/archerWalk/archerWalk.yy",},},
     {"id":{"name":"grassStone","path":"tilesets/grassStone/grassStone.yy",},},
     {"id":{"name":"woodWall","path":"sprites/woodWall/woodWall.yy",},},
