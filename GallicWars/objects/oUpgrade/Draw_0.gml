@@ -83,16 +83,16 @@ if(upgrade_type == BARRACK || upgrade_type == RANGE || upgrade_type == STABLE) {
 	// Recruit unit
 	draw_text_ext_transformed_color(x-15, y-y_offset+30, "Recruit:", 5, 500,0.5,0.5,0, c_black,c_black,c_black,c_black, 1 );
 	
-	if(upgrade_type == STABLE {
+	if(upgrade_type == STABLE) {
 		
-		if(global.resources[GOLD] >= CAV_RECRUIT_COST && global.resources[METAL] >= CAV_RECRUIT_COST) {
+		if(global.resources[GOLD] >= CAV_RECRUIT_COST*build_lvl && global.resources[METAL] >= RECRUIT_COST*build_lvl) {
 			draw_sprite(checkbutton, 0, x+20, y-y_offset+35);
 		}else {
 			draw_sprite(checkbutton, 1, x+20, y-y_offset+35);
 		}
 	
 	} else {
-			if(global.resources[GOLD] >= RECRUIT_COST && global.resources[METAL] >= RECRUIT_COST) {
+			if(global.resources[GOLD] >= RECRUIT_COST*build_lvl && global.resources[METAL] >= RECRUIT_COST*build_lvl) {
 				draw_sprite(checkbutton, 0, x+20, y-y_offset+35);
 			}	else {
 				draw_sprite(checkbutton, 1, x+20, y-y_offset+35);
