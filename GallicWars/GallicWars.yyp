@@ -90,6 +90,7 @@
     {"id":{"name":"farmTile","path":"sprites/farmTile/farmTile.yy",},},
     {"id":{"name":"Credits","path":"rooms/Credits/Credits.yy",},},
     {"id":{"name":"barbCavWalk","path":"sprites/barbCavWalk/barbCavWalk.yy",},},
+    {"id":{"name":"unitLevel","path":"sprites/unitLevel/unitLevel.yy",},},
     {"id":{"name":"oCity_Hall","path":"objects/oCity_Hall/oCity_Hall.yy",},},
     {"id":{"name":"quarryTile","path":"sprites/quarryTile/quarryTile.yy",},},
     {"id":{"name":"grassPlot","path":"sprites/grassPlot/grassPlot.yy",},},

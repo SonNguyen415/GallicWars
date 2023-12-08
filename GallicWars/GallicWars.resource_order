@@ -70,6 +70,7 @@
     {"name":"ret_btn","order":5,"path":"objects/ret_btn/ret_btn.yy",},
     {"name":"Credits","order":2,"path":"rooms/Credits/Credits.yy",},
     {"name":"barbCavWalk","order":25,"path":"sprites/barbCavWalk/barbCavWalk.yy",},
+    {"name":"unitLevel","order":29,"path":"sprites/unitLevel/unitLevel.yy",},
     {"name":"quarryTile","order":2,"path":"sprites/quarryTile/quarryTile.yy",},
     {"name":"grassPlot","order":5,"path":"sprites/grassPlot/grassPlot.yy",},
     {"name":"barbCavDeath","order":27,"path":"sprites/barbCavDeath/barbCavDeath.yy",},
