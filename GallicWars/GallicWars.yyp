@@ -142,6 +142,7 @@
     {"id":{"name":"barbArcher","path":"sprites/barbArcher/barbArcher.yy",},},
     {"id":{"name":"BackgroundSprite","path":"sprites/BackgroundSprite/BackgroundSprite.yy",},},
     {"id":{"name":"credits","path":"sprites/credits/credits.yy",},},
+    {"id":{"name":"stable","path":"sprites/stable/stable.yy",},},
     {"id":{"name":"goldIcon","path":"sprites/goldIcon/goldIcon.yy",},},
     {"id":{"name":"cavalryAttack","path":"sprites/cavalryAttack/cavalryAttack.yy",},},
     {"id":{"name":"houses","path":"sprites/houses/houses.yy",},},
