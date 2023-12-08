@@ -103,6 +103,34 @@ if(upgrading > 0 && mouse_check_button_pressed(mb_right)) {
 
 // Recruiting
 if(recruiting) {
-	show_message("recruited");
-	recruiting = false;	
+	if (place_meeting(x, y - sprite_height, oBarrack_Building) || place_meeting(x, y - sprite_height, oPlot) || place_meeting(x, y - sprite_height, oResource_Building) || place_meeting(x, y - sprite_height, oUtil_Building)) {
+		if (instance_position(x, y + sprite_height, all)) {
+			recruiting = false;	
+		} else {
+			new_troop = instance_create_layer(x, y + sprite_height, "Instances", oRome);
+		}
+	} else {
+		if (instance_position(x, y - sprite_height, all)) {
+			recruiting = false;	
+		} else {
+			new_troop = instance_create_layer(x, y - sprite_height, "Instances", oRome);
+		}
+	}
+	if (recruiting != false) {
+		new_troop.tier = build_lvl;
+		new_troop.troop_health = 100 * new_troop.tier;
+		new_troop.troop_defense = 4 * new_troop.tier;
+		new_troop.troop_attack = 8 * new_troop.tier;
+		switch(build_type) {
+			case BARRACK:
+				new_troop.troop_type = "Infantry";
+				break;
+			case RANGE:
+				new_troop.troop_type = "Archer";
+			case STABLE:
+				new_troop.troop_type = "Cavalry";
+				new_troop.troop_speed *= 1.5;
+		}
+		recruiting = false;
+	}
 }
