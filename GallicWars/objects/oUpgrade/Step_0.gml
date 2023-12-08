@@ -28,8 +28,7 @@ global.resources[WOOD] >= _curr_cost && global.resources[GOLD] >= _curr_cost) {
 	if(mouse_check_button_pressed(mb_left) &&
 		mouse_x > x+10 && mouse_x < x+10+upgrade_btn_sz && 
 		mouse_y > y-40 && mouse_y < y-40+upgrade_btn_sz ) {
-		// Recruit soldier (need to check and look for blank spot	
-		show_message("Recruiting");
+		upgrade_building.recruiting = true;
 	}
 		
 } else { // Otherwise you can only upgrade these
@@ -47,18 +46,6 @@ global.resources[WOOD] >= _curr_cost && global.resources[GOLD] >= _curr_cost) {
 	}
 
 }
-
-
-// Recruit if is barrack
-/*
-
-if(global.resources[global.gold] >= global.recruit_cost && global.resources[global.metal] >= global.recruit_cost) {
-	global.resources[global.gold] -= global.recruit_cost;
-	global.resources[global.metal] -= global.recruit_cost;
-		
-	// Recruit soldier (need to check and look for blank spot
-}
-*/
 
 
 image_alpha = 0.9;

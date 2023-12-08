@@ -9,6 +9,8 @@ upgrading = -1;
 recent_upgraded = false;
 build_lvl = 1;
 
+recruiting = false;
+
 
 
 // Build cost

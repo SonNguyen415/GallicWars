@@ -99,3 +99,10 @@ if(upgrading > 0 && mouse_check_button_pressed(mb_right)) {
 	instance_destroy(upgrading);
 	upgrading = -1;
 }
+
+
+// Recruiting
+if(recruiting) {
+	show_message("recruited");
+	recruiting = false;	
+}
