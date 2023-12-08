@@ -5,7 +5,7 @@
 
 switch(build_type) {
 	case HOUSE:
-		global.tax_income[global.gold] -= global.productivity * build_lvl;
+		global.tax_income[GOLD] -= PRODUCTIVITY * build_lvl;
 		instance_create_layer(x, y, "Plots", oPlot);
 		break;
 		

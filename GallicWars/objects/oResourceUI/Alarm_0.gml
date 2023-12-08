@@ -10,4 +10,4 @@ for(var _i=0; _i<5; _i++) {
 	global.resources[_i] = clamp(global.resources[_i], 0, 9999);
 }
 
-alarm_set(0, global.tax_rate);
+alarm_set(0, TAX_RATE);

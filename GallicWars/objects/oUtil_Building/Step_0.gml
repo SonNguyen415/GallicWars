@@ -24,7 +24,7 @@ if(recent_upgraded) {
 	image_index = build_lvl-1;
 	switch(build_type) {
 		case HOUSE:
-			global.tax_income[global.gold] += global.productivity;
+			global.tax_income[GOLD] += PRODUCTIVITY;
 			break;
 		
 	
@@ -59,7 +59,7 @@ if(hovering > 0) {
 		instance_destroy(oPopup);
 				
 		instance_create_layer(mouse_x, mouse_y, "Popup_Layer", oPopup);
-		oPopup.popup_type = global.popup_upgrade;
+		oPopup.popup_type = POPUP_UPGRADE;
 		oPopup.popup_subtype = build_type;
 		oPopup.build_lvl = build_lvl;
 		oPopup.building_health = building_health;
@@ -68,7 +68,7 @@ if(hovering > 0) {
 			
 	} else if(has_popup < 0) {  // If we have no popup yet, make new one
 		instance_create_layer(mouse_x, mouse_y, "Popup_Layer", oPopup);
-		oPopup.popup_type = global.popup_upgrade;
+		oPopup.popup_type = POPUP_UPGRADE;
 		oPopup.popup_subtype = build_type;
 		oPopup.build_lvl = build_lvl;
 		oPopup.building_health = building_health;

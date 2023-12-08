@@ -7,21 +7,21 @@ show_debug_message("X: " + string(x) + " | Y: " + string(y));
 show_debug_message("----------------------------------------------------");
 */
 
-var _curr_cost = build_lvl*global.upgrade_cost+global.build_cost;
+var _curr_cost = build_lvl*UPGRADE_COST + BUILD_COST;
 
 
 // Military building can upgrade and recruit
 if(upgrade_type == BARRACK || upgrade_type == RANGE || upgrade_type == STABLE) {
 	if(build_lvl < 4 && mouse_check_button_pressed(mb_left) &&
-global.resources[global.wood] >= _curr_cost && global.resources[global.gold] >= _curr_cost) {
+global.resources[WOOD] >= _curr_cost && global.resources[GOLD] >= _curr_cost) {
 		// Upgrade building
 		if(mouse_x > x+10 && mouse_x < x+10+upgrade_btn_sz && 
 		mouse_y > y-65 && mouse_y < y-65+upgrade_btn_sz) {
 			build_lvl++;
 			upgrade_building.build_lvl++;
 			upgrade_building.recent_upgraded = true;
-			global.resources[global.wood] -= _curr_cost;
-			global.resources[global.gold] -=_curr_cost;
+			global.resources[WOOD] -= _curr_cost;
+			global.resources[GOLD] -=_curr_cost;
 		} 
 	}
 	
@@ -34,15 +34,15 @@ global.resources[global.wood] >= _curr_cost && global.resources[global.gold] >= 
 		
 } else { // Otherwise you can only upgrade these
 	if(build_lvl < 4 && mouse_check_button_pressed(mb_left) &&
-global.resources[global.wood] >= _curr_cost && global.resources[global.gold] >= _curr_cost) {
+global.resources[WOOD] >= _curr_cost && global.resources[GOLD] >= _curr_cost) {
 		// Upgrade building
 		if(mouse_x > x+10 && mouse_x < x+10+upgrade_btn_sz && 
 		mouse_y > y-50 && mouse_y < y-50+upgrade_btn_sz) {
 			build_lvl++;
 			upgrade_building.build_lvl++;
 			upgrade_building.recent_upgraded = true;
-			global.resources[global.wood] -= _curr_cost;
-			global.resources[global.gold] -=_curr_cost;
+			global.resources[WOOD] -= _curr_cost;
+			global.resources[GOLD] -=_curr_cost;
 		}
 	}
 

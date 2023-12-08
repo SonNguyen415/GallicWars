@@ -37,7 +37,7 @@ if(has_popup > 0 && hovering < 0) {
 if(hovering > 0 && has_popup < 1) {
 	instance_create_layer(mouse_x, mouse_y, "Popup_Layer", oPopup);
 	has_popup = 1;
-	oPopup.popup_type = global.popup_construct;
+	oPopup.popup_type = POPUP_CONSTRUCT;
 				
 	switch(state) {
 		
@@ -130,8 +130,8 @@ if(selected > 0) {
 			break;
 		
 		case CAMPS:
-			if(global.resources[global.gold] >= global.build_cost && 
-				global.resources[global.wood] >= global.build_cost)  {
+			if(global.resources[GOLD] >= BUILD_COST && 
+				global.resources[WOOD] >= BUILD_COST)  {
 				if(selected == 1) { // Build Farm
 					building = BARRACK;
 				} else if(selected == 2) { // Build mill
@@ -145,8 +145,8 @@ if(selected > 0) {
 			break;
 		
 		case RESOURCES:
-			if(global.resources[global.gold] >= global.build_cost && 
-			global.resources[global.wood] >= global.build_cost)  {
+			if(global.resources[GOLD] >= BUILD_COST && 
+			global.resources[WOOD] >= BUILD_COST)  {
 				if(selected == 1) { // Build Farm
 					building = FARM;
 				} else if(selected == 2) { // Build mill
@@ -163,8 +163,8 @@ if(selected > 0) {
 			break;
 			
 		case UTIL:
-			if(global.resources[global.gold] >= global.build_cost && 
-			global.resources[global.wood] >= global.build_cost)  {
+			if(global.resources[GOLD] >= BUILD_COST && 
+			global.resources[WOOD] >= BUILD_COST)  {
 				if(selected == 1) { // Build House
 					building = HOUSE;
 				} 

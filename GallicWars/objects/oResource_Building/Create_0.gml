@@ -12,8 +12,8 @@ build_lvl = 1;
 
 
 // Build cost
-global.resources[global.gold] -= global.build_cost;
-global.resources[global.wood] -= global.build_cost;
+global.resources[GOLD] -= BUILD_COST;
+global.resources[WOOD] -= BUILD_COST;
 	
 
 building_health = max_health;
@@ -25,4 +25,4 @@ oBuildingManager.building = 0;
 
 	
 // Increase the income
-global.tax_income[build_type- STABLE] += global.productivity;
+global.tax_income[build_type- STABLE] += PRODUCTIVITY;

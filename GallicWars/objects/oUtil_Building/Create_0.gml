@@ -11,8 +11,8 @@ build_lvl = 1;
 
 
 // Build cost
-global.resources[global.gold] -= global.build_cost;
-global.resources[global.wood] -= global.build_cost;
+global.resources[GOLD] -= BUILD_COST;
+global.resources[WOOD] -= BUILD_COST;
 	
 	
 building_health = max_health;
@@ -26,7 +26,7 @@ oBuildingManager.building = 0;
 // Modify functionality based on type
 switch(build_type) {
 	case HOUSE:
-		global.tax_income[global.gold] += global.productivity;
+		global.tax_income[GOLD] += PRODUCTIVITY;
 		break;
 		
 	

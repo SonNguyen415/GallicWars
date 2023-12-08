@@ -6,35 +6,38 @@
 hovering = -1;
 has_popup = -1;
 
-
-global.popup_construct = 1;
-global.popup_upgrade = 2;
-global.popup_money = 3;
-global.popup_unit = 4;
+// Popup setup
+#macro POPUP_CONSTRUCT 1
+#macro POPUP_UPGRADE 2
+#macro POPUP_MONEY 3
+#macro POPUP_UNIT 4
 
 
 // Build cost and upgrade cost
-global.build_cost = 50;
-global.upgrade_cost = 25;
-global.productivity = 5;
+#macro BUILD_COST 50
+#macro UPGRADE_COST 25
+#macro PRODUCTIVITY 5
+
 
 // Recruitment cost
-global.maintain_cost = 1;
-global.recruit_cost = 10;
+#macro RECRUIT_COST 10
+#macro UPKEEP_COST 1
 
 
 // Just some id
-global.gold = 0;
-global.food = 1;
-global.wood = 2;
-global.stone = 3;
-global.metal = 4;
+#macro GOLD 0
+#macro FOOD 1
+#macro WOOD 2
+#macro STONE 3
+#macro METAL 4
+
+#macro TAX_RATE 60
+
 
 global.resources = [200, 300, 300, 300, 300]
 global.tax_income = [5, 0, 1, 0, 0];
 global.expenses = [0, 0, 0, 0, 0]
 global.balance = [0, 0, 0, 0, 0]
 
-global.tax_rate = 60;
 
-alarm_set(0, global.tax_rate);
+alarm_set(0, TAX_RATE);

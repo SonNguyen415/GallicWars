@@ -50,7 +50,7 @@ if(has_popup > 0 && hovering < 0) {
 // If hovering AND doesn't have popup, make popup
 if(hovering >= 0 && has_popup < 0) {
 	instance_create_layer(mouse_x, mouse_y, "Popup_Layer", oPopup);
-	oPopup.popup_type = global.popup_money;
+	oPopup.popup_type = POPUP_MONEY;
 	oPopup.popup_subtype = hovering;
 	has_popup = 1;
 } 
