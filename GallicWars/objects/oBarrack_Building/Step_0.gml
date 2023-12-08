@@ -2,6 +2,10 @@
 // You can write your code in this editor
 
 if (building_health <= 0) {
+	mp_grid_clear_cell(oGridManager.grid, x/32, y/32);
+	mp_grid_clear_cell(oGridManager.grid, x/32 + 1, y/32);
+	mp_grid_clear_cell(oGridManager.grid, x/32, y/32 + 1);
+	mp_grid_clear_cell(oGridManager.grid, x/32 + 1, y/32 + 1);
 	instance_destroy();
 }
 
