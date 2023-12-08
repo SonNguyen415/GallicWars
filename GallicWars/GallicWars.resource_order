@@ -101,6 +101,7 @@
     {"name":"romeInfAttack","order":6,"path":"sprites/romeInfAttack/romeInfAttack.yy",},
     {"name":"oUpgrade","order":1,"path":"objects/oUpgrade/oUpgrade.yy",},
     {"name":"roadTile","order":6,"path":"tilesets/roadTile/roadTile.yy",},
+    {"name":"Sprite95","order":9,"path":"sprites/Sprite95/Sprite95.yy",},
     {"name":"barbCavIdle","order":24,"path":"sprites/barbCavIdle/barbCavIdle.yy",},
     {"name":"barbInfAttack","order":3,"path":"sprites/barbInfAttack/barbInfAttack.yy",},
     {"name":"tutbutton","order":11,"path":"sprites/tutbutton/tutbutton.yy",},

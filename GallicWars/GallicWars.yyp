@@ -126,6 +126,7 @@
     {"id":{"name":"romeInfAttack","path":"sprites/romeInfAttack/romeInfAttack.yy",},},
     {"id":{"name":"oUpgrade","path":"objects/oUpgrade/oUpgrade.yy",},},
     {"id":{"name":"roadTile","path":"tilesets/roadTile/roadTile.yy",},},
+    {"id":{"name":"Sprite95","path":"sprites/Sprite95/Sprite95.yy",},},
     {"id":{"name":"oPopup","path":"objects/oPopup/oPopup.yy",},},
     {"id":{"name":"woodIcon","path":"sprites/woodIcon/woodIcon.yy",},},
     {"id":{"name":"barbCavIdle","path":"sprites/barbCavIdle/barbCavIdle.yy",},},
