@@ -22,9 +22,9 @@ has_popup = -1;
 
 // Recruitment cost
 #macro RECRUIT_COST 10
-#macro UPKEEP_COST 2
+#macro UPKEEP_COST 1
 #macro CAV_RECRUIT_COST 15
-#macro CAV_UPKEEP_COST 3
+#macro CAV_UPKEEP_COST 2
 
 // Just some id
 #macro GOLD 0
