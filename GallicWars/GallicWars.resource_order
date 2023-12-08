@@ -140,7 +140,6 @@
     {"name":"Tree","order":4,"path":"sprites/Tree/Tree.yy",},
     {"name":"grassWaterTileMap","order":1,"path":"sprites/grassWaterTileMap/grassWaterTileMap.yy",},
     {"name":"Sprite90","order":5,"path":"sprites/Sprite90/Sprite90.yy",},
-    {"name":"unitHighlight","order":30,"path":"sprites/unitHighlight/unitHighlight.yy",},
     {"name":"names","order":9,"path":"sprites/names/names.yy",},
     {"name":"Num","order":1,"path":"sprites/Num/Num.yy",},
     {"name":"Sprite82","order":1,"path":"sprites/Sprite82/Sprite82.yy",},
