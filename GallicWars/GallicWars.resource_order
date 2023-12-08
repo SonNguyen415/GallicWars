@@ -144,5 +144,6 @@
     {"name":"Num","order":1,"path":"sprites/Num/Num.yy",},
     {"name":"Sprite82","order":1,"path":"sprites/Sprite82/Sprite82.yy",},
     {"name":"barbcavalry","order":10,"path":"sprites/barbcavalry/barbcavalry.yy",},
+    {"name":"unitHighlight","order":30,"path":"sprites/unitHighlight/unitHighlight.yy",},
   ],
 }

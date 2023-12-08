@@ -177,6 +177,7 @@
     {"id":{"name":"oCamera","path":"objects/oCamera/oCamera.yy",},},
     {"id":{"name":"barracksTile","path":"sprites/barracksTile/barracksTile.yy",},},
     {"id":{"name":"barbcavalry","path":"sprites/barbcavalry/barbcavalry.yy",},},
+    {"id":{"name":"unitHighlight","path":"sprites/unitHighlight/unitHighlight.yy",},},
     {"id":{"name":"oRome","path":"objects/oRome/oRome.yy",},},
   ],
   "RoomOrderNodes": [
