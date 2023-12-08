@@ -11,3 +11,5 @@ hovering = false;
 check_wall = -1;
 popup_hovering = false;
 wall_destroyed = false;
+
+mp_grid_add_cell(oGridManager.grid, x/32, y/32);

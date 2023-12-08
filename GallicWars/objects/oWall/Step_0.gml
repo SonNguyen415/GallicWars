@@ -15,7 +15,6 @@ if(wall_destroyed) {
 	layer = layer_get_id("Plots");
 	mp_grid_clear_cell(oGridManager.grid, x/32, y/32);
 	image_index = 12;
-	
 }
 
 
