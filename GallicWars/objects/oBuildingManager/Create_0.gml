@@ -1,7 +1,26 @@
 /// @description Insert description here
 // You can write your code in this editor
 
-state = menu;
+// Building ids;
+#macro BARRACK 1
+#macro RANGE 2
+#macro STABLE 3
+#macro FARM 4
+#macro MILL 5
+#macro QUARRY 6
+#macro MINE 7
+#macro HOUSE 8
+#macro WALL 9
+
+
+// state ids
+#macro CANNOT 0
+#macro MENU 1
+#macro CAMPS 2
+#macro RESOURCES 3
+#macro UTIL 4
+
+state = MENU;
 previous_state = ds_stack_create();
 
 has_popup = -1;
@@ -21,23 +40,3 @@ b_top_gap = b_size + b_spacing;
 building = 0;
 
 
-// Building ids;
-#macro BARRACK 1
-#macro RANGE 2
-#macro STABLE 3
-#macro FARM 4
-#macro MILL 5
-#macro QUARRY 6
-#macro MINE 7
-#macro HOUSE 8
-#macro WALL 9
-
-barrack = 1; 
-range = 2;
-stable = 3;
-farm = 4;
-mill = 5;
-quarry = 6;
-mine = 7;
-house = 8;
-wall = 9;

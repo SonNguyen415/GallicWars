@@ -39,7 +39,7 @@ if(mouse_check_button_pressed(mb_left)) {
 	
 	if(hovering && repairing < 0) {
 		repairing = instance_create_layer(x, y, "Popup_Layer", oUpgrade);
-		repairing.upgrade_type = oBuildingManager.wall;
+		repairing.upgrade_type = WALL;
 		repairing.upgrade_building = id;
 	} else if(upgrading > 0 &&
 		(mouse_x < x-96/2 ||  mouse_x > x+96/2 ||

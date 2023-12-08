@@ -41,37 +41,37 @@ if(hovering > 0 && has_popup < 1) {
 				
 	switch(state) {
 		
-		case barracks:
+		case CAMPS:
 			if(hovering == 1) { // Build Barrack
-				oPopup.popup_subtype = barrack;
+				oPopup.popup_subtype = BARRACK;
 			} else if(hovering == 2) { // Build archer range
-				oPopup.popup_subtype = range;
+				oPopup.popup_subtype = RANGE;
 			} else if(hovering == 3) {
-				oPopup.popup_subtype = stable;
+				oPopup.popup_subtype = STABLE;
 			} else {
 				instance_destroy(oPopup);
 			}
 			break;
 		
-		case resources:
+		case RESOURCES:
 	
 			if(hovering == 1) {
-				oPopup.popup_subtype = farm;
+				oPopup.popup_subtype = FARM;
 			} else if(hovering == 2) {
-				oPopup.popup_subtype = mill;
+				oPopup.popup_subtype = MILL;
 			} else if(hovering == 3) {
-				oPopup.popup_subtype = quarry;
+				oPopup.popup_subtype = QUARRY;
 			} else if(hovering == 4) {
-				oPopup.popup_subtype = mine;
+				oPopup.popup_subtype = MINE;
 			} else {
 				instance_destroy(oPopup);
 			}
 			break;
 		
 		
-		case util:
+		case UTIL:
 			if(hovering == 1) {
-				oPopup.popup_subtype = house;
+				oPopup.popup_subtype = HOUSE;
 			} else {
 				instance_destroy(oPopup);
 			}
@@ -104,7 +104,7 @@ if(mouse_check_button_pressed(mb_left) && hovering >= 0 && !building) {
 // Switch state
 
 // Go back if selected = 0. Popping previous states
-if(selected == 0 && state != menu) {
+if(selected == 0 && state != MENU) {
 	state = ds_stack_pop(previous_state);
 }
 
@@ -113,48 +113,48 @@ if(selected == 0 && state != menu) {
 if(selected > 0) {
 	// show_debug_message("Selected: " + string(selected));
 	switch(state) {
-		case menu:
+		case MENU:
 			if(selected == 1){
-				state = barracks;
+				state = CAMPS;
 			}
 			
 			if(selected == 2){
-				state = resources;
+				state = RESOURCES;
 			}
 			
 			if(selected == 3){
-				state = util;
+				state = UTIL;
 			}
 			
-			ds_stack_push(previous_state, menu);
+			ds_stack_push(previous_state, MENU);
 			break;
 		
-		case barracks:
+		case CAMPS:
 			if(global.resources[global.gold] >= global.build_cost && 
 				global.resources[global.wood] >= global.build_cost)  {
 				if(selected == 1) { // Build Farm
-					building = barrack;
+					building = BARRACK;
 				} else if(selected == 2) { // Build mill
-					building = range;
+					building = RANGE;
 				} else if(selected == 3) {
-					building = stable;
+					building = STABLE;
 				}
 				instance_create_layer(mouse_x, mouse_y, "Build", oC_Building);
 			}
 			
 			break;
 		
-		case resources:
+		case RESOURCES:
 			if(global.resources[global.gold] >= global.build_cost && 
 			global.resources[global.wood] >= global.build_cost)  {
 				if(selected == 1) { // Build Farm
-					building = farm;
+					building = FARM;
 				} else if(selected == 2) { // Build mill
-					building = mill;
+					building = MILL;
 				} else if(selected == 3) { // Build quarry
-					building = quarry;
+					building = QUARRY;
 				} else if(selected == 4) { // Build mine
-					building = mine;
+					building = MINE;
 				}
 				instance_create_layer(mouse_x, mouse_y, "Build", oC_Building);
 			}
@@ -162,11 +162,11 @@ if(selected > 0) {
 			
 			break;
 			
-		case util:
+		case UTIL:
 			if(global.resources[global.gold] >= global.build_cost && 
 			global.resources[global.wood] >= global.build_cost)  {
 				if(selected == 1) { // Build House
-					building = house;
+					building = HOUSE;
 				} 
 				instance_create_layer(mouse_x, mouse_y, "Build", oC_Building);
 			}

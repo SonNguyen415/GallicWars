@@ -14,45 +14,45 @@ var _curr_lvl = "";
 
 // 
 switch(upgrade_type) {
-	case oBuildingManager.farm:
+	case FARM:
 		_curr_build = "Farm";
 		_curr_lvl = "Level: " + string(build_lvl);
 
 		break;
 		
-	case oBuildingManager.mill:
+	case MILL:
 		_curr_build = "Mill";
 		_curr_lvl = "Level: " + string(build_lvl);
 	
 		break;
 		
-	case oBuildingManager.quarry:
+	case QUARRY:
 		_curr_build = "Stone";
 		_curr_lvl = "Level: " + string(build_lvl);
 
 		break;
 			
-	case oBuildingManager.mine:
+	case MINE:
 		_curr_build = "Mine";
 		_curr_lvl = "Level: " + string(build_lvl);
 		break;
 		
-	case oBuildingManager.barrack:
+	case BARRACK:
 		_curr_build = "Barrack";
 		_curr_lvl = "Level: " + string(build_lvl);
 		break;
 	
-	case oBuildingManager.range:
+	case RANGE:
 		_curr_build = "Skirmish Range";
 		_curr_lvl = "Level: " + string(build_lvl);
 		break;
 	
-	case oBuildingManager.stable:
+	case STABLE:
 		_curr_build = "Stable";
 		_curr_lvl = "Level: " + string(build_lvl);
 		break;
 		
-	case oBuildingManager.house:
+	case HOUSE:
 		_curr_build = "House";
 		_curr_lvl = "Level: " + string(build_lvl);
 		break;
@@ -66,7 +66,7 @@ switch(upgrade_type) {
 
 
 // Barracks have 2 buttons - upgrade and recruit
-if(upgrade_type == oBuildingManager.barrack || upgrade_type == oBuildingManager.range || upgrade_type == oBuildingManager.stable) {
+if(upgrade_type == BARRACK || upgrade_type == RANGE || upgrade_type == STABLE) {
 	draw_text_ext_transformed_color(x, y-y_offset-30, _curr_build, 5, 500,0.6,0.6,0, c_blue,c_blue,c_blue,c_blue, 1 );
 	draw_text_ext_transformed_color(x, y-y_offset-15, _curr_lvl, 5, 500,0.5,0.5,0, c_black,c_black,c_black,c_black, 1 );
 	draw_text_ext_transformed_color(x-15, y-y_offset+5, "Upgrade:", 5, 500,0.5,0.5,0, c_black,c_black,c_black,c_black, 1 );
