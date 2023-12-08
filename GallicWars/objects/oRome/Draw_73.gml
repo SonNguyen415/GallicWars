@@ -1,4 +1,8 @@
 
+// Visual indicator
+if(selected) {
+	draw_sprite(unitHighlight, 0, x, y);
+}
 
 draw_set_alpha( 1);
 
@@ -9,3 +13,5 @@ if (path_exists(path_index)) {
 }
 
 draw_sprite(unitLevel, tier - 1, x, y);
+
+
