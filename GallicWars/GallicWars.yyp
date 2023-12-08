@@ -79,6 +79,7 @@
     {"id":{"name":"cavalryDeath","path":"sprites/cavalryDeath/cavalryDeath.yy",},},
     {"id":{"name":"roadTileMap","path":"sprites/roadTileMap/roadTileMap.yy",},},
     {"id":{"name":"farmTile","path":"sprites/farmTile/farmTile.yy",},},
+    {"id":{"name":"Credits","path":"rooms/Credits/Credits.yy",},},
     {"id":{"name":"barbcavalryWalk","path":"sprites/barbcavalryWalk/barbcavalryWalk.yy",},},
     {"id":{"name":"oCity_Hall","path":"objects/oCity_Hall/oCity_Hall.yy",},},
     {"id":{"name":"quarryTile","path":"sprites/quarryTile/quarryTile.yy",},},
@@ -164,6 +165,7 @@
   "RoomOrderNodes": [
     {"roomId":{"name":"Room1","path":"rooms/Room1/Room1.yy",},},
     {"roomId":{"name":"Title","path":"rooms/Title/Title.yy",},},
+    {"roomId":{"name":"Credits","path":"rooms/Credits/Credits.yy",},},
   ],
   "templateType": "game",
   "TextureGroups": [

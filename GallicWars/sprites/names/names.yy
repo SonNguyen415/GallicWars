@@ -4,7 +4,7 @@
   "name": "names",
   "bbox_bottom": 122,
   "bbox_left": 12,
-  "bbox_right": 119,
+  "bbox_right": 115,
   "bbox_top": 13,
   "bboxMode": 0,
   "collisionKind": 1,
