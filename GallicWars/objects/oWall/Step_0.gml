@@ -59,6 +59,17 @@ if(mouse_check_button_pressed(mb_left)) {
 		// Check if we clicked the repair button
 		wall_destroyed = false;
 		wall_health = max_health;
+		
+		global.resources[GOLD] -=BUILD_COST;
+		global.resources[WOOD] -= BUILD_COST;
+		if(global.resources[GOLD] < 0) {
+			global.resources[GOLD] = 0;
+		}
+
+		if(global.resources[WOOD] < 0) {
+			global.resources[WOOD] = 0;
+		}
+
 		mp_grid_add_cell(oGridManager.grid, x/32, y/32);
 		image_index = old_idx;
 		instance_destroy(oWallInfo);

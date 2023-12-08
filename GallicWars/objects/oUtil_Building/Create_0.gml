@@ -13,6 +13,15 @@ build_lvl = 1;
 // Build cost
 global.resources[GOLD] -= BUILD_COST;
 global.resources[WOOD] -= BUILD_COST;
+
+if(global.resources[GOLD] < 0) {
+	global.resources[GOLD] = 0;
+}
+
+if(global.resources[WOOD] < 0) {
+	global.resources[WOOD] = 0;
+}
+
 	
 	
 building_health = max_health;

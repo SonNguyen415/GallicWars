@@ -55,6 +55,6 @@ if(hovering >= 0 && has_popup < 0) {
 	has_popup = 1;
 } 
 
-if(global.resources[FOOD] <= 0) {
+if(global.resources[FOOD] <= 0 || global.resources[GOLD] <= 0) {
 	global.curr_game = LOSE;	
 }

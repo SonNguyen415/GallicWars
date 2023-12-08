@@ -92,13 +92,13 @@ if(upgrade_type == BARRACK || upgrade_type == RANGE || upgrade_type == STABLE) {
 		}
 	
 	} else {
-			if(global.resources[GOLD] >= RECRUIT_COST*build_lvl && global.resources[METAL] >= RECRUIT_COST*build_lvl) {
-				draw_sprite(checkbutton, 0, x+20, y-y_offset+35);
-			}	else {
-				draw_sprite(checkbutton, 1, x+20, y-y_offset+35);
-			}	
-		}
-	
+		if(global.resources[GOLD] >= RECRUIT_COST*build_lvl && global.resources[METAL] >= RECRUIT_COST*build_lvl) {
+			draw_sprite(checkbutton, 0, x+20, y-y_offset+35);
+		}	else {
+			draw_sprite(checkbutton, 1, x+20, y-y_offset+35);
+		}	
+		
+	}
 	
 
 } else { // Other buildings can only upgrade

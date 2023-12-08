@@ -132,6 +132,8 @@ if(recruiting) {
 				new_troop.troop_type = "Infantry";
 				global.resources[GOLD] -= RECRUIT_COST*build_lvl;
 				global.resources[METAL] -= RECRUIT_COST*build_lvl;
+				
+				
 
 				global.expenses[GOLD] += UPKEEP_COST;
 				global.expenses[FOOD] += UPKEEP_COST*2;
@@ -155,6 +157,15 @@ if(recruiting) {
 				
 				break;
 		}
+		
+		if(global.resources[GOLD] < 0) {
+			global.resources[GOLD] = 0;
+		}
+
+		if(global.resources[METAL] < 0) {
+			global.resources[METAL] = 0;
+		}
+
 		recruiting = false;
 	}
 }
