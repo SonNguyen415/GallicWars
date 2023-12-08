@@ -57,7 +57,6 @@ if(popup_type == global.popup_construct) {
 			_c_offset = -10;
 			draw_text_ext_transformed_color(_x_pos+text_x_offset, _y_pos + 30, _build_result,5, 500, 1,1,0, c_black,c_black,c_black,c_black, 1 );
 			draw_text_ext_transformed_color(_x_pos+text_x_offset, _y_pos + 50, "Recruit Legions",5, 500, 0.8,0.8,0, c_black,c_black,c_black,c_black, 1 );
-		
 			break;
 		
 		case oBuildingManager.range:
@@ -66,7 +65,13 @@ if(popup_type == global.popup_construct) {
 			_c_offset = -5;
 			draw_text_ext_transformed_color(_x_pos+text_x_offset, _y_pos + 30, _build_result,5, 500, 1,1,0, c_black,c_black,c_black,c_black, 1 );
 			draw_text_ext_transformed_color(_x_pos+text_x_offset, _y_pos + 55, "Recruit Skirmishers",5, 500, 0.8,0.8,0, c_black,c_black,c_black,c_black, 1 );
+			break;
 		
+			case oBuildingManager.stable:
+			draw_text_ext_transformed_color(_x_pos+text_x_offset, _y_pos - 60, "Stable",5, 500,1.2,1.2,0, c_blue,c_blue,c_blue,c_blue, 1 );
+			_c_offset = -5;
+			draw_text_ext_transformed_color(_x_pos+text_x_offset, _y_pos + 30, _build_result,5, 500, 1,1,0, c_black,c_black,c_black,c_black, 1 );
+			draw_text_ext_transformed_color(_x_pos+text_x_offset, _y_pos + 55, "Recruit Cavalry",5, 500, 0.8,0.8,0, c_black,c_black,c_black,c_black, 1 );
 			break;
 		
 		case oBuildingManager.house:
@@ -246,6 +251,12 @@ if(popup_type == global.popup_upgrade && build_lvl > 0) {
 			_curr_health = "HP: " + string(building_health) + " / " + string(oBarrack_Building.max_health);
 			_curr_product = string(global.build_cost);
 			break;
+			
+		case oBuildingManager.stable:
+			_curr_build = "Stable";
+			_curr_health = "HP: " + string(building_health) + " / " + string(oBarrack_Building.max_health);
+			_curr_product = string(global.build_cost);
+			break;
 	
 		case oBuildingManager.house:
 			_curr_build = "House";
@@ -260,7 +271,7 @@ if(popup_type == global.popup_upgrade && build_lvl > 0) {
 			break;
 	}
 	
-	if(popup_subtype == oBuildingManager.barrack || popup_subtype == oBuildingManager.range) {
+	if(popup_subtype == oBuildingManager.barrack || popup_subtype == oBuildingManager.range || popup_subtype == oBuildingManager.stable) {
 		draw_text_ext_transformed_color(_x_pos+text_x_offset, _y_pos-69, _curr_build, 5, 500, 1,1,0, c_blue, c_blue,c_blue,c_blue, 1 );
 		draw_text_ext_transformed_color(_x_pos+text_x_offset, _y_pos-45, "Recruit Cost", 5, 500, 0.9,0.9,0, c_black,c_black,c_black,c_black, 1 );
 		draw_text_ext_transformed_color(_x_pos+text_x_offset, _y_pos-25, _curr_product + " Gold", 5, 500, 0.9,0.9,0, _c_recruit,_c_recruit,_c_recruit,_c_recruit, 1 );

@@ -13,6 +13,9 @@ switch(build_type) {
 		
 	case oBuildingManager.range:
 		sprite_index = archeryRange;
+		
+	case oBuildingManager.stable:
+		sprite_index = stableSprite;
 
 	default:
 		break;

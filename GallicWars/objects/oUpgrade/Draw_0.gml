@@ -46,6 +46,11 @@ switch(upgrade_type) {
 		_curr_build = "Skirmish Range";
 		_curr_lvl = "Level: " + string(build_lvl);
 		break;
+	
+	case oBuildingManager.stable:
+		_curr_build = "Stable";
+		_curr_lvl = "Level: " + string(build_lvl);
+		break;
 		
 	case oBuildingManager.house:
 		_curr_build = "House";
@@ -61,7 +66,7 @@ switch(upgrade_type) {
 
 
 // Barracks have 2 buttons - upgrade and recruit
-if(upgrade_type == oBuildingManager.barrack || upgrade_type == oBuildingManager.range) {
+if(upgrade_type == oBuildingManager.barrack || upgrade_type == oBuildingManager.range || upgrade_type == oBuildingManager.stable) {
 	draw_text_ext_transformed_color(x, y-y_offset-30, _curr_build, 5, 500,0.6,0.6,0, c_blue,c_blue,c_blue,c_blue, 1 );
 	draw_text_ext_transformed_color(x, y-y_offset-15, _curr_lvl, 5, 500,0.5,0.5,0, c_black,c_black,c_black,c_black, 1 );
 	draw_text_ext_transformed_color(x-15, y-y_offset+5, "Upgrade:", 5, 500,0.5,0.5,0, c_black,c_black,c_black,c_black, 1 );

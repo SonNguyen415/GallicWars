@@ -46,6 +46,8 @@ if(hovering > 0 && has_popup < 1) {
 				oPopup.popup_subtype = barrack;
 			} else if(hovering == 2) { // Build archer range
 				oPopup.popup_subtype = range;
+			} else if(hovering == 3) {
+				oPopup.popup_subtype = stable;
 			} else {
 				instance_destroy(oPopup);
 			}
@@ -134,7 +136,9 @@ if(selected > 0) {
 					building = barrack;
 				} else if(selected == 2) { // Build mill
 					building = range;
-				} 
+				} else if(selected == 3) {
+					building = stable;
+				}
 				instance_create_layer(mouse_x, mouse_y, "Build", oC_Building);
 			}
 			

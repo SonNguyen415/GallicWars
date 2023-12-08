@@ -11,7 +11,7 @@ var _curr_cost = build_lvl*global.upgrade_cost+global.build_cost;
 
 
 // Military building can upgrade and recruit
-if(upgrade_type == oBuildingManager.barrack || upgrade_type == oBuildingManager.range) {
+if(upgrade_type == oBuildingManager.barrack || upgrade_type == oBuildingManager.range || upgrade_type == oBuildingManager.stable) {
 	if(build_lvl < 4 && mouse_check_button_pressed(mb_left) &&
 global.resources[global.wood] >= _curr_cost && global.resources[global.gold] >= _curr_cost) {
 		// Upgrade building
