@@ -83,6 +83,7 @@ if(hovering > 0) {
 
 if(mouse_check_button_pressed(mb_left)) {
 	
+	// Create a new upgrader popup if don't have one
 	if(hovering > 0 && upgrading < 0) {
 
 		upgrading = instance_create_layer(x, y, "Popup_Layer", oUpgrade);
@@ -91,7 +92,8 @@ if(mouse_check_button_pressed(mb_left)) {
 		upgrading.upgrade_building = id;
 	} else if(upgrading > 0 &&
 		(mouse_x < x-96/2 ||  mouse_x > x+96/2 ||
-				mouse_y < y-96 || mouse_y > y)) {
+				mouse_y < y-96 || mouse_y > y)) { 
+		// Otherwise, we have the upgrader. Check if mouse is clicked on button
 		instance_destroy(upgrading);
 		upgrading = -1;
 	}

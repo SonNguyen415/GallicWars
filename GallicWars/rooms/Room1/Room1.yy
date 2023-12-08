@@ -232,6 +232,9 @@
     {"name":"inst_63FE1B60","path":"rooms/Room1/Room1.yy",},
     {"name":"inst_1E13647E","path":"rooms/Room1/Room1.yy",},
     {"name":"inst_8E047B3","path":"rooms/Room1/Room1.yy",},
+    {"name":"inst_63FE1B60","path":"rooms/Room1/Room1.yy",},
+    {"name":"inst_1E13647E","path":"rooms/Room1/Room1.yy",},
+    {"name":"inst_8E047B3","path":"rooms/Room1/Room1.yy",},
   ],
   "isDnd": false,
   "layers": [

@@ -78,6 +78,7 @@
     {"name":"Sprite60","order":16,"path":"sprites/Sprite60/Sprite60.yy",},
     {"name":"buttons","order":7,"path":"sprites/buttons/buttons.yy",},
     {"name":"back","order":8,"path":"sprites/back/back.yy",},
+    {"name":"oWallInfo","order":2,"path":"objects/oWallInfo/oWallInfo.yy",},
     {"name":"UtilityButtons","order":8,"path":"sprites/UtilityButtons/UtilityButtons.yy",},
     {"name":"oUtil_Building","order":5,"path":"objects/oUtil_Building/oUtil_Building.yy",},
     {"name":"oBarb","order":1,"path":"objects/oBarb/oBarb.yy",},

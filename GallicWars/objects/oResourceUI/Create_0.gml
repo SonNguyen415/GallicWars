@@ -17,7 +17,7 @@ has_popup = -1;
 #macro BUILD_COST 50
 #macro UPGRADE_COST 25
 #macro PRODUCTIVITY 5
-
+#macro REPAIR_COST 5
 
 // Recruitment cost
 #macro RECRUIT_COST 10

@@ -19,7 +19,7 @@ if(other.wall_destroyed == false) {
 		sprite_index = barbInfAttack;
 		combat = true;
 		other.wall_health -= clamp(troop_attack, 1, other.wall_health);
-
+		other.info_changed = true;
 		alarm[0]= room_speed;
 		//show_debug_message("Army: " + string(other.troop_health));
 	}

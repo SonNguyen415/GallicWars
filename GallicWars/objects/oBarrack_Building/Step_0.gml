@@ -127,8 +127,10 @@ if(recruiting) {
 				break;
 			case RANGE:
 				new_troop.troop_type = "Archer";
+				show_debug_message("Archer");
 			case STABLE:
 				new_troop.troop_type = "Cavalry";
+				show_debug_message("Cavalry");
 				new_troop.troop_speed *= 1.5;
 		}
 		recruiting = false;

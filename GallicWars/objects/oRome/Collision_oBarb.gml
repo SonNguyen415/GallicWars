@@ -13,13 +13,7 @@ if (target == noone) {
 }
 
 if (target == other && combat == false && dead == false) {
-	if (troop_type == "Infantry") {
-		sprite_index = romeInfAttack;
-	} else if (troop_type == "Archer") {
-		sprite_index = romeArchAttack;
-	} else if (troop_type == "Cavalry") {
-		sprite_index = romeCavAttack;
-	}
+	sprite_index = romeInfAttack;
 	combat = true;
 	other.troop_health -= clamp(troop_attack - other.troop_defense, 1, other.troop_health);
 	alarm[0]= room_speed;
