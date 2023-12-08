@@ -175,10 +175,10 @@
     {"id":{"name":"oRome","path":"objects/oRome/oRome.yy",},},
   ],
   "RoomOrderNodes": [
-    {"roomId":{"name":"Room1","path":"rooms/Room1/Room1.yy",},},
     {"roomId":{"name":"Title","path":"rooms/Title/Title.yy",},},
-    {"roomId":{"name":"Credits","path":"rooms/Credits/Credits.yy",},},
     {"roomId":{"name":"Tutorial","path":"rooms/Tutorial/Tutorial.yy",},},
+    {"roomId":{"name":"Room1","path":"rooms/Room1/Room1.yy",},},
+    {"roomId":{"name":"Credits","path":"rooms/Credits/Credits.yy",},},
   ],
   "templateType": "game",
   "TextureGroups": [
