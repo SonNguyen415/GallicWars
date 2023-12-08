@@ -23,6 +23,7 @@
     {"name":"ResourceBuildings","order":16,"path":"folders/Sprites/ResourceBuildings.yy",},
     {"name":"Tilemap","order":15,"path":"folders/Sprites/Tilemap.yy",},
     {"name":"UI","order":14,"path":"folders/Sprites/UI.yy",},
+    {"name":"Announcements","order":17,"path":"folders/Sprites/UI/Announcements.yy",},
     {"name":"BuildingUI","order":10,"path":"folders/Sprites/UI/BuildingUI.yy",},
     {"name":"Numbers","order":5,"path":"folders/Sprites/UI/Numbers.yy",},
     {"name":"Title","order":12,"path":"folders/Sprites/UI/Title.yy",},
@@ -32,7 +33,6 @@
     {"name":"Walls","order":20,"path":"folders/Sprites/Walls.yy",},
     {"name":"Tile Sets","order":2,"path":"folders/Tile Sets.yy",},
     {"name":"Timelines","order":8,"path":"folders/Timelines.yy",},
-    {"name":"Announcements","order":17,"path":"folders/Sprites/UI/Announcements.yy",},
   ],
   "ResourceOrderSettings": [
     {"name":"barbArchDeath","order":19,"path":"sprites/barbArchDeath/barbArchDeath.yy",},
@@ -143,6 +143,5 @@
     {"name":"Num","order":1,"path":"sprites/Num/Num.yy",},
     {"name":"Sprite82","order":1,"path":"sprites/Sprite82/Sprite82.yy",},
     {"name":"barbcavalry","order":10,"path":"sprites/barbcavalry/barbcavalry.yy",},
-    {"name":"oRome","order":1,"path":"objects/oRome/oRome.yy",},
   ],
 }

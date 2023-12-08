@@ -7,7 +7,7 @@ randomise();
 
 
 #macro MAX_WAVE 6
-#macro WAVE_TIME 3
+#macro WAVE_TIME 120
 
 spawn_wave = 0;
 
