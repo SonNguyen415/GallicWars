@@ -68,7 +68,7 @@ if(spawn_wave < MAX_WAVE) {
 				break;
 			
 			case 2:
-				_num_enemies = 16;
+				_num_enemies = 20;
 				_num_inf = irandom_range(8, 12);
 				_num_archers = _num_enemies - _num_inf;
 			
@@ -79,7 +79,7 @@ if(spawn_wave < MAX_WAVE) {
 			
 		
 			case 3:
-				_num_enemies = 25;
+				_num_enemies = 30;
 				_num_cav = 2;
 				_num_inf = irandom_range(16, 20);
 				_num_archers = _num_enemies - _num_inf - _num_cav;
@@ -91,7 +91,7 @@ if(spawn_wave < MAX_WAVE) {
 				break;
 			
 			case 4:
-				_num_enemies = 40/(_k+1);
+				_num_enemies = 60/(_k+1);
 				_num_cav = 2;
 				_num_inf = irandom_range(8, 12);
 				_num_archers = _num_enemies - _num_inf - _num_cav;
@@ -104,29 +104,27 @@ if(spawn_wave < MAX_WAVE) {
 				break;
 			
 			case 5:
-				_num_enemies = 50/(_k+1);
+				_num_enemies = 100/(_k+1);
 				_num_cav = 4;
 				_num_inf = irandom_range(8, 12);
 				_num_archers = _num_enemies - _num_inf - _num_cav;
 			
 			
 				// 1/2 are upgraded (10)
-				_num_lvl[2] = 4;
-				_num_lvl[1] = floor(_num_enemies/2);
-				_num_lvl[0] = _num_enemies - _num_lvl[2] - _num_lvl[1];
+				_num_lvl[2] = floor((_num_enemies-2)/2);
+				_num_lvl[1] = _num_enemies - _num_lvl[2] - _num_lvl[1];
 			
 				break;
 			
 			case 6:
-				_num_enemies = 75/(_k+1);
+				_num_enemies = 180/(_k+1);
 				_num_inf = irandom_range(8, 12);
 				_num_cav = irandom_range(2, 6);
 				_num_archers = _num_enemies - _num_inf - _num_cav;
 			
 				// 1/2 are upgraded (10)
-				_num_lvl[3] = 2;
-				_num_lvl[1] = floor(_num_enemies/2);
-				_num_lvl[2] =  _num_enemies - _num_lvl[3] - _num_lvl[1];
+				_num_lvl[3] = floor(_num_enemies/2);
+				_num_lvl[2] =  _num_enemies - _num_lvl[3];
 			
 				break;
 			

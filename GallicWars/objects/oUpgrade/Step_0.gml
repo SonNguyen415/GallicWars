@@ -7,11 +7,14 @@ show_debug_message("X: " + string(x) + " | Y: " + string(y));
 show_debug_message("----------------------------------------------------");
 */
 
-var _curr_cost = build_lvl*UPGRADE_COST + BUILD_COST;
+
 
 
 // Military building can upgrade and recruit
 if(upgrade_type == BARRACK || upgrade_type == RANGE || upgrade_type == STABLE) {
+	var _curr_cost = build_lvl*BARRACK_UPGRADE_COST + BUILD_COST;
+	
+	
 	if(build_lvl < 4 && mouse_check_button_pressed(mb_left) &&
 global.resources[WOOD] >= _curr_cost && global.resources[GOLD] >= _curr_cost) {
 		// Upgrade building
@@ -32,6 +35,9 @@ global.resources[WOOD] >= _curr_cost && global.resources[GOLD] >= _curr_cost) {
 	}
 		
 } else { // Otherwise you can only upgrade these
+	var _curr_cost = build_lvl*RES_UPGRADE_COST + BUILD_COST;
+	
+	
 	if(build_lvl < 4 && mouse_check_button_pressed(mb_left) &&
 global.resources[WOOD] >= _curr_cost && global.resources[GOLD] >= _curr_cost) {
 		// Upgrade building

@@ -192,13 +192,19 @@ if(popup_type == POPUP_UPGRADE && build_lvl > 0) {
 	var _curr_build = "";
 	var _curr_product = "";
 	var _curr_health = "";
-	
-	var _curr_up_cost = build_lvl*UPGRADE_COST+BUILD_COST;
+
 	var _upgrade0 = "Max Level";
 	var	_upgrade1 = "";
 	
 	var _c_upgrade = c_silver;
 	if(build_lvl < 4) {
+		if(popup_subtype == BARRACK || popup_subtype == RANGE || popup_subtype == STABLE) {
+				var _curr_up_cost = build_lvl*BARRACK_UPGRADE_COST+BUILD_COST;
+		} else {
+					
+			var _curr_up_cost = build_lvl*RES_UPGRADE_COST+BUILD_COST;
+			
+		}
 		_upgrade0 = string(_curr_up_cost) + " Gold";
 		_upgrade1 = string(_curr_up_cost) + " Wood";
 		if(global.resources[GOLD] >= _curr_up_cost && global.resources[WOOD] >=_curr_up_cost) {

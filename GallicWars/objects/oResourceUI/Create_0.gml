@@ -15,7 +15,8 @@ has_popup = -1;
 
 // Build cost and upgrade cost
 #macro BUILD_COST 50
-#macro UPGRADE_COST 25
+#macro RES_UPGRADE_COST 25
+#macro BARRACK_UPGRADE_COST 100
 #macro PRODUCTIVITY 10
 #macro REPAIR_COST 5
 
