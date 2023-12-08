@@ -54,18 +54,28 @@ if(has_popup > 0 && hovering < 0) {
 }
 
 
-// If hovering AND doesn't have popup, make popup
-if(hovering > 0 && has_popup < 0) {
-	instance_create_layer(mouse_x, mouse_y, "Popup_Layer", oPopup);
-	oPopup.popup_type = global.popup_upgrade;
-	oPopup.popup_subtype = build_type;
-	oPopup.build_lvl = build_lvl;
-	oPopup.building_health = building_health;
+// Create popup if hovering
+if(hovering > 0) {
+	// If we have no popup yet, make new one
+	if(has_popup < 0) {
+		instance_create_layer(mouse_x, mouse_y, "Popup_Layer", oPopup);
+		oPopup.popup_type = global.popup_upgrade;
+		oPopup.popup_subtype = build_type;
+		oPopup.build_lvl = build_lvl;
+		oPopup.building_health = building_health;
+	} else if(other.hp_changed) {
+		instance_destroy(oPopup);
+		
+		instance_create_layer(mouse_x, mouse_y, "Popup_Layer", oPopup);
+		oPopup.popup_type = global.popup_upgrade;
+		oPopup.popup_subtype = build_type;
+		oPopup.build_lvl = build_lvl;
+		oPopup.building_health = building_health;
+		other.hp_changed = false;
+	}
+	
 	has_popup = 1;
 }
-
-
-
 
 
 

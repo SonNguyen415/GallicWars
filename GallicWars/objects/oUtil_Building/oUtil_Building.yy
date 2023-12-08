@@ -33,8 +33,8 @@
   ],
   "solid": true,
   "spriteId": {
-    "name": "farmTile",
-    "path": "sprites/farmTile/farmTile.yy",
+    "name": "houses",
+    "path": "sprites/houses/houses.yy",
   },
   "spriteMaskId": null,
   "visible": true,
