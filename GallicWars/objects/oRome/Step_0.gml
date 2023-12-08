@@ -21,4 +21,3 @@ if (!path_exists(path_index) && !place_meeting(x,y,oBarb) && dead == false) {
 if (target != noone	&& (!instance_exists(target) || !place_meeting(x, y, target))) {
 		target = noone;
 }
-
