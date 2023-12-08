@@ -45,7 +45,7 @@
     {"resourceType":"GMObjectProperty","resourceVersion":"1.0","name":"tier","filters":[],"listItems":[],"multiselect":false,"rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"value":"1","varType":1,},
     {"resourceType":"GMObjectProperty","resourceVersion":"1.0","name":"dead","filters":[],"listItems":[],"multiselect":false,"rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"value":"0","varType":3,},
   ],
-  "solid": false,
+  "solid": true,
   "spriteId": null,
   "spriteMaskId": null,
   "visible": true,
