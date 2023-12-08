@@ -132,9 +132,9 @@ if(selected > 0) {
 		case CAMPS:
 			if(global.resources[GOLD] >= BUILD_COST && 
 				global.resources[WOOD] >= BUILD_COST)  {
-				if(selected == 1) { // Build Farm
+				if(selected == 1) { // Build barrack
 					building = BARRACK;
-				} else if(selected == 2) { // Build mill
+				} else if(selected == 2) { // Build range
 					building = RANGE;
 				} else if(selected == 3) {
 					building = STABLE;

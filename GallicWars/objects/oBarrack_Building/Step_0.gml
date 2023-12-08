@@ -13,9 +13,11 @@ switch(build_type) {
 		
 	case RANGE:
 		sprite_index = archeryRange;
+		break;
 		
 	case STABLE:
 		sprite_index = stableSprite;
+		break;
 
 	default:
 		break;
@@ -128,10 +130,12 @@ if(recruiting) {
 			case RANGE:
 				new_troop.troop_type = "Archer";
 				show_debug_message("Archer");
+				break;
 			case STABLE:
 				new_troop.troop_type = "Cavalry";
 				show_debug_message("Cavalry");
 				new_troop.troop_speed *= 1.5;
+				break;
 		}
 		recruiting = false;
 	}
