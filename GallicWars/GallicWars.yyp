@@ -170,6 +170,7 @@
     {"id":{"name":"houses","path":"sprites/houses/houses.yy",},},
     {"id":{"name":"Tree","path":"sprites/Tree/Tree.yy",},},
     {"id":{"name":"grassWaterTileMap","path":"sprites/grassWaterTileMap/grassWaterTileMap.yy",},},
+    {"id":{"name":"Sprite90","path":"sprites/Sprite90/Sprite90.yy",},},
     {"id":{"name":"names","path":"sprites/names/names.yy",},},
     {"id":{"name":"Num","path":"sprites/Num/Num.yy",},},
     {"id":{"name":"Sprite82","path":"sprites/Sprite82/Sprite82.yy",},},
