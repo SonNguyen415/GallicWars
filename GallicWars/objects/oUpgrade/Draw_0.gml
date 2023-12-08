@@ -72,7 +72,7 @@ if(upgrade_type == BARRACK || upgrade_type == RANGE || upgrade_type == STABLE) {
 	draw_text_ext_transformed_color(x-15, y-y_offset+5, "Upgrade:", 5, 500,0.5,0.5,0, c_black,c_black,c_black,c_black, 1 );
 		
 	// Upgrade unit
-	var _curr_cost = build_lvl*UPGRADE_COST + BUILD_COST;
+	var _curr_cost = build_lvl*BARRACK_UPGRADE_COST + BUILD_COST;
 	if(build_lvl < 4 && 
 	global.resources[WOOD] >= _curr_cost && global.resources[GOLD] >= _curr_cost) {
 		draw_sprite(checkbutton, 0, x+20, y-y_offset+10);
@@ -95,7 +95,7 @@ if(upgrade_type == BARRACK || upgrade_type == RANGE || upgrade_type == STABLE) {
 	draw_text_ext_transformed_color(x, y-y_offset, _curr_lvl, 5, 500,0.6,0.6,0, c_black,c_black,c_black,c_black, 1 );
 	draw_text_ext_transformed_color(x-15, y-y_offset+20, "Upgrade: ",5, 500,0.6,0.6,0, c_black,c_black,c_black,c_black, 1 );
 	
-	var _curr_cost = build_lvl*UPGRADE_COST + BUILD_COST;
+	var _curr_cost = build_lvl*RES_UPGRADE_COST + BUILD_COST;
 	if(build_lvl < 4 && 
 	global.resources[WOOD] >= _curr_cost && global.resources[GOLD] >= _curr_cost) {
 		draw_sprite(checkbutton, 0, x+20, y-y_offset+25);
