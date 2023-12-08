@@ -242,20 +242,20 @@ if(popup_type == POPUP_UPGRADE && build_lvl > 0) {
 		case BARRACK:
 			_curr_build = "Barrack";
 			_curr_health = "HP: " + string(building_health) + " / " + string(oBarrack_Building.max_health);
-			_curr_product = string(BUILD_COST);
+			_curr_product = string(RECRUIT_COST);
 			break;
 	
 	
 		case RANGE:
 			_curr_build = "Skirmish Range";
 			_curr_health = "HP: " + string(building_health) + " / " + string(oBarrack_Building.max_health);
-			_curr_product = string(BUILD_COST);
+			_curr_product = string(RECRUIT_COST);
 			break;
 			
 		case STABLE:
 			_curr_build = "Stable";
 			_curr_health = "HP: " + string(building_health) + " / " + string(oBarrack_Building.max_health);
-			_curr_product = string(BUILD_COST);
+			_curr_product = string(RECRUIT_COST);
 			break;
 	
 		case HOUSE:
