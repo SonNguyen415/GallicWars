@@ -22,6 +22,16 @@ building = 0;
 
 
 // Building ids;
+#macro BARRACK 1
+#macro RANGE 2
+#macro STABLE 3
+#macro FARM 4
+#macro MILL 5
+#macro QUARRY 6
+#macro MINE 7
+#macro HOUSE 8
+#macro WALL 9
+
 barrack = 1; 
 range = 2;
 stable = 3;
@@ -30,3 +40,4 @@ mill = 5;
 quarry = 6;
 mine = 7;
 house = 8;
+wall = 9;

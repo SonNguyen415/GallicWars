@@ -25,7 +25,7 @@ oBuildingManager.building = 0;
 
 // Modify functionality based on type
 switch(build_type) {
-	case oBuildingManager.house:
+	case HOUSE:
 		global.tax_income[global.gold] += global.productivity;
 		break;
 		

@@ -25,4 +25,4 @@ oBuildingManager.building = 0;
 
 	
 // Increase the income
-global.tax_income[build_type- oBuildingManager.stable] += global.productivity;
+global.tax_income[build_type- STABLE] += global.productivity;

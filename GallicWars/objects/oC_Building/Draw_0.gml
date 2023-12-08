@@ -3,36 +3,38 @@
 
 
 switch(oBuildingManager.building) {
-	case oBuildingManager.farm:
-		
-		draw_sprite_ext(farmTile, 0, mouse_x, mouse_y, 1, 1, 0, c_white, build_transparency);
-		break;
-	case oBuildingManager.mill:
-		draw_sprite_ext(sawmillTile, 0, mouse_x, mouse_y, 1, 1, 0, c_white, build_transparency);
-		break;
-	case oBuildingManager.quarry:
-		draw_sprite_ext(quarryTile, 0, mouse_x, mouse_y, 1, 1, 0, c_white, build_transparency);
-		break;
-	case oBuildingManager.mine:
-		draw_sprite_ext(mineTile, 0, mouse_x, mouse_y, 1, 1, 0, c_white, build_transparency);
-		break;
-	
-	case oBuildingManager.barrack:
+	case BARRACK:
 		draw_sprite_ext(barracksTile, 0, mouse_x, mouse_y, 1, 1, 0, c_white, build_transparency);
 		break;
 		
-	case oBuildingManager.range:
+	case RANGE:
 		draw_sprite_ext(archeryRange, 0, mouse_x, mouse_y, 1, 1, 0, c_white, build_transparency);
 		break;
 		
-	case oBuildingManager.stable:
+	case STABLE:
 		draw_sprite_ext(stableSprite, 0, mouse_x, mouse_y, 1, 1, 0, c_white, build_transparency);
 		break;
 		
-	case oBuildingManager.house:
-		draw_sprite_ext(houses, 0, mouse_x, mouse_y, 1, 1, 0, c_white, build_transparency);
+		
+	case FARM:
+		draw_sprite_ext(farmTile, 0, mouse_x, mouse_y, 1, 1, 0, c_white, build_transparency);
 		break;
 		
+	case MILL:
+		draw_sprite_ext(sawmillTile, 0, mouse_x, mouse_y, 1, 1, 0, c_white, build_transparency);
+		break;
+		
+	case QUARRY:
+		draw_sprite_ext(quarryTile, 0, mouse_x, mouse_y, 1, 1, 0, c_white, build_transparency);
+		break;
+		
+	case MINE:
+		draw_sprite_ext(mineTile, 0, mouse_x, mouse_y, 1, 1, 0, c_white, build_transparency);
+		break;
+
+	case HOUSE:
+		draw_sprite_ext(houses, 0, mouse_x, mouse_y, 1, 1, 0, c_white, build_transparency);
+		break;
 		
 		
 	default:

@@ -7,7 +7,7 @@ if (building_health <= 0) {
 
 // Set sprite
 switch(build_type) {
-	case oBuildingManager.house:
+	case HOUSE:
 		sprite_index = houses;
 		break;
 		
@@ -23,7 +23,7 @@ image_speed = 0;
 if(recent_upgraded) {
 	image_index = build_lvl-1;
 	switch(build_type) {
-		case oBuildingManager.house:
+		case HOUSE:
 			global.tax_income[global.gold] += global.productivity;
 			break;
 		

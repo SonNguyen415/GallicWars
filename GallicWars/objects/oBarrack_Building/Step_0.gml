@@ -7,14 +7,14 @@ if (building_health <= 0) {
 
 // Set sprite
 switch(build_type) {
-	case oBuildingManager.barrack:
+	case BARRACK:
 		sprite_index = barracksTile;
 		break;
 		
-	case oBuildingManager.range:
+	case RANGE:
 		sprite_index = archeryRange;
 		
-	case oBuildingManager.stable:
+	case STABLE:
 		sprite_index = stableSprite;
 
 	default:

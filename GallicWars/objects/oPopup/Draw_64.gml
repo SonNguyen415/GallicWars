@@ -27,31 +27,31 @@ if(popup_type == global.popup_construct) {
 	
 
 	switch(popup_subtype) {
-		case oBuildingManager.farm:
+		case FARM:
 			_build_result += "+" + string(global.productivity) + " Food";
 			draw_text_ext_transformed_color(_x_pos+text_x_offset, _y_pos - 50, "Farm",5, 500,1.2,1.2,0, c_blue,c_blue,c_blue,c_blue, 1 );
 			draw_text_ext_transformed_color(_x_pos+text_x_offset, _y_pos + 35, _build_result,5, 500, 1,1,0, c_black,c_black,c_black,c_black, 1 );
 			break;
 			
-		case oBuildingManager.mill:
+		case MILL:
 			_build_result += "+" + string(global.productivity) + " Wood";
 			draw_text_ext_transformed_color(_x_pos+text_x_offset, _y_pos - 50, "Mill",5, 500,1.2,1.2,0, c_blue,c_blue,c_blue,c_blue, 1 );
 			draw_text_ext_transformed_color(_x_pos+text_x_offset, _y_pos + 35, _build_result,5, 500, 1,1,0, c_black,c_black,c_black,c_black, 1 );
 			break;
 			
-		case oBuildingManager.quarry:
+		case QUARRY:
 			_build_result += "+" + string(global.productivity) + " Stone";
 			draw_text_ext_transformed_color(_x_pos+text_x_offset, _y_pos - 50, "Quarry",5, 500,1.2,1.2,0, c_blue,c_blue,c_blue,c_blue, 1 );
 			draw_text_ext_transformed_color(_x_pos+text_x_offset, _y_pos + 35, _build_result,5, 500, 1,1,0, c_black,c_black,c_black,c_black, 1 );
 			break;
 		
-		case oBuildingManager.mine:
+		case MINE:
 			_build_result += "+" + string(global.productivity) + " Metal";
 			draw_text_ext_transformed_color(_x_pos+text_x_offset, _y_pos - 50, "Mine",5, 500,1.2,1.2,0, c_blue,c_blue,c_blue,c_blue, 1 );
 			draw_text_ext_transformed_color(_x_pos+text_x_offset, _y_pos + 35, _build_result,5, 500, 1,1,0, c_black,c_black,c_black,c_black, 1 );
 			break;
 		
-		case oBuildingManager.barrack:
+		case BARRACK:
 	
 			draw_text_ext_transformed_color(_x_pos+text_x_offset, _y_pos - 55, "Barrack",5, 500,1.1,1.1,0, c_blue,c_blue,c_blue,c_blue, 1 );
 			_c_offset = -10;
@@ -59,7 +59,7 @@ if(popup_type == global.popup_construct) {
 			draw_text_ext_transformed_color(_x_pos+text_x_offset, _y_pos + 50, "Recruit Legions",5, 500, 0.8,0.8,0, c_black,c_black,c_black,c_black, 1 );
 			break;
 		
-		case oBuildingManager.range:
+		case RANGE:
 			draw_text_ext_transformed_color(_x_pos+text_x_offset, _y_pos - 60, "Skirmisher",5, 500,1.2,1.2,0, c_blue,c_blue,c_blue,c_blue, 1 );
 			draw_text_ext_transformed_color(_x_pos+text_x_offset, _y_pos - 42, "Range",5, 500,1.2,1.2,0, c_blue,c_blue,c_blue,c_blue, 1 );
 			_c_offset = -5;
@@ -67,14 +67,14 @@ if(popup_type == global.popup_construct) {
 			draw_text_ext_transformed_color(_x_pos+text_x_offset, _y_pos + 55, "Recruit Skirmishers",5, 500, 0.8,0.8,0, c_black,c_black,c_black,c_black, 1 );
 			break;
 		
-			case oBuildingManager.stable:
+		case STABLE:
 			draw_text_ext_transformed_color(_x_pos+text_x_offset, _y_pos - 60, "Stable",5, 500,1.2,1.2,0, c_blue,c_blue,c_blue,c_blue, 1 );
 			_c_offset = -5;
 			draw_text_ext_transformed_color(_x_pos+text_x_offset, _y_pos + 30, _build_result,5, 500, 1,1,0, c_black,c_black,c_black,c_black, 1 );
 			draw_text_ext_transformed_color(_x_pos+text_x_offset, _y_pos + 55, "Recruit Cavalry",5, 500, 0.8,0.8,0, c_black,c_black,c_black,c_black, 1 );
 			break;
 		
-		case oBuildingManager.house:
+		case HOUSE:
 			_build_result += "+" + string(global.productivity) + " Gold";
 			draw_text_ext_transformed_color(_x_pos+text_x_offset, _y_pos - 50, "House",5, 500,1.2,1.2,0, c_blue,c_blue,c_blue,c_blue, 1 );
 			draw_text_ext_transformed_color(_x_pos+text_x_offset, _y_pos + 35, _build_result,5, 500, 1,1,0, c_black,c_black,c_black,c_black, 1 );
@@ -215,50 +215,50 @@ if(popup_type == global.popup_upgrade && build_lvl > 0) {
 	
 
 	switch(popup_subtype) {
-		case oBuildingManager.farm:
+		case FARM:
 			_curr_build = "Farm";
 			_curr_product = "Product: " + string(global.productivity * build_lvl) + " Food";
 			_curr_health = "HP: " + string(building_health) + " / " + string(oResource_Building.max_health);
 			break;
 		
-		case oBuildingManager.mill:
+		case MILL:
 			_curr_build = "Mill";
 			_curr_product = "Product: " + string(global.productivity * build_lvl)  + " Wood";
 			_curr_health = "HP: " + string(building_health) + " / " + string(oResource_Building.max_health);
 			break;
 		
-		case oBuildingManager.quarry:
+		case QUARRY:
 			_curr_build = "Stone";
 			_curr_product = "Product: " + string(global.productivity * build_lvl)  + " Stone";
 			_curr_health = "HP: " + string(building_health) + " / " + string(oResource_Building.max_health);
 			break;
 			
-		case oBuildingManager.mine:
+		case MINE:
 			_curr_build = "Mine";
 			_curr_product = "Product: " + string(global.productivity *build_lvl)  + " Metal";
 			_curr_health = "HP: " + string(building_health) + " / " + string(oResource_Building.max_health);
 			break;
 	
-		case oBuildingManager.barrack:
+		case BARRACK:
 			_curr_build = "Barrack";
 			_curr_health = "HP: " + string(building_health) + " / " + string(oBarrack_Building.max_health);
 			_curr_product = string(global.build_cost);
 			break;
 	
 	
-		case oBuildingManager.range:
+		case RANGE:
 			_curr_build = "Skirmish Range";
 			_curr_health = "HP: " + string(building_health) + " / " + string(oBarrack_Building.max_health);
 			_curr_product = string(global.build_cost);
 			break;
 			
-		case oBuildingManager.stable:
+		case STABLE:
 			_curr_build = "Stable";
 			_curr_health = "HP: " + string(building_health) + " / " + string(oBarrack_Building.max_health);
 			_curr_product = string(global.build_cost);
 			break;
 	
-		case oBuildingManager.house:
+		case HOUSE:
 			_curr_build = "House";
 			_curr_product = "Product: " + string(global.productivity *build_lvl)  + " Gold";
 			_curr_health = "HP: " + string(building_health) + " / " + string(oUtil_Building.max_health);
@@ -271,7 +271,7 @@ if(popup_type == global.popup_upgrade && build_lvl > 0) {
 			break;
 	}
 	
-	if(popup_subtype == oBuildingManager.barrack || popup_subtype == oBuildingManager.range || popup_subtype == oBuildingManager.stable) {
+	if(popup_subtype == BARRACK || popup_subtype == RANGE || popup_subtype == RANGE) {
 		draw_text_ext_transformed_color(_x_pos+text_x_offset, _y_pos-69, _curr_build, 5, 500, 1,1,0, c_blue, c_blue,c_blue,c_blue, 1 );
 		draw_text_ext_transformed_color(_x_pos+text_x_offset, _y_pos-45, "Recruit Cost", 5, 500, 0.9,0.9,0, c_black,c_black,c_black,c_black, 1 );
 		draw_text_ext_transformed_color(_x_pos+text_x_offset, _y_pos-25, _curr_product + " Gold", 5, 500, 0.9,0.9,0, _c_recruit,_c_recruit,_c_recruit,_c_recruit, 1 );
