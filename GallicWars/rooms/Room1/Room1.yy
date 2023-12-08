@@ -233,14 +233,6 @@
     {"name":"inst_D81FC82","path":"rooms/Room1/Room1.yy",},
     {"name":"inst_777ABEE0","path":"rooms/Room1/Room1.yy",},
     {"name":"inst_2D5ADDE3","path":"rooms/Room1/Room1.yy",},
-    {"name":"inst_20306B91","path":"rooms/Room1/Room1.yy",},
-    {"name":"inst_5A44FD6D","path":"rooms/Room1/Room1.yy",},
-    {"name":"inst_6E476497","path":"rooms/Room1/Room1.yy",},
-    {"name":"inst_11998514","path":"rooms/Room1/Room1.yy",},
-    {"name":"inst_7E5329C8","path":"rooms/Room1/Room1.yy",},
-    {"name":"inst_36B972F2","path":"rooms/Room1/Room1.yy",},
-    {"name":"inst_21F9F5E4","path":"rooms/Room1/Room1.yy",},
-    {"name":"inst_1BCC4B14","path":"rooms/Room1/Room1.yy",},
   ],
   "isDnd": false,
   "layers": [
@@ -383,30 +375,6 @@
         {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_D81FC82","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":9,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"oWall","path":"objects/oWall/oWall.yy",},"properties":[],"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":2048.0,"y":2112.0,},
         {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_777ABEE0","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":9,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"oWall","path":"objects/oWall/oWall.yy",},"properties":[],"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":2080.0,"y":2112.0,},
         {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_2D5ADDE3","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"oCity_Hall","path":"objects/oCity_Hall/oCity_Hall.yy",},"properties":[],"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":1600.0,"y":1600.0,},
-        {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_20306B91","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"oBarb","path":"objects/oBarb/oBarb.yy",},"properties":[
-            {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","objectId":{"name":"oBarb","path":"objects/oBarb/oBarb.yy",},"propertyId":{"name":"troop_type","path":"objects/oBarb/oBarb.yy",},"value":"\"Infantry\"",},
-          ],"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":992.0,"y":1728.0,},
-        {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_5A44FD6D","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"oBarb","path":"objects/oBarb/oBarb.yy",},"properties":[
-            {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","objectId":{"name":"oBarb","path":"objects/oBarb/oBarb.yy",},"propertyId":{"name":"troop_type","path":"objects/oBarb/oBarb.yy",},"value":"\"Infantry\"",},
-          ],"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":992.0,"y":1760.0,},
-        {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_6E476497","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"oBarb","path":"objects/oBarb/oBarb.yy",},"properties":[
-            {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","objectId":{"name":"oBarb","path":"objects/oBarb/oBarb.yy",},"propertyId":{"name":"troop_type","path":"objects/oBarb/oBarb.yy",},"value":"\"Infantry\"",},
-          ],"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":992.0,"y":1792.0,},
-        {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_11998514","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"oBarb","path":"objects/oBarb/oBarb.yy",},"properties":[
-            {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","objectId":{"name":"oBarb","path":"objects/oBarb/oBarb.yy",},"propertyId":{"name":"troop_type","path":"objects/oBarb/oBarb.yy",},"value":"\"Infantry\"",},
-          ],"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":992.0,"y":1824.0,},
-        {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_7E5329C8","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"oBarb","path":"objects/oBarb/oBarb.yy",},"properties":[
-            {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","objectId":{"name":"oBarb","path":"objects/oBarb/oBarb.yy",},"propertyId":{"name":"troop_type","path":"objects/oBarb/oBarb.yy",},"value":"\"Infantry\"",},
-          ],"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":160.0,"y":1728.0,},
-        {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_36B972F2","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"oBarb","path":"objects/oBarb/oBarb.yy",},"properties":[
-            {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","objectId":{"name":"oBarb","path":"objects/oBarb/oBarb.yy",},"propertyId":{"name":"troop_type","path":"objects/oBarb/oBarb.yy",},"value":"\"Infantry\"",},
-          ],"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":160.0,"y":1760.0,},
-        {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_21F9F5E4","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"oBarb","path":"objects/oBarb/oBarb.yy",},"properties":[
-            {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","objectId":{"name":"oBarb","path":"objects/oBarb/oBarb.yy",},"propertyId":{"name":"troop_type","path":"objects/oBarb/oBarb.yy",},"value":"\"Infantry\"",},
-          ],"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":160.0,"y":1792.0,},
-        {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_1BCC4B14","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"oBarb","path":"objects/oBarb/oBarb.yy",},"properties":[
-            {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","objectId":{"name":"oBarb","path":"objects/oBarb/oBarb.yy",},"propertyId":{"name":"troop_type","path":"objects/oBarb/oBarb.yy",},"value":"\"Infantry\"",},
-          ],"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":160.0,"y":1824.0,},
       ],"layers":[],"properties":[],"userdefinedDepth":false,"visible":true,},
     {"resourceType":"GMRInstanceLayer","resourceVersion":"1.0","name":"Plots","depth":600,"effectEnabled":true,"effectType":null,"gridX":32,"gridY":32,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"instances":[
         {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_22746E3A","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"oPlot","path":"objects/oPlot/oPlot.yy",},"properties":[],"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":1760.0,"y":1376.0,},
