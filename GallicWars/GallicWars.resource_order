@@ -96,7 +96,6 @@
     {"name":"PropTiles57","order":10,"path":"sprites/PropTiles57/PropTiles57.yy",},
     {"name":"start","order":1,"path":"sprites/start/start.yy",},
     {"name":"romeInfAttack","order":6,"path":"sprites/romeInfAttack/romeInfAttack.yy",},
-    {"name":"unitLevel","order":9,"path":"sprites/unitLevel/unitLevel.yy",},
     {"name":"oUpgrade","order":1,"path":"objects/oUpgrade/oUpgrade.yy",},
     {"name":"roadTile","order":6,"path":"tilesets/roadTile/roadTile.yy",},
     {"name":"barbCavIdle","order":24,"path":"sprites/barbCavIdle/barbCavIdle.yy",},

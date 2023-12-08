@@ -121,7 +121,6 @@
     {"id":{"name":"grassStoneTileMap","path":"sprites/grassStoneTileMap/grassStoneTileMap.yy",},},
     {"id":{"name":"start_btn","path":"objects/start_btn/start_btn.yy",},},
     {"id":{"name":"romeInfAttack","path":"sprites/romeInfAttack/romeInfAttack.yy",},},
-    {"id":{"name":"unitLevel","path":"sprites/unitLevel/unitLevel.yy",},},
     {"id":{"name":"oUpgrade","path":"objects/oUpgrade/oUpgrade.yy",},},
     {"id":{"name":"roadTile","path":"tilesets/roadTile/roadTile.yy",},},
     {"id":{"name":"oPopup","path":"objects/oPopup/oPopup.yy",},},
