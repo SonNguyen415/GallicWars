@@ -10,6 +10,11 @@ randomise();
 #macro GAUL_HP 50
 
 
+#macro WIN 1
+#macro LOSE -
+#macro IN_GAME 0
+#macro MAX_WAVE 6
+
 
 spawn_wave = 1;
 
@@ -31,3 +36,4 @@ start_variation = 100;
 // I want first 2 waves to be more predictable, but each gameplay must be different
 // So we get a random position to exclude from the first 3 waves's calculation
 start_exclude = irandom(2);
+
