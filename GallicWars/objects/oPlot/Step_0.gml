@@ -1,7 +1,8 @@
 /// @description Insert description here
 // You can write your code in this editor
 
-if(position_meeting(mouse_x, mouse_y, oBarb) || position_meeting(x, y, oRome)) {
+if(place_meeting(x, y, oBarb) || place_meeting(x, y, oRome) || position_meeting(x, y, oBarb) || position_meeting(x, y, oRome)) {
+	show_debug_message("army on tile");
 	army_on_tile = true;	
 } else {
 	army_on_tile = false;	

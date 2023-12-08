@@ -16,13 +16,13 @@ has_popup = -1;
 // Build cost and upgrade cost
 #macro BUILD_COST 50
 #macro RES_UPGRADE_COST 25
-#macro BARRACK_UPGRADE_COST 100
-#macro PRODUCTIVITY 10
+#macro BARRACK_UPGRADE_COST 250
+#macro PRODUCTIVITY 5
 #macro REPAIR_COST 5
 
 // Recruitment cost
 #macro RECRUIT_COST 10
-#macro UPKEEP_COST 1
+#macro UPKEEP_COST 2
 
 
 // Just some id
@@ -35,7 +35,7 @@ has_popup = -1;
 #macro TAX_RATE 100
 
 
-global.resources = [200, 300, 300, 100, 100]
+global.resources = [200, 200, 200, 200, 200]
 global.tax_income = [5, 0, 1, 0, 0];
 global.expenses = [0, 0, 0, 0, 0]
 global.balance = [0, 0, 0, 0, 0]
