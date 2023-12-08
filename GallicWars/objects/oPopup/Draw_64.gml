@@ -261,7 +261,7 @@ if(popup_type == POPUP_UPGRADE && build_lvl > 0) {
 		case STABLE:
 			_curr_build = "Stable";
 			_curr_health = "HP: " + string(building_health) + " / " + string(oBarrack_Building.max_health);
-			_curr_product = string(RECRUIT_COST);
+			_curr_product = string(CAV_RECRUIT_COST);
 			break;
 	
 		case HOUSE:

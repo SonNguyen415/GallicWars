@@ -126,15 +126,29 @@ if(recruiting) {
 		switch(build_type) {
 			case BARRACK:
 				new_troop.troop_type = "Infantry";
+				global.resources[GOLD] -= RECRUIT_COST*build_lvl;
+				global.resources[METAL] -= RECRUIT_COST;
+
+				global.expenses[GOLD] += UPKEEP_COST;
+				global.expenses[FOOD] += UPKEEP_COST*2;
 				break;
 			case RANGE:
 				new_troop.troop_type = "Archer";
-				show_debug_message("Archer");
+				global.resources[GOLD] -= RECRUIT_COST;
+				global.resources[METAL] -= RECRUIT_COST;
+
+				global.expenses[GOLD] += UPKEEP_COST;
+				global.expenses[FOOD] += UPKEEP_COST*2;
 				break;
 			case STABLE:
 				new_troop.troop_type = "Cavalry";
-				show_debug_message("Cavalry");
 				new_troop.troop_speed *= CAV_SPEED;
+				global.resources[GOLD] -= CAV_RECRUIT_COST;
+				global.resources[METAL] -= CAV_RECRUIT_COST;
+
+				global.expenses[GOLD] += CAV_UPKEEP_COST;
+				global.expenses[FOOD] += CAV_UPKEEP_COST*2;
+				
 				break;
 		}
 		recruiting = false;

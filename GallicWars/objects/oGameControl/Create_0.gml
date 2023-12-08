@@ -8,7 +8,7 @@
 #macro LOSE 3
 
 
-#macro CAV_SPEED 1.5
+#macro CAV_SPEED 1.2
 #macro ROME_ATTACK 8
 #macro ROME_DEFENSE 4
 #macro ROME_HEALTH 100
@@ -16,7 +16,7 @@
 
 #macro GAUL_ATTACK 8
 #macro GAUL_DEFENSE 4
-#macro GAUL_HP 50
+#macro GAUL_HP 75
 
 
 global.curr_game = START_GAME;

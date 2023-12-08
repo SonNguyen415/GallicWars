@@ -14,16 +14,17 @@ has_popup = -1;
 
 
 // Build cost and upgrade cost
-#macro BUILD_COST 50
+#macro BUILD_COST 75
 #macro RES_UPGRADE_COST 25
-#macro BARRACK_UPGRADE_COST 250
+#macro BARRACK_UPGRADE_COST 500
 #macro PRODUCTIVITY 5
 #macro REPAIR_COST 5
 
 // Recruitment cost
 #macro RECRUIT_COST 10
 #macro UPKEEP_COST 2
-
+#macro CAV_RECRUIT_COST 15
+#macro CAV_UPKEEP_COST 3
 
 // Just some id
 #macro GOLD 0
