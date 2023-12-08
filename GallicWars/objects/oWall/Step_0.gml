@@ -39,11 +39,6 @@ if(x > room_width/2) {
 // Check for hovering over popup
 if(mouse_x >= x && mouse_x <= x+64 && mouse_y >= y-75 && mouse_y <= y-10 && check_wall > 0) {
 	popup_hovering = true;
-	show_debug_message("MinX: " + string(x+26) + " | MaxX: " + string(x+46));
-	show_debug_message("MinY: " + string(y-20) + " | MaxY: " + string(y));
-	show_debug_message("mouse_x: " + string(mouse_x) + " | mouse_y: " + string(mouse_y));
-	show_debug_message("------------------------------------");
-
 } else {
 	popup_hovering = false;
 }
@@ -79,7 +74,6 @@ if(mouse_check_button_pressed(mb_left)) {
 // If already has popup and info changed, destroy current so we can update HP
 if(check_wall > 0 && info_changed) { 
 	instance_destroy(oWallInfo);
-	show_debug_message("Updating HP");
 	check_wall = instance_create_layer(x+16, y+16, "Popup_Layer", oWallInfo);
 	check_wall.wall_id = id;
 	check_wall.wall_health = wall_health;
