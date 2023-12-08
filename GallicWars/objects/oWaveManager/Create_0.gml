@@ -4,6 +4,13 @@
 // Randomize the seed. Comment out for debugging
 randomise();
 
+
+#macro GAUL_ATTACK 8
+#macro GAUL_DEFENSE 4
+#macro GAUL_HP 50
+
+
+
 spawn_wave = 1;
 
 alarm[0] = room_speed * 10;

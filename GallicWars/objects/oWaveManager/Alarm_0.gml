@@ -1,9 +1,12 @@
 /// @description Insert description here
 // You can write your code in this editor
-/*
+
 
 var _num_dir = 1;
 
+if(spawn_wave > 1) {
+	spawn_wave = 1;
+}
 
 
 // Set number of directions army will come from
@@ -65,7 +68,7 @@ for(var _k=0; _k<_num_dir; _k++) {
 			
 		case 2:
 			_num_enemies = 16;
-			_num_inf = irandom(8, 12);
+			_num_inf = irandom_range(8, 12);
 			_num_archers = _num_enemies - _num_inf;
 			
 			// 1/3 are upgraded (5)
@@ -76,7 +79,7 @@ for(var _k=0; _k<_num_dir; _k++) {
 		
 		case 3:
 			_num_enemies = 25;
-			_num_inf = irandom(16, 20);
+			_num_inf = irandom_range(16, 20);
 			_num_archers = _num_enemies - _num_inf-2;
 			_num_cav = 2;
 			
@@ -86,67 +89,104 @@ for(var _k=0; _k<_num_dir; _k++) {
 			
 			
 		case 4:
-			_num_enemies = 20;
-			_num_inf = irandom(8, 12);
+			_num_enemies = 40/_k;
+			_num_inf = irandom_range(8, 12);
 			_num_archers = _num_enemies - _num_inf-2;
 			_num_cav = 2;
 			
 			// 1/2 are upgraded (10)
 			_num_lvl[2] = 4;
 			_num_lvl[1] = floor(_num_enemies/2);
-			_num_lvl[0] = _num_lvl[2] - _num_enemies - _num_lvl[0];
+			_num_lvl[0] =  _num_enemies - _num_lvl[2] - _num_lvl[1];
 			
 			break;
 			
 		case 5:
-			_num_enemies = 25;
-			_num_inf = irandom(8, 12);
-			_num_archers = _num_enemies - _num_inf-2;
-			_num_cav = 2;
+			_num_enemies = 50/_k;
+			_num_inf = irandom_range(8, 12);
+			_num_archers = _num_enemies - _num_inf-4;
+			_num_cav = 4;
 			
 			// 1/2 are upgraded (10)
 			_num_lvl[2] = 4;
 			_num_lvl[1] = floor(_num_enemies/2);
-			_num_lvl[0] = _num_lvl[2] - _num_enemies - _num_lvl[0];
+			_num_lvl[0] = _num_enemies - _num_lvl[2] - _num_lvl[1];
 			
 			break;
 			
 		case 6:
-			_num_enemies = 20;
-			_num_inf = irandom(8, 12);
-			_num_archers = _num_enemies - _num_inf-2;
-			_num_cav = 2;
+			_num_enemies = 75/_k;
+			_num_inf = irandom_range(8, 12);
+			_num_cav = irandom_range(2, 6);
+			_num_archers = _num_enemies - _num_inf-_num_cav;
 			
 			// 1/2 are upgraded (10)
-			_num_lvl[2] = 4;
+			_num_lvl[3] = 2;
 			_num_lvl[1] = floor(_num_enemies/2);
-			_num_lvl[0] = _num_lvl[2] - _num_enemies - _num_lvl[0];
+			_num_lvl[2] =  _num_enemies - _num_lvl[3] - _num_lvl[1];
 			
 			break;
 		
 	}
 	
+	var _root_enemies = ceil(sqrt(_num_enemies));
 
 	
-	for(var _i=0; _i<_num_enemies; _i++) {
-		for(var _j= 0; _j <_num_enemies; _j++) {
+	for(var _i=0; _i<_root_enemies; _i++) {
+		for(var _j= 0; _j <_root_enemies; _j++) {
+			if(_num_enemies <= 0) {
+				break;	
+			}
+			
 			var _new_troop = instance_create_layer(_start_pos[0]+_i*32, _start_pos[1]+_j*32, "Instances", oBarb);
-			_new_troop.tier = 1;
-			_new_troop.troop_health = 50 * new_troop.tier;
-			_new_troop.troop_defense = 4 * new_troop.tier;
-			_new_troop.troop_attack = 8 * new_troop.tier;
-			_new_troop.troop_type = "Infantry";
+			
+			
+			// Determine troop tier. Priority for higher rank to spawn first
+			if(_num_lvl[3] > 0) {
+				_new_troop.tier = 3;
+				_num_lvl[3]--;
+			} else if(_num_lvl[2] > 0) {
+				_new_troop.tier = 2;
+				_num_lvl[2]--;
+			} else if(_num_lvl[1] > 0) {
+				_new_troop.tier = 1;
+				_num_lvl[1]--;
+			}  else if(_num_lvl[0] > 0) {
+				_new_troop.tier = 0;
+				_num_lvl[0]--;
+			} 
+				
+			_new_troop.troop_health = GAUL_HP * _new_troop.tier;
+			_new_troop.troop_defense = GAUL_DEFENSE * _new_troop.tier;
+			_new_troop.troop_attack = GAUL_ATTACK * _new_troop.tier;
+			
+			
+			// Determine troop type. Priority for cav->archer->infantry
+			if(_num_cav > 0) {
+				_new_troop.troop_type = "Cavalry";
+				_num_cav--;
+				_new_troop.troop_speed *= CAV_SPEED;
+			} else if(_num_archers > 0) {
+				_new_troop.troop_type = "Archer";
+				_num_archers--;
+			} else if(_num_inf > 0) {
+				_new_troop.troop_type = "Infantry";
+				_num_inf--;
+			} 
+			
+			
+			_num_enemies--;
+			
 		}
 			
 	}
-	
 	
 }
 
 	
 
 spawn_wave++;
-*/
-alarm[0] = room_speed * 10;
+
+alarm[0] = room_speed * wave_time;
 
 

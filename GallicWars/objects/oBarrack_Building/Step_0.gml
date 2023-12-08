@@ -120,9 +120,9 @@ if(recruiting) {
 	}
 	if (recruiting != false) {
 		new_troop.tier = build_lvl;
-		new_troop.troop_health = 100 * new_troop.tier;
-		new_troop.troop_defense = 4 * new_troop.tier;
-		new_troop.troop_attack = 8 * new_troop.tier;
+		new_troop.troop_health = ROME_HEALTH * new_troop.tier;
+		new_troop.troop_defense = ROME_DEFENSE * new_troop.tier;
+		new_troop.troop_attack = ROME_ATTACK * new_troop.tier;
 		switch(build_type) {
 			case BARRACK:
 				new_troop.troop_type = "Infantry";
@@ -134,7 +134,7 @@ if(recruiting) {
 			case STABLE:
 				new_troop.troop_type = "Cavalry";
 				show_debug_message("Cavalry");
-				new_troop.troop_speed *= 1.5;
+				new_troop.troop_speed *= CAV_SPEED;
 				break;
 		}
 		recruiting = false;
