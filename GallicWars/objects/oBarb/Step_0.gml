@@ -19,6 +19,7 @@ if (target == noone  && !place_meeting(x, y, oBarb) && dead == false) {
 	} else {
 		image_xscale = 1;	
 	}
+	
 	if (troop_type == "Infantry") {
 		sprite_index = barbInfWalk;
 	} else if (troop_type == "Archer") {

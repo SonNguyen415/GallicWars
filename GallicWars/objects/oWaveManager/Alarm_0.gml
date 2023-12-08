@@ -64,7 +64,12 @@ for(var _k=0; _k<_num_dir; _k++) {
 	
 	for(var _i=0; _i<_sq_root_enemies; _i++) {
 		for(var _j= 0; _j <_sq_root_enemies; _j++) {
-			instance_create_layer(_start_pos[0]+_i*32, _start_pos[1]+_j*32, "Instances", oBarb);
+			new_troop = instance_create_layer(_start_pos[0]+_i*32, _start_pos[1]+_j*32, "Instances", oBarb);
+			new_troop.tier = 1;
+			new_troop.troop_health = 50 * new_troop.tier;
+			new_troop.troop_defense = 4 * new_troop.tier;
+			new_troop.troop_attack = 8 * new_troop.tier;
+			new_troop.troop_type = "Infantry";
 		}
 			
 	}
@@ -76,6 +81,6 @@ for(var _k=0; _k<_num_dir; _k++) {
 
 spawn_wave++;
 
-alarm[0] = room_speed * wave_time;
+alarm[0] = room_speed * 10;
 
 

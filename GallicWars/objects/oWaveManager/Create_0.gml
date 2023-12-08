@@ -6,7 +6,7 @@ randomise();
 
 spawn_wave = 1;
 
-alarm[0] = room_speed * wave_time;
+alarm[0] = room_speed * 10;
 
 
 // Initialize the starting position
