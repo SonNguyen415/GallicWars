@@ -1,0 +1,1 @@
+army_on_tile = false;

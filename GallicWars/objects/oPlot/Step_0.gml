@@ -1,9 +1,14 @@
 /// @description Insert description here
 // You can write your code in this editor
 
+if(position_meeting(mouse_x, mouse_y, oBarb) || position_meeting(x, y, oRome)) {
+	army_on_tile = true;	
+} else {
+	army_on_tile = false;	
+}
 
-
-if(mouse_check_button_pressed(mb_left) &&  position_meeting(mouse_x, mouse_y, id) && oBuildingManager.building > 0 && oBuildingManager.hovering < 0) {
+if(mouse_check_button_pressed(mb_left) &&  position_meeting(mouse_x, mouse_y, id) && 
+oBuildingManager.building > 0 && oBuildingManager.hovering < 0 && !army_on_tile) {
 	
 	instance_destroy(oC_Building);
 	
