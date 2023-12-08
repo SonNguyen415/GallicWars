@@ -1,5 +1,12 @@
 /// @description Insert description here
 // You can write your code in this editor
 
-wall_health = 5;
-wall_destroyed = false;
+//draw_set_alpha( .3);
+
+//mp_grid_draw( grid);
+
+
+
+
+
+

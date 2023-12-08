@@ -3,11 +3,8 @@
 
 
 
-if(!other.wall_destroyed) {
-	
+if(other.wall_destroyed == false) {
 	speed = 0;
-
-
 
 	if (target == noone) {
 		target = other;
@@ -22,11 +19,14 @@ if(!other.wall_destroyed) {
 		sprite_index = barbInfAttack;
 		combat = true;
 		other.wall_health -= clamp(troop_attack, 1, other.wall_health);
-		if(other.wall_health <= 0) {
-			other.wall_destroyed =  true;
-		}
-	
+
 		alarm[0]= room_speed;
 		//show_debug_message("Army: " + string(other.troop_health));
 	}
+
+} else {
+	if (target == other) {
+		target = noone;	
+	}
 }
+

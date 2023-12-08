@@ -1,7 +1,7 @@
 {
   "resourceType": "GMObject",
   "resourceVersion": "1.0",
-  "name": "scores_btn",
+  "name": "tut_btn",
   "eventList": [],
   "managed": true,
   "overriddenProperties": [],
@@ -26,8 +26,8 @@
   "properties": [],
   "solid": false,
   "spriteId": {
-    "name": "scores",
-    "path": "sprites/scores/scores.yy",
+    "name": "tutbutton",
+    "path": "sprites/tutbutton/tutbutton.yy",
   },
   "spriteMaskId": null,
   "visible": true,

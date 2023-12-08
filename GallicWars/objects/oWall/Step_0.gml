@@ -1,6 +1,9 @@
 /// @description Insert description here
 // You can write your code in this editor
 
+if(wall_destroyed == false && wall_health <= 0) {
+	wall_destroyed = true;
+}
 
 if(wall_destroyed) {
 	visible = false;

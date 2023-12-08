@@ -4,5 +4,3 @@
 
 image_speed = 0;
 wall_health = max_health;
-
-wall_destroyed = false;
