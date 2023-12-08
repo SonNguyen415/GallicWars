@@ -17,6 +17,7 @@ global.resources[global.wood] -= global.build_cost;
 
 
 max_health = 500;
+info_changed = false;
 
 // Set building type and reset construction
 build_type = oBuildingManager.building;
