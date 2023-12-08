@@ -1,3 +1,5 @@
 # GallicWars
 
-Google Drive: https://drive.google.com/drive/folders/1-7RLCyWo5WcwdGVZxDDjlDfK1WctM5T3?usp=sharing
+Beta Test: https://drive.google.com/file/d/1fwYgE7ZcDEjCzUbLDamh_4b57vsZ8rj7/view?usp=sharing
+
+
