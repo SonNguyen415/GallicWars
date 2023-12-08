@@ -40,7 +40,9 @@ if(x > room_width/2) {
 // Check for hovering over popup
 if(mouse_x >= x && mouse_x <= x+64 && mouse_y >= y-75 && mouse_y <= y-10 && check_wall > 0) {
 	popup_hovering = true;
-	show_debug_message("X: " + string(mouse_x) + " | Y: " + string(mouse_y));
+	show_debug_message("MinX: " + string(x+26) + " | MaxX: " + string(x+46));
+	show_debug_message("MinY: " + string(y-20) + " | MaxY: " + string(y));
+	show_debug_message("mouse_x: " + string(mouse_x) + " | mouse_y: " + string(mouse_y));
 	show_debug_message("------------------------------------");
 
 } else {
@@ -56,13 +58,17 @@ if(mouse_check_button_pressed(mb_left)) {
 		check_wall.wall_id = id;
 		check_wall.wall_health = wall_health;
 		check_wall.wall_destroyed = wall_destroyed;
-	} else if(hovering && wall_destroyed && check_wall > 0) {
-		// 1 more condition: Check if we clicked the repair button
-		/*
+	} else if(popup_hovering && wall_destroyed && check_wall > 0 &&
+		mouse_x >= x+26 && mouse_x <= x+46 && 
+		mouse_y >= y-52 && mouse_y <= y-32) {
+			
+		// Check if we clicked the repair button
 		wall_destroyed = false;
+		wall_health = max_health;
 		mp_grid_add_cell(oGridManager.grid, x/32, y/32);
 		image_index = old_idx;
-		*/
+		instance_destroy(oWallInfo);
+		
 	} else if(!popup_hovering && check_wall > 0) { 
 		// Otherwise if we click and not hovering and there's a popup, delete
 		instance_destroy(oWallInfo);
@@ -75,7 +81,7 @@ if(mouse_check_button_pressed(mb_left)) {
 if(check_wall > 0 && info_changed) { 
 	instance_destroy(oWallInfo);
 	show_debug_message("Updating HP");
-	check_wall = instance_create_layer(x, y, "Popup_Layer", oWallInfo);
+	check_wall = instance_create_layer(x+16, y+16, "Popup_Layer", oWallInfo);
 	check_wall.wall_id = id;
 	check_wall.wall_health = wall_health;
 	check_wall.wall_destroyed = wall_destroyed;

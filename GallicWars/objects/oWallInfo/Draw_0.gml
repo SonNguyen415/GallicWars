@@ -26,9 +26,6 @@ if(wall_destroyed) {
 		draw_text_ext_transformed_color(x, y-30, string(REPAIR_COST) + " Wood" , 5, 500, 0.5,0.5,0, c_maroon, c_maroon,c_maroon,c_maroon, 1);
 	}
 	
-	
-	
-
 } else {
 	var _curr_health = "HP: " + string(wall_health) + " / " + string(oWall.max_health);
 	
