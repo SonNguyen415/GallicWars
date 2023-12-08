@@ -105,17 +105,17 @@ if(upgrading > 0 && mouse_check_button_pressed(mb_right)) {
 
 // Recruiting
 if(recruiting) {
-	if (place_meeting(x, y - sprite_height, oBarrack_Building) || place_meeting(x, y - sprite_height, oPlot) || place_meeting(x, y - sprite_height, oResource_Building) || place_meeting(x, y - sprite_height, oUtil_Building)) {
-		if (instance_position(x, y + sprite_height, all)) {
+	if (place_meeting(x - sprite_width, y, oBarrack_Building) || place_meeting(x - sprite_width, y, oPlot) || place_meeting(x - sprite_width, y, oResource_Building) || place_meeting(x - sprite_width, y, oUtil_Building)) {
+		if (instance_position(x + sprite_width, y, all) || instance_position(x + sprite_width + 16, y + 16, all) || instance_position(x + sprite_width + 16, y - 16, all) || instance_position(x + sprite_width - 16, y + 16, all) || instance_position(x + sprite_width - 16, y - 16, all)) {
 			recruiting = false;	
 		} else {
-			new_troop = instance_create_layer(x, y + sprite_height, "Instances", oRome);
+			new_troop = instance_create_layer(x + sprite_width, y, "Instances", oRome);
 		}
 	} else {
-		if (instance_position(x, y - sprite_height, all)) {
+		if (instance_position(x - sprite_width, y, all) || instance_position(x - sprite_width + 16, y + 16, all) || instance_position(x - sprite_width + 16, y - 16, all) || instance_position(x - sprite_width - 16, y + 16, all) || instance_position(x - sprite_width - 16, y - 16, all)) {
 			recruiting = false;	
 		} else {
-			new_troop = instance_create_layer(x, y - sprite_height, "Instances", oRome);
+			new_troop = instance_create_layer(x - sprite_width, y, "Instances", oRome);
 		}
 	}
 	if (recruiting != false) {
