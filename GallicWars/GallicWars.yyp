@@ -137,6 +137,7 @@
     {"id":{"name":"oBarrack_Building","path":"objects/oBarrack_Building/oBarrack_Building.yy",},},
     {"id":{"name":"barbInfDeath","path":"sprites/barbInfDeath/barbInfDeath.yy",},},
     {"id":{"name":"OffenseButtons","path":"sprites/OffenseButtons/OffenseButtons.yy",},},
+    {"id":{"name":"Sprite96","path":"sprites/Sprite96/Sprite96.yy",},},
     {"id":{"name":"BarrackSprite","path":"sprites/BarrackSprite/BarrackSprite.yy",},},
     {"id":{"name":"highscore","path":"sprites/highscore/highscore.yy",},},
     {"id":{"name":"barbArchWalk","path":"sprites/barbArchWalk/barbArchWalk.yy",},},

@@ -110,6 +110,7 @@
     {"name":"oBarrack_Building","order":4,"path":"objects/oBarrack_Building/oBarrack_Building.yy",},
     {"name":"barbInfDeath","order":1,"path":"sprites/barbInfDeath/barbInfDeath.yy",},
     {"name":"OffenseButtons","order":10,"path":"sprites/OffenseButtons/OffenseButtons.yy",},
+    {"name":"Sprite96","order":10,"path":"sprites/Sprite96/Sprite96.yy",},
     {"name":"BarrackSprite","order":3,"path":"sprites/BarrackSprite/BarrackSprite.yy",},
     {"name":"barbArchWalk","order":17,"path":"sprites/barbArchWalk/barbArchWalk.yy",},
     {"name":"title","order":10,"path":"sprites/title/title.yy",},
