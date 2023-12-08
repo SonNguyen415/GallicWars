@@ -83,6 +83,7 @@
     {"id":{"name":"TileSet","path":"tilesets/TileSet/TileSet.yy",},},
     {"id":{"name":"sawmillTile","path":"sprites/sawmillTile/sawmillTile.yy",},},
     {"id":{"name":"romeCavDeath","path":"sprites/romeCavDeath/romeCavDeath.yy",},},
+    {"id":{"name":"barbInfIdle","path":"sprites/barbInfIdle/barbInfIdle.yy",},},
     {"id":{"name":"roadTileMap","path":"sprites/roadTileMap/roadTileMap.yy",},},
     {"id":{"name":"Sprite84","path":"sprites/Sprite84/Sprite84.yy",},},
     {"id":{"name":"ret_btn","path":"objects/ret_btn/ret_btn.yy",},},
