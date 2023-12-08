@@ -16,7 +16,13 @@ if(other.wall_destroyed == false) {
 	}
 
 	if (target == other && combat == false && dead == false) {
-		sprite_index = barbInfAttack;
+		if (troop_type == "Infantry") {
+			sprite_index = barbInfAttack;
+		} else if (troop_type == "Archer") {
+			sprite_index = barbArchAttack;
+		} else if (troop_type == "Cavalry") {
+			sprite_index = barbCavAttack;
+		}
 		combat = true;
 		other.wall_health -= clamp(troop_attack, 1, other.wall_health);
 		other.info_changed = true;

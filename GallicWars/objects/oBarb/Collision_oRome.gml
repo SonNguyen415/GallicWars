@@ -15,7 +15,13 @@ if (target == noone) {
 }
 
 if (target == other && combat == false && dead == false) {
-	sprite_index = barbInfAttack;
+	if (troop_type == "Infantry") {
+		sprite_index = barbInfAttack;
+	} else if (troop_type == "Archer") {
+		sprite_index = barbArchAttack;
+	} else if (troop_type == "Cavalry") {
+		sprite_index = barbCavAttack;
+	}
 	combat = true;
 	other.troop_health -= clamp(troop_attack - other.troop_defense, 1, other.troop_health);
 	alarm[0]= room_speed;
