@@ -23,13 +23,13 @@ if(wall_destroyed) {
 
 // Check for hovering. Conditions are different for left and right wall
 if(x > room_width/2) {
-	if(mouse_x >= x-16 && mouse_x <= x+16+6 && mouse_y >= y-16 && mouse_y <= y + 16) {
+	if(mouse_x >= x && mouse_x <= x+32+6 && mouse_y >= y && mouse_y <= y + 32) {
 		hovering = true;
 	} else {
 		hovering = false;
 	}
 } else {
-	if(mouse_x >= x-16-6 && mouse_x <= x+16 && mouse_y >= y-16 && mouse_y <= y + 16) {
+	if(mouse_x >= x-6 && mouse_x <= x+32 && mouse_y >= y && mouse_y <= y + 32) {
 		hovering = true;
 	} else {
 		hovering = false;
@@ -38,8 +38,11 @@ if(x > room_width/2) {
 
 
 // Check for hovering over popup
-if(mouse_x >= x-32 && mouse_x <= x+32 && mouse_y >= y-88 && mouse_y <= y-20 && check_wall > 0) {
+if(mouse_x >= x && mouse_x <= x+64 && mouse_y >= y-75 && mouse_y <= y-10 && check_wall > 0) {
 	popup_hovering = true;
+	show_debug_message("X: " + string(mouse_x) + " | Y: " + string(mouse_y));
+	show_debug_message("------------------------------------");
+
 } else {
 	popup_hovering = false;
 }
@@ -49,7 +52,7 @@ if(mouse_x >= x-32 && mouse_x <= x+32 && mouse_y >= y-88 && mouse_y <= y-20 && c
 if(mouse_check_button_pressed(mb_left)) {	
 	if(hovering && check_wall < 0 ) { 
 		// If no popup yet, create popup
-		check_wall = instance_create_layer(x, y, "Popup_Layer", oWallInfo);
+		check_wall = instance_create_layer(x+16, y+16, "Popup_Layer", oWallInfo);
 		check_wall.wall_id = id;
 		check_wall.wall_health = wall_health;
 		check_wall.wall_destroyed = wall_destroyed;
